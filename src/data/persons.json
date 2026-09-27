@@ -1,15 +1,1369 @@
 [
-  { "id": "abraham", "slug": "abraao", "title": "Abraão", "shortDescription": "Patriarca associado à aliança e à promessa de uma descendência.", "startYear": -2000, "endYear": -1825, "dateLabel": "c. 2000–1825 a.C.", "dateType": "approximate", "role": "Patriarca", "birthYear": -2000, "deathYear": -1825, "description": "Abraão é apresentado em Gênesis como o patriarca chamado por Deus para deixar sua terra. A cronologia de sua vida é estimada e depende da reconstrução histórica adotada.", "references": [{ "book": "Gênesis", "chapter": 12, "verseStart": 1, "verseEnd": 9, "label": "Gênesis 12:1–9" }, { "book": "Gênesis", "chapter": 15, "verseStart": 1, "verseEnd": 6, "label": "Gênesis 15:1–6" }], "eventIds": ["call-of-abraham", "covenant-abraham"], "bookIds": ["genesis"], "placeIds": ["canaan", "jerusalem"], "family": ["isaac"], "sourceIds": ["bible", "oxford"] },
-  { "id": "moses", "slug": "moises", "title": "Moisés", "shortDescription": "Líder do êxodo e mediador da aliança no Sinai.", "startYear": -1350, "endYear": -1230, "dateLabel": "Datação debatida", "dateType": "disputed", "role": "Profeta e líder", "birthYear": -1350, "deathYear": -1230, "description": "Moisés conduz a saída dos israelitas do Egito e recebe a Lei no Sinai. As datas do êxodo e da vida de Moisés são discutidas; esta cronologia usa uma faixa ilustrativa, não uma data estabelecida.", "references": [{ "book": "Êxodo", "chapter": 3, "verseStart": 1, "verseEnd": 12, "label": "Êxodo 3:1–12" }, { "book": "Deuteronômio", "chapter": 34, "verseStart": 1, "verseEnd": 12, "label": "Deuteronômio 34" }], "eventIds": ["exodus", "sinai-covenant"], "bookIds": ["exodus", "deuteronomy"], "placeIds": ["egypt", "sinai", "canaan"], "sourceIds": ["bible", "edwards"] },
-  { "id": "samuel", "slug": "samuel", "title": "Samuel", "shortDescription": "Profeta e juiz que ungiu os primeiros reis de Israel.", "startYear": -1100, "endYear": -1010, "dateLabel": "c. 1100–1010 a.C.", "dateType": "approximate", "role": "Profeta e juiz", "birthYear": -1100, "deathYear": -1010, "description": "Samuel serviu como profeta e juiz em Israel. Nos relatos bíblicos, ungiu Saul e, mais tarde, Davi.", "references": [{ "book": "1 Samuel", "chapter": 3, "verseStart": 1, "verseEnd": 21, "label": "1 Samuel 3" }, { "book": "1 Samuel", "chapter": 16, "verseStart": 1, "verseEnd": 13, "label": "1 Samuel 16:1–13" }], "eventIds": ["anointing-saul", "anointing-david"], "bookIds": ["1-samuel"], "placeIds": ["shiloh", "bethlehem"], "family": ["saul", "david"], "sourceIds": ["bible", "oxford"] },
-  { "id": "saul", "slug": "saul", "title": "Saul", "shortDescription": "Primeiro rei de Israel segundo a narrativa de Samuel.", "startYear": -1050, "endYear": -1010, "dateLabel": "c. 1050–1010 a.C.", "dateType": "approximate", "role": "Rei", "birthYear": -1050, "deathYear": -1010, "description": "Saul é apresentado como o primeiro rei de Israel. As datas de seu reinado são aproximadas e variam conforme a cronologia adotada.", "references": [{ "book": "1 Samuel", "chapter": 10, "verseStart": 1, "verseEnd": 27, "label": "1 Samuel 10" }, { "book": "1 Samuel", "chapter": 31, "verseStart": 1, "verseEnd": 13, "label": "1 Samuel 31" }], "eventIds": ["anointing-saul", "david-goliath"], "bookIds": ["1-samuel"], "placeIds": ["israel", "gilboa"], "family": ["samuel", "david"], "sourceIds": ["bible", "oxford"] },
-  { "id": "david", "slug": "davi", "title": "Davi", "shortDescription": "Rei de Israel associado à unificação do reino e à conquista de Jerusalém.", "startYear": -1040, "endYear": -970, "dateLabel": "c. 1040–970 a.C.", "dateType": "approximate", "role": "Rei e salmista", "birthYear": -1040, "deathYear": -970, "description": "Davi foi rei de Judá e depois de Israel. A narrativa bíblica associa seu reinado à conquista de Jerusalém e a uma aliança dinástica.", "references": [{ "book": "1 Samuel", "chapter": 16, "verseStart": 1, "verseEnd": 13, "label": "1 Samuel 16:1–13" }, { "book": "2 Samuel", "chapter": 5, "verseStart": 1, "verseEnd": 10, "label": "2 Samuel 5:1–10" }], "eventIds": ["anointing-david", "david-goliath", "jerusalem-david", "united-monarchy"], "bookIds": ["2-samuel", "psalms"], "placeIds": ["bethlehem", "jerusalem"], "family": ["samuel", "saul", "solomon"], "sourceIds": ["bible", "oxford"] },
-  { "id": "solomon", "slug": "salomao", "title": "Salomão", "shortDescription": "Rei associado à construção do Primeiro Templo em Jerusalém.", "startYear": -990, "endYear": -931, "dateLabel": "c. 990–931 a.C.", "dateType": "approximate", "role": "Rei", "birthYear": -990, "deathYear": -931, "description": "Salomão sucede Davi na monarquia unida. A narrativa de 1 Reis atribui a ele a construção do templo em Jerusalém.", "references": [{ "book": "1 Reis", "chapter": 6, "verseStart": 1, "verseEnd": 14, "label": "1 Reis 6:1–14" }, { "book": "1 Reis", "chapter": 11, "verseStart": 41, "verseEnd": 43, "label": "1 Reis 11:41–43" }], "eventIds": ["first-temple", "kingdom-divided"], "bookIds": ["1-kings"], "placeIds": ["jerusalem"], "family": ["david"], "sourceIds": ["bible", "oxford"] },
-  { "id": "elijah", "slug": "elias", "title": "Elias", "shortDescription": "Profeta ativo no reino do Norte durante a dinastia de Onri.", "startYear": -900, "endYear": -850, "dateLabel": "c. século IX a.C.", "dateType": "approximate", "role": "Profeta", "birthYear": -900, "deathYear": -850, "description": "Elias confronta a idolatria no reino do Norte nos relatos de 1 Reis. A datação é aproximada e ligada ao período dos reis Acabe e Acazias.", "references": [{ "book": "1 Reis", "chapter": 17, "verseStart": 1, "verseEnd": 24, "label": "1 Reis 17" }, { "book": "1 Reis", "chapter": 18, "verseStart": 20, "verseEnd": 40, "label": "1 Reis 18:20–40" }], "eventIds": ["elijah-carmel"], "bookIds": ["1-kings"], "placeIds": ["israel", "mount-carmel"], "sourceIds": ["bible", "anchor"] },
-  { "id": "isaiah", "slug": "isaias", "title": "Isaías", "shortDescription": "Profeta de Judá associado aos reinados de Uzias, Jotão, Acaz e Ezequias.", "startYear": -740, "endYear": -680, "dateLabel": "c. século VIII a.C.", "dateType": "approximate", "role": "Profeta", "birthYear": -740, "deathYear": -680, "description": "O livro de Isaías situa o ministério do profeta em Judá, num período de pressão assíria. O livro também possui uma história de composição discutida por estudiosos.", "references": [{ "book": "Isaías", "chapter": 1, "verseStart": 1, "label": "Isaías 1:1" }, { "book": "Isaías", "chapter": 36, "verseStart": 1, "verseEnd": 22, "label": "Isaías 36" }], "eventIds": ["assyria-samaria", "jerusalem-assyria"], "bookIds": ["isaiah"], "placeIds": ["jerusalem", "judah"], "sourceIds": ["bible", "anchor"] },
-  { "id": "jeremiah", "slug": "jeremias", "title": "Jeremias", "shortDescription": "Profeta de Judá durante os últimos anos do reino e o exílio babilônico.", "startYear": -650, "endYear": -570, "dateLabel": "c. 650–570 a.C.", "dateType": "approximate", "role": "Profeta", "birthYear": -650, "deathYear": -570, "description": "Jeremias profetizou antes e durante a queda de Jerusalém. Seu ministério atravessa o fim do reino de Judá e o início do exílio.", "references": [{ "book": "Jeremias", "chapter": 1, "verseStart": 1, "verseEnd": 10, "label": "Jeremias 1:1–10" }, { "book": "Jeremias", "chapter": 39, "verseStart": 1, "verseEnd": 14, "label": "Jeremias 39" }], "eventIds": ["jerusalem-fall", "return-exile"], "bookIds": ["jeremiah"], "placeIds": ["jerusalem", "babylon"], "sourceIds": ["bible", "oxford"] },
-  { "id": "daniel", "slug": "daniel", "title": "Daniel", "shortDescription": "Exilado judeu cuja narrativa se passa nas cortes babilônica e persa.", "startYear": -620, "endYear": -530, "dateLabel": "c. século VI a.C.", "dateType": "approximate", "role": "Profeta e estadista", "birthYear": -620, "deathYear": -530, "description": "O livro de Daniel narra a vida de um judeu exilado em contextos babilônico e persa. A data de composição do livro é objeto de debate acadêmico.", "references": [{ "book": "Daniel", "chapter": 1, "verseStart": 1, "verseEnd": 7, "label": "Daniel 1:1–7" }, { "book": "Daniel", "chapter": 6, "verseStart": 1, "verseEnd": 28, "label": "Daniel 6" }], "eventIds": ["jerusalem-fall", "return-exile"], "bookIds": ["daniel"], "placeIds": ["jerusalem", "babylon", "susa"], "sourceIds": ["bible", "anchor"] },
-  { "id": "jesus", "slug": "jesus", "title": "Jesus Cristo", "shortDescription": "Figura central dos Evangelhos; sua vida é situada no contexto do domínio romano.", "startYear": -4, "endYear": 30, "dateLabel": "c. 4 a.C.–30 d.C.", "dateType": "approximate", "role": "Messias e mestre", "birthYear": -4, "deathYear": 30, "description": "Os Evangelhos narram o nascimento, ministério, crucificação e ressurreição de Jesus. As datas exatas do nascimento e da morte são reconstruções aproximadas; a cronologia varia entre estudiosos.", "references": [{ "book": "Lucas", "chapter": 2, "verseStart": 1, "verseEnd": 20, "label": "Lucas 2:1–20" }, { "book": "Marcos", "chapter": 15, "verseStart": 21, "verseEnd": 39, "label": "Marcos 15:21–39" }, { "book": "1 Coríntios", "chapter": 15, "verseStart": 3, "verseEnd": 8, "label": "1 Coríntios 15:3–8" }], "eventIds": ["birth-jesus", "crucifixion", "pentecost"], "bookIds": ["luke", "mark"], "placeIds": ["bethlehem", "jerusalem", "galilee"], "sourceIds": ["bible", "oxford"] },
-  { "id": "peter", "slug": "pedro", "title": "Pedro", "shortDescription": "Apóstolo que testemunhou a ressurreição e anunciou o evangelho em Jerusalém.", "startYear": 1, "endYear": 64, "dateLabel": "c. 1–64 d.C.", "dateType": "approximate", "role": "Apóstolo", "birthYear": 1, "deathYear": 64, "description": "Pedro, também chamado Simão, aparece nos Evangelhos e em Atos como um dos principais apóstolos. As datas de sua vida são aproximadas.", "references": [{ "book": "Atos", "chapter": 2, "verseStart": 14, "verseEnd": 41, "label": "Atos 2:14–41" }, { "book": "Atos", "chapter": 10, "verseStart": 34, "verseEnd": 48, "label": "Atos 10:34–48" }], "eventIds": ["pentecost", "cornelius-conversion"], "bookIds": ["acts"], "placeIds": ["jerusalem", "caesarea", "rome"], "sourceIds": ["bible", "oxford"] },
-  { "id": "paul", "slug": "paulo", "title": "Paulo", "shortDescription": "Apóstolo que levou o evangelho a várias cidades do mundo greco-romano.", "startYear": 5, "endYear": 67, "dateLabel": "c. 5–67 d.C.", "dateType": "approximate", "role": "Apóstolo e missionário", "birthYear": 5, "deathYear": 67, "description": "Paulo, inicialmente conhecido como Saulo, tornou-se um dos principais missionários do cristianismo primitivo. As viagens e cartas são situadas aproximadamente em meados do século I.", "references": [{ "book": "Atos", "chapter": 9, "verseStart": 1, "verseEnd": 19, "label": "Atos 9:1–19" }, { "book": "Atos", "chapter": 13, "verseStart": 1, "verseEnd": 3, "label": "Atos 13:1–3" }], "eventIds": ["paul-conversion", "first-journey", "council-jerusalem"], "bookIds": ["acts", "romans"], "placeIds": ["damascus", "antioch", "corinth", "rome"], "sourceIds": ["bible", "oxford"] }
+  {
+    "id": "abraham",
+    "slug": "abraao",
+    "title": "Abraão",
+    "shortDescription": "Patriarca associado à aliança e à promessa de uma descendência.",
+    "startYear": -2000,
+    "endYear": -1825,
+    "dateLabel": "c. 2000–1825 a.C.",
+    "dateType": "approximate",
+    "role": "Patriarca",
+    "birthYear": -2000,
+    "deathYear": -1825,
+    "description": "Abraão é apresentado em Gênesis como o patriarca chamado por Deus para deixar sua terra. A cronologia de sua vida é estimada e depende da reconstrução histórica adotada.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 12,
+        "verseStart": 1,
+        "verseEnd": 9,
+        "label": "Gênesis 12:1–9"
+      },
+      {
+        "book": "Gênesis",
+        "chapter": 15,
+        "verseStart": 1,
+        "verseEnd": 6,
+        "label": "Gênesis 15:1–6"
+      }
+    ],
+    "eventIds": [
+      "call-of-abraham",
+      "covenant-abraham"
+    ],
+    "bookIds": [
+      "genesis"
+    ],
+    "placeIds": [
+      "canaan",
+      "jerusalem"
+    ],
+    "family": [
+      "isaac"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "moses",
+    "slug": "moises",
+    "title": "Moisés",
+    "shortDescription": "Líder do êxodo e mediador da aliança no Sinai.",
+    "startYear": -1350,
+    "endYear": -1230,
+    "dateLabel": "Datação debatida",
+    "dateType": "disputed",
+    "role": "Profeta e líder",
+    "birthYear": -1350,
+    "deathYear": -1230,
+    "description": "Moisés conduz a saída dos israelitas do Egito e recebe a Lei no Sinai. As datas do êxodo e da vida de Moisés são discutidas; esta cronologia usa uma faixa ilustrativa, não uma data estabelecida.",
+    "references": [
+      {
+        "book": "Êxodo",
+        "chapter": 3,
+        "verseStart": 1,
+        "verseEnd": 12,
+        "label": "Êxodo 3:1–12"
+      },
+      {
+        "book": "Deuteronômio",
+        "chapter": 34,
+        "verseStart": 1,
+        "verseEnd": 12,
+        "label": "Deuteronômio 34"
+      }
+    ],
+    "eventIds": [
+      "exodus",
+      "sinai-covenant"
+    ],
+    "bookIds": [
+      "exodus",
+      "deuteronomy"
+    ],
+    "placeIds": [
+      "egypt",
+      "sinai",
+      "canaan"
+    ],
+    "sourceIds": [
+      "bible",
+      "edwards"
+    ]
+  },
+  {
+    "id": "samuel",
+    "slug": "samuel",
+    "title": "Samuel",
+    "shortDescription": "Profeta e juiz que ungiu os primeiros reis de Israel.",
+    "startYear": -1100,
+    "endYear": -1010,
+    "dateLabel": "c. 1100–1010 a.C.",
+    "dateType": "approximate",
+    "role": "Profeta e juiz",
+    "birthYear": -1100,
+    "deathYear": -1010,
+    "description": "Samuel serviu como profeta e juiz em Israel. Nos relatos bíblicos, ungiu Saul e, mais tarde, Davi.",
+    "references": [
+      {
+        "book": "1 Samuel",
+        "chapter": 3,
+        "verseStart": 1,
+        "verseEnd": 21,
+        "label": "1 Samuel 3"
+      },
+      {
+        "book": "1 Samuel",
+        "chapter": 16,
+        "verseStart": 1,
+        "verseEnd": 13,
+        "label": "1 Samuel 16:1–13"
+      }
+    ],
+    "eventIds": [
+      "anointing-saul",
+      "anointing-david"
+    ],
+    "bookIds": [
+      "1-samuel"
+    ],
+    "placeIds": [
+      "shiloh",
+      "bethlehem"
+    ],
+    "family": [
+      "saul",
+      "david"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "saul",
+    "slug": "saul",
+    "title": "Saul",
+    "shortDescription": "Primeiro rei de Israel segundo a narrativa de Samuel.",
+    "startYear": -1050,
+    "endYear": -1010,
+    "dateLabel": "c. 1050–1010 a.C.",
+    "dateType": "approximate",
+    "role": "Rei",
+    "birthYear": -1050,
+    "deathYear": -1010,
+    "description": "Saul é apresentado como o primeiro rei de Israel. As datas de seu reinado são aproximadas e variam conforme a cronologia adotada.",
+    "references": [
+      {
+        "book": "1 Samuel",
+        "chapter": 10,
+        "verseStart": 1,
+        "verseEnd": 27,
+        "label": "1 Samuel 10"
+      },
+      {
+        "book": "1 Samuel",
+        "chapter": 31,
+        "verseStart": 1,
+        "verseEnd": 13,
+        "label": "1 Samuel 31"
+      }
+    ],
+    "eventIds": [
+      "anointing-saul",
+      "david-goliath"
+    ],
+    "bookIds": [
+      "1-samuel"
+    ],
+    "placeIds": [
+      "israel",
+      "gilboa"
+    ],
+    "family": [
+      "samuel",
+      "david"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "david",
+    "slug": "davi",
+    "title": "Davi",
+    "shortDescription": "Rei de Israel associado à unificação do reino e à conquista de Jerusalém.",
+    "startYear": -1040,
+    "endYear": -970,
+    "dateLabel": "c. 1040–970 a.C.",
+    "dateType": "approximate",
+    "role": "Rei e salmista",
+    "birthYear": -1040,
+    "deathYear": -970,
+    "description": "Davi foi rei de Judá e depois de Israel. A narrativa bíblica associa seu reinado à conquista de Jerusalém e a uma aliança dinástica.",
+    "references": [
+      {
+        "book": "1 Samuel",
+        "chapter": 16,
+        "verseStart": 1,
+        "verseEnd": 13,
+        "label": "1 Samuel 16:1–13"
+      },
+      {
+        "book": "2 Samuel",
+        "chapter": 5,
+        "verseStart": 1,
+        "verseEnd": 10,
+        "label": "2 Samuel 5:1–10"
+      }
+    ],
+    "eventIds": [
+      "anointing-david",
+      "david-goliath",
+      "jerusalem-david",
+      "united-monarchy"
+    ],
+    "bookIds": [
+      "2-samuel",
+      "psalms"
+    ],
+    "placeIds": [
+      "bethlehem",
+      "jerusalem"
+    ],
+    "family": [
+      "samuel",
+      "saul",
+      "solomon"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "solomon",
+    "slug": "salomao",
+    "title": "Salomão",
+    "shortDescription": "Rei associado à construção do Primeiro Templo em Jerusalém.",
+    "startYear": -990,
+    "endYear": -931,
+    "dateLabel": "c. 990–931 a.C.",
+    "dateType": "approximate",
+    "role": "Rei",
+    "birthYear": -990,
+    "deathYear": -931,
+    "description": "Salomão sucede Davi na monarquia unida. A narrativa de 1 Reis atribui a ele a construção do templo em Jerusalém.",
+    "references": [
+      {
+        "book": "1 Reis",
+        "chapter": 6,
+        "verseStart": 1,
+        "verseEnd": 14,
+        "label": "1 Reis 6:1–14"
+      },
+      {
+        "book": "1 Reis",
+        "chapter": 11,
+        "verseStart": 41,
+        "verseEnd": 43,
+        "label": "1 Reis 11:41–43"
+      }
+    ],
+    "eventIds": [
+      "first-temple",
+      "kingdom-divided"
+    ],
+    "bookIds": [
+      "1-kings"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "family": [
+      "david"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "elijah",
+    "slug": "elias",
+    "title": "Elias",
+    "shortDescription": "Profeta ativo no reino do Norte durante a dinastia de Onri.",
+    "startYear": -900,
+    "endYear": -850,
+    "dateLabel": "c. século IX a.C.",
+    "dateType": "approximate",
+    "role": "Profeta",
+    "birthYear": -900,
+    "deathYear": -850,
+    "description": "Elias confronta a idolatria no reino do Norte nos relatos de 1 Reis. A datação é aproximada e ligada ao período dos reis Acabe e Acazias.",
+    "references": [
+      {
+        "book": "1 Reis",
+        "chapter": 17,
+        "verseStart": 1,
+        "verseEnd": 24,
+        "label": "1 Reis 17"
+      },
+      {
+        "book": "1 Reis",
+        "chapter": 18,
+        "verseStart": 20,
+        "verseEnd": 40,
+        "label": "1 Reis 18:20–40"
+      }
+    ],
+    "eventIds": [
+      "elijah-carmel"
+    ],
+    "bookIds": [
+      "1-kings"
+    ],
+    "placeIds": [
+      "israel",
+      "mount-carmel"
+    ],
+    "sourceIds": [
+      "bible",
+      "anchor"
+    ]
+  },
+  {
+    "id": "isaiah",
+    "slug": "isaias",
+    "title": "Isaías",
+    "shortDescription": "Profeta de Judá associado aos reinados de Uzias, Jotão, Acaz e Ezequias.",
+    "startYear": -740,
+    "endYear": -680,
+    "dateLabel": "c. século VIII a.C.",
+    "dateType": "approximate",
+    "role": "Profeta",
+    "birthYear": -740,
+    "deathYear": -680,
+    "description": "O livro de Isaías situa o ministério do profeta em Judá, num período de pressão assíria. O livro também possui uma história de composição discutida por estudiosos.",
+    "references": [
+      {
+        "book": "Isaías",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Isaías 1:1"
+      },
+      {
+        "book": "Isaías",
+        "chapter": 36,
+        "verseStart": 1,
+        "verseEnd": 22,
+        "label": "Isaías 36"
+      }
+    ],
+    "eventIds": [
+      "assyria-samaria",
+      "jerusalem-assyria"
+    ],
+    "bookIds": [
+      "isaiah"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "judah"
+    ],
+    "sourceIds": [
+      "bible",
+      "anchor"
+    ]
+  },
+  {
+    "id": "jeremiah",
+    "slug": "jeremias",
+    "title": "Jeremias",
+    "shortDescription": "Profeta de Judá durante os últimos anos do reino e o exílio babilônico.",
+    "startYear": -650,
+    "endYear": -570,
+    "dateLabel": "c. 650–570 a.C.",
+    "dateType": "approximate",
+    "role": "Profeta",
+    "birthYear": -650,
+    "deathYear": -570,
+    "description": "Jeremias profetizou antes e durante a queda de Jerusalém. Seu ministério atravessa o fim do reino de Judá e o início do exílio.",
+    "references": [
+      {
+        "book": "Jeremias",
+        "chapter": 1,
+        "verseStart": 1,
+        "verseEnd": 10,
+        "label": "Jeremias 1:1–10"
+      },
+      {
+        "book": "Jeremias",
+        "chapter": 39,
+        "verseStart": 1,
+        "verseEnd": 14,
+        "label": "Jeremias 39"
+      }
+    ],
+    "eventIds": [
+      "jerusalem-fall",
+      "return-exile"
+    ],
+    "bookIds": [
+      "jeremiah"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "babylon"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "daniel",
+    "slug": "daniel",
+    "title": "Daniel",
+    "shortDescription": "Exilado judeu cuja narrativa se passa nas cortes babilônica e persa.",
+    "startYear": -620,
+    "endYear": -530,
+    "dateLabel": "c. século VI a.C.",
+    "dateType": "approximate",
+    "role": "Profeta e estadista",
+    "birthYear": -620,
+    "deathYear": -530,
+    "description": "O livro de Daniel narra a vida de um judeu exilado em contextos babilônico e persa. A data de composição do livro é objeto de debate acadêmico.",
+    "references": [
+      {
+        "book": "Daniel",
+        "chapter": 1,
+        "verseStart": 1,
+        "verseEnd": 7,
+        "label": "Daniel 1:1–7"
+      },
+      {
+        "book": "Daniel",
+        "chapter": 6,
+        "verseStart": 1,
+        "verseEnd": 28,
+        "label": "Daniel 6"
+      }
+    ],
+    "eventIds": [
+      "jerusalem-fall",
+      "return-exile"
+    ],
+    "bookIds": [
+      "daniel"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "babylon",
+      "susa"
+    ],
+    "sourceIds": [
+      "bible",
+      "anchor"
+    ]
+  },
+  {
+    "id": "jesus",
+    "slug": "jesus",
+    "title": "Jesus Cristo",
+    "shortDescription": "Figura central dos Evangelhos; sua vida é situada no contexto do domínio romano.",
+    "startYear": -4,
+    "endYear": 30,
+    "dateLabel": "c. 4 a.C.–30 d.C.",
+    "dateType": "approximate",
+    "role": "Messias e mestre",
+    "birthYear": -4,
+    "deathYear": 30,
+    "description": "Os Evangelhos narram o nascimento, ministério, crucificação e ressurreição de Jesus. As datas exatas do nascimento e da morte são reconstruções aproximadas; a cronologia varia entre estudiosos.",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 2,
+        "verseStart": 1,
+        "verseEnd": 20,
+        "label": "Lucas 2:1–20"
+      },
+      {
+        "book": "Marcos",
+        "chapter": 15,
+        "verseStart": 21,
+        "verseEnd": 39,
+        "label": "Marcos 15:21–39"
+      },
+      {
+        "book": "1 Coríntios",
+        "chapter": 15,
+        "verseStart": 3,
+        "verseEnd": 8,
+        "label": "1 Coríntios 15:3–8"
+      }
+    ],
+    "eventIds": [
+      "birth-jesus",
+      "crucifixion",
+      "pentecost",
+      "jesus-baptism"
+    ],
+    "bookIds": [
+      "luke",
+      "mark"
+    ],
+    "placeIds": [
+      "bethlehem",
+      "jerusalem",
+      "galilee"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "peter",
+    "slug": "pedro",
+    "title": "Pedro",
+    "shortDescription": "Apóstolo que testemunhou a ressurreição e anunciou o evangelho em Jerusalém.",
+    "startYear": 1,
+    "endYear": 64,
+    "dateLabel": "c. 1–64 d.C.",
+    "dateType": "approximate",
+    "role": "Apóstolo",
+    "birthYear": 1,
+    "deathYear": 64,
+    "description": "Pedro, também chamado Simão, aparece nos Evangelhos e em Atos como um dos principais apóstolos. As datas de sua vida são aproximadas.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 2,
+        "verseStart": 14,
+        "verseEnd": 41,
+        "label": "Atos 2:14–41"
+      },
+      {
+        "book": "Atos",
+        "chapter": 10,
+        "verseStart": 34,
+        "verseEnd": 48,
+        "label": "Atos 10:34–48"
+      }
+    ],
+    "eventIds": [
+      "pentecost",
+      "cornelius-conversion"
+    ],
+    "bookIds": [
+      "acts"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "caesarea",
+      "rome"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "paul",
+    "slug": "paulo",
+    "title": "Paulo",
+    "shortDescription": "Apóstolo que levou o evangelho a várias cidades do mundo greco-romano.",
+    "startYear": 5,
+    "endYear": 67,
+    "dateLabel": "c. 5–67 d.C.",
+    "dateType": "approximate",
+    "role": "Apóstolo e missionário",
+    "birthYear": 5,
+    "deathYear": 67,
+    "description": "Paulo, inicialmente conhecido como Saulo, tornou-se um dos principais missionários do cristianismo primitivo. As viagens e cartas são situadas aproximadamente em meados do século I.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 9,
+        "verseStart": 1,
+        "verseEnd": 19,
+        "label": "Atos 9:1–19"
+      },
+      {
+        "book": "Atos",
+        "chapter": 13,
+        "verseStart": 1,
+        "verseEnd": 3,
+        "label": "Atos 13:1–3"
+      }
+    ],
+    "eventIds": [
+      "paul-conversion",
+      "first-journey",
+      "council-jerusalem"
+    ],
+    "bookIds": [
+      "acts",
+      "romans"
+    ],
+    "placeIds": [
+      "damascus",
+      "antioch",
+      "corinth",
+      "rome"
+    ],
+    "sourceIds": [
+      "bible",
+      "oxford"
+    ]
+  },
+  {
+    "id": "melchizedek",
+    "slug": "melquisedeque",
+    "title": "Melquisedeque",
+    "shortDescription": "Gênesis 14 apresenta Melquisedeque como rei de Salém e sacerdote do Deus Altíssimo.",
+    "startYear": -1950,
+    "endYear": -1950,
+    "dateLabel": "Época de Abraão; vida não datada",
+    "dateType": "approximate",
+    "role": "Rei de Salém e sacerdote",
+    "description": "Gênesis 14 apresenta Melquisedeque como rei de Salém e sacerdote do Deus Altíssimo. Ele traz pão e vinho, abençoa Abrão e reaparece em Salmo 110 e Hebreus 7. O texto não informa nascimento, morte ou anos de reinado.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 14,
+        "verseStart": 18,
+        "verseEnd": 20,
+        "label": "Gênesis 14:18–20"
+      },
+      {
+        "book": "Salmos",
+        "chapter": 110,
+        "verseStart": 4,
+        "verseEnd": 4,
+        "label": "Salmos 110:4"
+      },
+      {
+        "book": "Hebreus",
+        "chapter": 7,
+        "verseStart": 1,
+        "verseEnd": 10,
+        "label": "Hebreus 7:1–10"
+      }
+    ],
+    "eventIds": [
+      "melchizedek-meets-abraham"
+    ],
+    "bookIds": [
+      "genesis",
+      "psalms",
+      "hebrews"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-melchizedek"
+    ],
+    "dateBasis": "activity",
+    "periodId": "patriarchs"
+  },
+  {
+    "id": "isaac",
+    "slug": "isaque",
+    "title": "Isaque",
+    "shortDescription": "Filho de Abraão e Sara; Gênesis narra seu nascimento e a continuidade da promessa.",
+    "startYear": -1900,
+    "endYear": -1750,
+    "dateLabel": "Período patriarcal; vida não datada",
+    "dateType": "approximate",
+    "role": "Patriarca",
+    "description": "Filho de Abraão e Sara; Gênesis narra seu nascimento e a continuidade da promessa. A posição na linha do tempo é apenas contextual.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 21,
+        "verseStart": 1,
+        "verseEnd": 7,
+        "label": "Gênesis 21:1–7"
+      },
+      {
+        "book": "Gênesis",
+        "chapter": 26,
+        "verseStart": 1,
+        "verseEnd": 6,
+        "label": "Gênesis 26:1–6"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "genesis"
+    ],
+    "placeIds": [
+      "canaan"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "patriarchs"
+  },
+  {
+    "id": "joseph",
+    "slug": "jose",
+    "title": "José",
+    "shortDescription": "A narrativa de Gênesis acompanha José do conflito familiar ao Egito e à reconciliação com seus irmãos.",
+    "startYear": -1800,
+    "endYear": -1700,
+    "dateLabel": "Período patriarcal; vida não datada",
+    "dateType": "approximate",
+    "role": "Filho de Jacó",
+    "description": "A narrativa de Gênesis acompanha José do conflito familiar ao Egito e à reconciliação com seus irmãos.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 37,
+        "verseStart": 1,
+        "verseEnd": 11,
+        "label": "Gênesis 37:1–11"
+      },
+      {
+        "book": "Gênesis",
+        "chapter": 50,
+        "verseStart": 15,
+        "verseEnd": 21,
+        "label": "Gênesis 50:15–21"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "genesis"
+    ],
+    "placeIds": [
+      "egypt"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "patriarchs"
+  },
+  {
+    "id": "joshua",
+    "slug": "josue",
+    "title": "Josué",
+    "shortDescription": "Sucessor de Moisés na narrativa de Josué.",
+    "startYear": -1250,
+    "endYear": -1150,
+    "dateLabel": "Período da entrada em Canaã; data debatida",
+    "dateType": "disputed",
+    "role": "Líder de Israel",
+    "description": "Sucessor de Moisés na narrativa de Josué. As propostas de data para a entrada em Canaã diferem.",
+    "references": [
+      {
+        "book": "Josué",
+        "chapter": 1,
+        "verseStart": 1,
+        "verseEnd": 9,
+        "label": "Josué 1:1–9"
+      }
+    ],
+    "eventIds": [
+      "jordan-crossing"
+    ],
+    "bookIds": [
+      "joshua"
+    ],
+    "placeIds": [
+      "canaan"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "conquest"
+  },
+  {
+    "id": "ezra",
+    "slug": "esdras",
+    "title": "Esdras",
+    "shortDescription": "Esdras é associado à leitura da Lei e à comunidade restaurada em Jerusalém.",
+    "startYear": -460,
+    "endYear": -440,
+    "dateLabel": "Século V a.C.; atividade aproximada",
+    "dateType": "approximate",
+    "role": "Escriba e sacerdote",
+    "description": "Esdras é associado à leitura da Lei e à comunidade restaurada em Jerusalém.",
+    "references": [
+      {
+        "book": "Esdras",
+        "chapter": 7,
+        "verseStart": 1,
+        "verseEnd": 10,
+        "label": "Esdras 7:1–10"
+      },
+      {
+        "book": "Neemias",
+        "chapter": 8,
+        "verseStart": 1,
+        "verseEnd": 8,
+        "label": "Neemias 8:1–8"
+      }
+    ],
+    "eventIds": [
+      "ezra-reading"
+    ],
+    "bookIds": [
+      "ezra",
+      "nehemiah"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "return"
+  },
+  {
+    "id": "esther",
+    "slug": "ester",
+    "title": "Ester",
+    "shortDescription": "A rainha Ester é protagonista da narrativa de proteção dos judeus na corte persa.",
+    "startYear": -480,
+    "endYear": -450,
+    "dateLabel": "Período persa; data narrativa debatida",
+    "dateType": "disputed",
+    "role": "Rainha",
+    "description": "A rainha Ester é protagonista da narrativa de proteção dos judeus na corte persa.",
+    "references": [
+      {
+        "book": "Ester",
+        "chapter": 4,
+        "verseStart": 1,
+        "verseEnd": 17,
+        "label": "Ester 4:1–17"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "esther"
+    ],
+    "placeIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "return"
+  },
+  {
+    "id": "mary",
+    "slug": "maria-mae-de-jesus",
+    "title": "Maria, mãe de Jesus",
+    "shortDescription": "Os Evangelhos apresentam Maria no relato do nascimento de Jesus e entre seus seguidores.",
+    "startYear": -4,
+    "endYear": 30,
+    "dateLabel": "Virada da era; vida não datada",
+    "dateType": "approximate",
+    "role": "Mãe de Jesus",
+    "description": "Os Evangelhos apresentam Maria no relato do nascimento de Jesus e entre seus seguidores. O texto não fornece datas de vida.",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 1,
+        "verseStart": 26,
+        "verseEnd": 38,
+        "label": "Lucas 1:26–38"
+      },
+      {
+        "book": "João",
+        "chapter": 19,
+        "verseStart": 25,
+        "verseEnd": 27,
+        "label": "João 19:25–27"
+      }
+    ],
+    "eventIds": [
+      "birth-jesus"
+    ],
+    "bookIds": [
+      "matthew",
+      "luke",
+      "john"
+    ],
+    "placeIds": [
+      "bethlehem",
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "jesus"
+  },
+  {
+    "id": "john-baptist",
+    "slug": "joao-batista",
+    "title": "João Batista",
+    "shortDescription": "Pregador associado ao Jordão que anuncia a proximidade do reino e batiza Jesus nos Evangelhos.",
+    "startYear": 25,
+    "endYear": 30,
+    "dateLabel": "c. décadas de 20–30 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Profeta",
+    "description": "Pregador associado ao Jordão que anuncia a proximidade do reino e batiza Jesus nos Evangelhos.",
+    "references": [
+      {
+        "book": "Marcos",
+        "chapter": 1,
+        "verseStart": 1,
+        "verseEnd": 11,
+        "label": "Marcos 1:1–11"
+      },
+      {
+        "book": "Lucas",
+        "chapter": 3,
+        "verseStart": 1,
+        "verseEnd": 20,
+        "label": "Lucas 3:1–20"
+      }
+    ],
+    "eventIds": [
+      "john-baptist-ministry",
+      "jesus-baptism"
+    ],
+    "bookIds": [
+      "mark",
+      "luke",
+      "matthew",
+      "john"
+    ],
+    "placeIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "jesus"
+  },
+  {
+    "id": "mary-magdalene",
+    "slug": "maria-madalena",
+    "title": "Maria Madalena",
+    "shortDescription": "Seguidora de Jesus citada nos relatos da crucificação, sepultamento e encontro com o túmulo vazio.",
+    "startYear": 28,
+    "endYear": 33,
+    "dateLabel": "c. décadas de 20–30 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Discípula de Jesus",
+    "description": "Seguidora de Jesus citada nos relatos da crucificação, sepultamento e encontro com o túmulo vazio.",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 8,
+        "verseStart": 1,
+        "verseEnd": 3,
+        "label": "Lucas 8:1–3"
+      },
+      {
+        "book": "João",
+        "chapter": 20,
+        "verseStart": 1,
+        "verseEnd": 18,
+        "label": "João 20:1–18"
+      }
+    ],
+    "eventIds": [
+      "crucifixion"
+    ],
+    "bookIds": [
+      "luke",
+      "john"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "jesus"
+  },
+  {
+    "id": "martha",
+    "slug": "marta",
+    "title": "Marta",
+    "shortDescription": "Irmã de Maria e Lázaro, aparece em Lucas 10 e João 11 em encontros com Jesus.",
+    "startYear": 28,
+    "endYear": 33,
+    "dateLabel": "Século I d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Discípula de Jesus",
+    "description": "Irmã de Maria e Lázaro, aparece em Lucas 10 e João 11 em encontros com Jesus.",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 10,
+        "verseStart": 38,
+        "verseEnd": 42,
+        "label": "Lucas 10:38–42"
+      },
+      {
+        "book": "João",
+        "chapter": 11,
+        "verseStart": 17,
+        "verseEnd": 27,
+        "label": "João 11:17–27"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "luke",
+      "john"
+    ],
+    "placeIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "jesus"
+  },
+  {
+    "id": "stephen",
+    "slug": "estevao",
+    "title": "Estêvão",
+    "shortDescription": "Um dos sete escolhidos para servir a comunidade; Atos 6–7 relata seu discurso e sua morte.",
+    "startYear": 30,
+    "endYear": 35,
+    "dateLabel": "c. década de 30 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Testemunha da igreja",
+    "description": "Um dos sete escolhidos para servir a comunidade; Atos 6–7 relata seu discurso e sua morte.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 6,
+        "verseStart": 1,
+        "verseEnd": 15,
+        "label": "Atos 6:1–15"
+      },
+      {
+        "book": "Atos",
+        "chapter": 7,
+        "verseStart": 54,
+        "verseEnd": 60,
+        "label": "Atos 7:54–60"
+      }
+    ],
+    "eventIds": [
+      "stephen-witness"
+    ],
+    "bookIds": [
+      "acts"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "philip",
+    "slug": "filipe-o-evangelista",
+    "title": "Filipe, o evangelista",
+    "shortDescription": "Filipe aparece em Atos como um dos sete e anuncia a mensagem em Samaria e a um viajante etíope.",
+    "startYear": 30,
+    "endYear": 60,
+    "dateLabel": "Século I d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Evangelista",
+    "description": "Filipe aparece em Atos como um dos sete e anuncia a mensagem em Samaria e a um viajante etíope.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 8,
+        "verseStart": 4,
+        "verseEnd": 13,
+        "label": "Atos 8:4–13"
+      },
+      {
+        "book": "Atos",
+        "chapter": 8,
+        "verseStart": 26,
+        "verseEnd": 40,
+        "label": "Atos 8:26–40"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "acts"
+    ],
+    "placeIds": [
+      "caesarea"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "barnabas",
+    "slug": "barnabe",
+    "title": "Barnabé",
+    "shortDescription": "Cooperador de Paulo em Antioquia e na primeira viagem missionária, segundo Atos.",
+    "startYear": 40,
+    "endYear": 55,
+    "dateLabel": "c. décadas de 40–50 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Missionário",
+    "description": "Cooperador de Paulo em Antioquia e na primeira viagem missionária, segundo Atos.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 11,
+        "verseStart": 22,
+        "verseEnd": 26,
+        "label": "Atos 11:22–26"
+      },
+      {
+        "book": "Atos",
+        "chapter": 13,
+        "verseStart": 1,
+        "verseEnd": 3,
+        "label": "Atos 13:1–3"
+      }
+    ],
+    "eventIds": [
+      "first-journey"
+    ],
+    "bookIds": [
+      "acts"
+    ],
+    "placeIds": [
+      "antioch",
+      "cyprus"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "james-brother",
+    "slug": "tiago-irmao-de-jesus",
+    "title": "Tiago, irmão de Jesus",
+    "shortDescription": "Tiago tem papel de relevo na comunidade de Jerusalém, especialmente na reunião descrita em Atos 15.",
+    "startYear": 40,
+    "endYear": 62,
+    "dateLabel": "c. décadas de 40–60 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Líder da igreja de Jerusalém",
+    "description": "Tiago tem papel de relevo na comunidade de Jerusalém, especialmente na reunião descrita em Atos 15.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 15,
+        "verseStart": 13,
+        "verseEnd": 21,
+        "label": "Atos 15:13–21"
+      },
+      {
+        "book": "Gálatas",
+        "chapter": 1,
+        "verseStart": 18,
+        "verseEnd": 19,
+        "label": "Gálatas 1:18–19"
+      }
+    ],
+    "eventIds": [
+      "council-jerusalem"
+    ],
+    "bookIds": [
+      "acts",
+      "james"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "timothy",
+    "slug": "timoteo",
+    "title": "Timóteo",
+    "shortDescription": "Colaborador de Paulo mencionado em Atos e nas cartas; a autoria das cartas pastorais é debatida.",
+    "startYear": 50,
+    "endYear": 65,
+    "dateLabel": "c. décadas de 50–60 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Cooperador de Paulo",
+    "description": "Colaborador de Paulo mencionado em Atos e nas cartas; a autoria das cartas pastorais é debatida.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 16,
+        "verseStart": 1,
+        "verseEnd": 5,
+        "label": "Atos 16:1–5"
+      },
+      {
+        "book": "Filipenses",
+        "chapter": 2,
+        "verseStart": 19,
+        "verseEnd": 23,
+        "label": "Filipenses 2:19–23"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "acts",
+      "philippians",
+      "1-timothy",
+      "2-timothy"
+    ],
+    "placeIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "lydia",
+    "slug": "lidia",
+    "title": "Lídia",
+    "shortDescription": "Atos relata sua acolhida à mensagem em Filipos e a hospitalidade oferecida aos missionários.",
+    "startYear": 50,
+    "endYear": 55,
+    "dateLabel": "c. década de 50 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Comerciante e anfitriã",
+    "description": "Atos relata sua acolhida à mensagem em Filipos e a hospitalidade oferecida aos missionários.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 16,
+        "verseStart": 11,
+        "verseEnd": 15,
+        "label": "Atos 16:11–15"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "acts"
+    ],
+    "placeIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "priscilla",
+    "slug": "priscila",
+    "title": "Priscila",
+    "shortDescription": "Priscila aparece com Áquila em Atos e nas cartas de Paulo, ensinando e apoiando comunidades.",
+    "startYear": 50,
+    "endYear": 65,
+    "dateLabel": "c. décadas de 50–60 d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Cooperadora da igreja",
+    "description": "Priscila aparece com Áquila em Atos e nas cartas de Paulo, ensinando e apoiando comunidades.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 18,
+        "verseStart": 1,
+        "verseEnd": 3,
+        "label": "Atos 18:1–3"
+      },
+      {
+        "book": "Atos",
+        "chapter": 18,
+        "verseStart": 24,
+        "verseEnd": 26,
+        "label": "Atos 18:24–26"
+      },
+      {
+        "book": "Romanos",
+        "chapter": 16,
+        "verseStart": 3,
+        "verseEnd": 5,
+        "label": "Romanos 16:3–5"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "acts",
+      "romans"
+    ],
+    "placeIds": [
+      "corinth"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  },
+  {
+    "id": "john-apostle",
+    "slug": "joao-apostolo",
+    "title": "João, apóstolo",
+    "shortDescription": "João, filho de Zebedeu, é citado entre os discípulos e como participante da igreja inicial.",
+    "startYear": 30,
+    "endYear": 70,
+    "dateLabel": "Século I d.C.; atividade",
+    "dateType": "approximate",
+    "role": "Apóstolo",
+    "description": "João, filho de Zebedeu, é citado entre os discípulos e como participante da igreja inicial. A identificação com os autores dos escritos joaninos é debatida.",
+    "references": [
+      {
+        "book": "Marcos",
+        "chapter": 1,
+        "verseStart": 19,
+        "verseEnd": 20,
+        "label": "Marcos 1:19–20"
+      },
+      {
+        "book": "Atos",
+        "chapter": 3,
+        "verseStart": 1,
+        "verseEnd": 11,
+        "label": "Atos 3:1–11"
+      }
+    ],
+    "eventIds": [
+      "pentecost"
+    ],
+    "bookIds": [
+      "mark",
+      "acts",
+      "john"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "sourceIds": [
+      "bible"
+    ],
+    "dateBasis": "activity",
+    "periodId": "church"
+  }
 ]

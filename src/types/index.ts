@@ -56,8 +56,11 @@ export interface EventRecord extends TimelineEntity {
 export interface Person extends TimelineEntity {
   role: string
   description: string
-  birthYear: number
+  /** Omit when Scripture gives only an activity period, not biographical dates. */
+  birthYear?: number
   deathYear?: number
+  dateBasis?: 'life' | 'activity'
+  periodId?: string
   eventIds: string[]
   bookIds: string[]
   placeIds: string[]
@@ -71,10 +74,14 @@ export interface BookRecord {
   title: string
   testament: 'AT' | 'NT'
   category: string
+  canonOrder: number
+  authorshipLabel: string
   periodId: string
   narrativeStartYear: number
   narrativeEndYear: number
   compositionLabel?: string
+  compositionStartYear?: number
+  compositionEndYear?: number
   description: string
   references: BiblicalReference[]
   personIds: string[]

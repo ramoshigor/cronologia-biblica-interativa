@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router'
-import { BookOpenText, Clock3, Compass, GitCompareArrows, Heart, Menu, X } from 'lucide-react'
+import { BookOpenText, Clock3, Compass, GitCompareArrows, Menu, X } from 'lucide-react'
 import { SearchBox } from './SearchBox'
 
 const navigation = [
@@ -8,7 +8,7 @@ const navigation = [
   { to: '/linha-do-tempo', label: 'Cronologia', icon: Clock3 },
   { to: '/explorar', label: 'Explorar', icon: BookOpenText },
   { to: '/comparar', label: 'Comparar', icon: GitCompareArrows },
-  { to: '/favoritos', label: 'Meu estudo', icon: Heart },
+  { to: '/livros', label: 'Livros', icon: BookOpenText },
 ]
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -43,13 +43,13 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </button>
         </div>
       </header>
-      {!isOnline && <div className="offline-banner"><span className="offline-dot" /> Você está offline. O conteúdo já carregado e seus dados locais continuam disponíveis.</div>}
+      {!isOnline && <div className="offline-banner"><span className="offline-dot" /> Você está offline. O conteúdo já carregado continua disponível.</div>}
       <main id="conteudo" className="page-shell" key={location.pathname}>
         {children}
       </main>
       <footer className="site-footer">
         <span>Um atlas para acompanhar a grande história bíblica.</span>
-        <span className="footer-meta"><span className="status-dot" /> Conteúdo demonstrativo · datas marcadas conforme sua precisão</span>
+        <span className="footer-meta"><span className="status-dot" /> 66 livros · datas e autorias indicadas conforme sua precisão</span>
       </footer>
       <div className="mobile-search"><SearchBox /></div>
     </div>

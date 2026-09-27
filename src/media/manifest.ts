@@ -24,6 +24,9 @@ export const editorialImages = {
   hellenistic: image('I11', 'mediterraneo-helenistico', 'Porto mediterrâneo com embarcações e povoado nas colinas.', 'Ilustração interpretativa do ambiente mediterrâneo entre os Testamentos.'),
   bethlehem: image('I12', 'belem-noite', 'Aldeia genérica nas colinas da Judeia sob o céu noturno.', 'Ilustração interpretativa do ambiente do nascimento de Jesus.'),
   jerusalemFirstCentury: image('I13', 'jerusalem-seculo-i', 'Cidade murada genérica nas colinas da Judeia ao entardecer.', 'Ilustração interpretativa do ambiente de Jerusalém no século I.'),
+  melchizedek: image('I14', 'melquisedeque-salem', 'Viajantes encontram um sacerdote diante de uma cidade antiga sobre colinas.', 'Ilustração interpretativa de Gênesis 14.'),
+  manuscripts: image('I15', 'manuscritos-biblicos', 'Rolos e manuscritos em uma mesa próxima ao mar Mediterrâneo.', 'Ilustração interpretativa da transmissão dos textos bíblicos.'),
+  jordan: image('I16', 'joao-jordao', 'Pessoas ouvem um pregador junto a um rio em uma paisagem antiga.', 'Ilustração interpretativa do ministério de João Batista.'),
 } satisfies Record<string, EditorialImage>
 
 export const imageForEvent: Record<string, EditorialImage> = {
@@ -50,6 +53,18 @@ export const imageForEvent: Record<string, EditorialImage> = {
   'elijah-carmel': editorialImages.divided,
   'assyria-samaria': editorialImages.divided,
   'jerusalem-assyria': editorialImages.divided,
+  'melchizedek-meets-abraham': editorialImages.melchizedek,
+  'john-baptist-ministry': editorialImages.jordan,
+  'stephen-witness': editorialImages.church,
+  'jordan-crossing': editorialImages.judges,
+  'second-temple': editorialImages.return,
+  'ezra-reading': editorialImages.return,
+  'jesus-baptism': editorialImages.jordan,
+}
+
+export const imageForPerson: Record<string, EditorialImage> = {
+  melchizedek: editorialImages.melchizedek,
+  'john-baptist': editorialImages.jordan,
 }
 
 export const imageForPeriod: Record<string, EditorialImage> = {

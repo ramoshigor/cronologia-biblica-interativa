@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest'
-import { empires, events, persons, places, sources } from '../repositories/catalogRepository'
+import { books, empires, events, persons, places, sources } from '../repositories/catalogRepository'
 import { searchCatalog } from './searchService'
 import { favoritesService } from './favoritesService'
 import { notesService } from './notesService'
@@ -27,6 +27,36 @@ describe('initial historical sample', () => {
     const results = searchCatalog('Jeremais')
     expect(results.some((item) => item.type === 'person' && item.title === 'Jeremias')).toBe(true)
     expect(results.some((item) => item.type === 'book' && item.title === 'Jeremias')).toBe(true)
+  })
+})
+
+describe('consultation catalog', () => {
+  it('contains the 66 books in canonical order with valid references and conservative composition dates', () => {
+    expect(books).toHaveLength(66)
+    expect(books.filter((book) => book.testament === 'AT')).toHaveLength(39)
+    expect(books.filter((book) => book.testament === 'NT')).toHaveLength(27)
+    const people = new Set(persons.map((person) => person.id))
+    const sourceIds = new Set(sources.map((source) => source.id))
+    for (const [index, book] of books.entries()) {
+      expect(book.canonOrder).toBe(index + 1)
+      expect(book.authorshipLabel.length).toBeGreaterThan(2)
+      expect(book.references.length).toBeGreaterThan(0)
+      expect(book.personIds.every((id) => people.has(id))).toBe(true)
+      expect(book.sourceIds.every((id) => sourceIds.has(id))).toBe(true)
+      if (book.compositionStartYear !== undefined) {
+        expect(book.compositionEndYear).toBeGreaterThanOrEqual(book.compositionStartYear)
+        expect(book.compositionStartYear).not.toBe(0)
+      }
+    }
+    expect(books.find((book) => book.id === 'hebrews')?.authorshipLabel).toContain('não identificado')
+  })
+
+  it('links Melchizedek to the narrative without inventing his lifespan', () => {
+    const person = persons.find((item) => item.id === 'melchizedek')
+    expect(person?.birthYear).toBeUndefined()
+    expect(person?.eventIds).toContain('melchizedek-meets-abraham')
+    expect(person?.references.map((reference) => reference.book)).toEqual(['Gênesis', 'Salmos', 'Hebreus'])
+    expect(persons.every((item) => item.eventIds.every((id) => events.some((event) => event.id === id)))).toBe(true)
   })
 })
 

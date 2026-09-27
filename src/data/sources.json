@@ -1,6 +1,49 @@
 [
-  { "id": "bible", "title": "Texto bíblico", "author": "Referências indicadas em cada registro", "note": "As referências bíblicas fundamentam o vínculo textual; datas históricas aproximadas requerem leitura das notas cronológicas." },
-  { "id": "oxford", "title": "The Oxford Bible Atlas", "author": "Herbert G. May (org.)", "publisher": "Oxford University Press", "note": "Referência geral de geografia e contexto histórico bíblico." },
-  { "id": "edwards", "title": "A History of Israel", "author": "John Bright", "publisher": "Westminster John Knox Press", "note": "Uma proposta acadêmica de síntese histórica; cronologias antigas podem variar entre estudiosos." },
-  { "id": "anchor", "title": "The Anchor Yale Bible Dictionary", "publisher": "Yale University Press", "note": "Obra de referência para contexto, lugares e personagens bíblicos." }
+  {
+    "id": "bible",
+    "title": "Texto bíblico",
+    "author": "Referências indicadas em cada registro",
+    "note": "As referências bíblicas fundamentam o vínculo textual; datas históricas aproximadas requerem leitura das notas cronológicas."
+  },
+  {
+    "id": "oxford",
+    "title": "The Oxford Bible Atlas",
+    "author": "Herbert G. May (org.)",
+    "publisher": "Oxford University Press",
+    "note": "Referência geral de geografia e contexto histórico bíblico."
+  },
+  {
+    "id": "edwards",
+    "title": "A History of Israel",
+    "author": "John Bright",
+    "publisher": "Westminster John Knox Press",
+    "note": "Uma proposta acadêmica de síntese histórica; cronologias antigas podem variar entre estudiosos."
+  },
+  {
+    "id": "anchor",
+    "title": "The Anchor Yale Bible Dictionary",
+    "publisher": "Yale University Press",
+    "note": "Obra de referência para contexto, lugares e personagens bíblicos."
+  },
+  {
+    "id": "bibleodyssey-method",
+    "title": "Bible Odyssey: formação e organização dos escritos bíblicos",
+    "author": "Society of Biblical Literature",
+    "url": "https://www.bibleodyssey.org/articles/why-does-the-bible-look-the-way-it-does/",
+    "note": "Panorama da formação e organização; datas resumidas aqui são propostas editoriais amplas, não extraídas individualmente desta fonte."
+  },
+  {
+    "id": "abs-nt",
+    "title": "The New Testament",
+    "author": "American Bible Society",
+    "url": "https://www.americanbible.org/engage/bible-resources/articles/the-new-testament/",
+    "note": "Introdução geral ao Novo Testamento; datas de composição são intervalos aproximados e algumas autorias são disputadas."
+  },
+  {
+    "id": "bibleodyssey-melchizedek",
+    "title": "Melchizedek",
+    "author": "Society of Biblical Literature",
+    "url": "https://www.bibleodyssey.org/articles/melchizedek/",
+    "note": "Personagem apresentado em Gênesis 14, com recepção em Salmos e Hebreus."
+  }
 ]

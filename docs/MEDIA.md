@@ -1,6 +1,6 @@
-# Mídia editorial v0.4
+# Mídia editorial v0.5
 
-As treze cenas foram produzidas com geração de imagem e selecionadas como ilustração interpretativa. Não são fotografias, mapas, retratos de pessoas bíblicas nem reconstruções arqueológicas. Cada imagem possui uma variante pequena para telas de até 800 px; `src/media/manifest.ts` define alt, legenda e contexto.
+As dezesseis cenas foram produzidas com geração de imagem e selecionadas como ilustração interpretativa. Não são fotografias, mapas, retratos de pessoas bíblicas nem reconstruções arqueológicas. Cada imagem possui uma variante pequena para telas de até 800 px; `src/media/manifest.ts` define alt, legenda e contexto.
 
 | ID | Arquivo | Uso |
 | --- | --- | --- |
@@ -17,6 +17,9 @@ As treze cenas foram produzidas com geração de imagem e selecionadas como ilus
 | I11 | `mediterraneo-helenistico.webp` | Ambiente do período intertestamentário |
 | I12 | `belem-noite.webp` | Contexto do nascimento de Jesus |
 | I13 | `jerusalem-seculo-i.webp` | Contexto da morte e ressurreição de Jesus |
+| I14 | `melquisedeque-salem.webp` | Encontro em Gênesis 14 e perfil de Melquisedeque |
+| I15 | `manuscritos-biblicos.webp` | Catálogo e composição dos livros |
+| I16 | `joao-jordao.webp` | João Batista e ministério no Jordão |
 | — | `textura-papel.webp` | Fundo sutil; uso opcional |
 
 As cenas aparecem nos cartões de períodos e na lista vertical da cronologia. Os três novos arquivos foram convertidos para WebP a 1536 × 1024 e 800 × 533 px. Cidades, embarcações e paisagens são composições genéricas; a associação a um período não identifica um sítio arqueológico.
@@ -41,3 +44,7 @@ Estilo comum: pintura digital editorial de atlas bíblico, leve textura de gravu
 - I12: aldeia genérica nas colinas da Judeia à noite, sem personagens bíblicos ou arquitetura específica de Belém.
 - I13: cidade murada genérica nas colinas da Judeia ao entardecer, sem cruzes nem reconstrução do templo ou de Jerusalém.
 - Textura: padrão quadrado discreto de fibra de papel/linho, contraste baixíssimo.
+
+- I14: grupo de viajantes encontra sacerdote junto a uma cidade genérica sobre colinas, pão e vinho em mesa simples, sem retrato ou reconstrução da antiga Salém.
+- I15: rolos e manuscritos sobre mesa em ambiente mediterrâneo, símbolo da transmissão textual; inscrições não são fonte.
+- I16: pregador distante junto ao rio com ouvintes, cenário interpretativo da pregação de João Batista.
