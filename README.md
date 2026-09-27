@@ -30,7 +30,7 @@ O build final fica em `dist/`.
 - Busca aproximada em português para eventos, pessoas, livros, lugares e impérios.
 - Páginas de detalhe para eventos, personagens, livros e lugares.
 - Comparação de até três personagens com faixas de vida aproximadas.
-- Favoritos e notas locais, sem conta ou serviço externo.
+- Favoritos e notas locais, com exportação e restauração de uma cópia JSON, sem conta ou serviço externo.
 - Instalação PWA e cache básico da aplicação depois da primeira visita online.
 - Rotas com endereço legível e fallback para hospedagem estática.
 
@@ -56,6 +56,8 @@ Os primeiros registros são uma amostra de produto, não um catálogo completo. 
 
 `src/services/` centraliza preferências, histórico, favoritos e notas. Favoritos, anotações, visões salvas e itens recentes permanecem no `localStorage` do navegador e não são sincronizados ou enviados a um servidor. Não armazene informação sensível.
 
+Em **Meu estudo**, a cópia JSON inclui favoritos, anotações e visões salvas. A importação valida o formato e mostra um resumo antes de substituir esses três conjuntos no navegador. O histórico de páginas visitadas não faz parte da cópia.
+
 ## Publicar grátis no GitHub Pages
 
 O workflow `.github/workflows/deploy.yml` verifica tipos e testes, cria o build e publica a pasta `dist`. Para um repositório de projeto:
@@ -75,3 +77,7 @@ Para adicionar sincronização, login ou administração remota, implemente uma 
 A cronologia oferece uma lista vertical por período no celular e conserva o panorama horizontal como alternativa. As imagens em `public/media/v2/` são ilustrações interpretativas, não reconstruções ou retratos históricos. O catálogo, as rotas e os dados de favoritos, notas e visões salvas no navegador permanecem com as mesmas chaves.
 
 O mapa regional em páginas de lugar marca apenas Jerusalém, Belém e Damasco com posições aproximadas de cidades atuais. Outros lugares continuam descritos em texto até haver base geográfica específica. Consulte `docs/MEDIA.md` para ativos, fontes e limitações editoriais.
+
+## Atualização visual v0.3
+
+Três novas cenas cobrem conquista e juízes, reino dividido e período intertestamentário. Os cartões das eras e a lista vertical no celular usam as imagens do período com rótulo de ilustração interpretativa. A exportação do estudo permite guardar e transferir os dados locais sem criar uma conta.

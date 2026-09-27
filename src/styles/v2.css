@@ -124,3 +124,24 @@ body { color: var(--text-primary); font-size: 16px; line-height: 1.5; }
 .origins-context h3 { margin: 0 0 8px; font: 26px var(--serif); }
 .origins-context p { max-width: 650px; font-size: 16px; line-height: 1.6; }
 @media (max-width:640px) { .origins-callout { flex-direction: column; align-items: flex-start; } }
+.era-card-image { height: 90px; margin: -17px -17px 13px; position: relative; overflow: hidden; background: #e8e9df; }
+.era-card-image .editorial-picture, .era-card-image img { width: 100%; height: 100%; }
+.era-card-image:after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, #213e3d80, transparent 65%); pointer-events: none; }
+.era-card-image > span:last-child, .mobile-period-image > span:last-child { position: absolute; z-index: 1; right: 9px; bottom: 6px; color: white; font-size: 10px; text-shadow: 0 1px 5px #213e3d; }
+.era-card:has(.era-card-image) { min-height: 264px; }
+.era-card:has(.era-card-image):before { display: none; }
+.mobile-period-image { position: relative; height: 125px; overflow: hidden; margin: -20px -18px 18px; border-radius: 7px 7px 0 0; background: #e8e9df; }
+.mobile-period-image .editorial-picture, .mobile-period-image img { width: 100%; height: 100%; }
+.mobile-period-image:after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, #213e3d6b, transparent 60%); pointer-events: none; }
+.study-backup { display: grid; gap: 16px; padding: 20px; border: 1px solid var(--border); border-radius: 11px; background: var(--surface); }
+.study-backup h2 { margin: 5px 0; font: 25px var(--serif); }
+.study-backup p { max-width: 680px; margin: 0; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+.study-backup-actions, .backup-preview > div { display: flex; flex-wrap: wrap; gap: 9px; }
+.study-backup-actions label { cursor: pointer; }
+.study-backup-actions input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.study-backup-actions label:focus-within { outline: 2px solid var(--focus); outline-offset: 2px; }
+.backup-preview { padding: 15px; border: 1px solid #cad7c7; border-radius: 8px; background: #f0f5ed; }
+.backup-preview strong { color: var(--navy); }
+.backup-preview p { margin: 5px 0 12px; }
+.study-backup .backup-message { font-size: 13px; }
+@media (max-width: 640px) { .era-card-image { height: 80px; margin: -12px -12px 12px; }.era-card:has(.era-card-image) { min-height: 235px; }.study-backup-actions .button { width: 100%; justify-content: center; } }
