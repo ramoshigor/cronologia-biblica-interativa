@@ -12,7 +12,7 @@ import './BooksPage.css'
 type View = 'canon' | 'composition'
 const canonGroups = [
   ['Pentateuco', 'Históricos', 'Poéticos', 'Profetas maiores', 'Profetas menores'],
-  ['Evangelhos', 'Histórico', 'Cartas paulinas', 'Cartas pastorais', 'Cartas gerais', 'Apocalíptico'],
+  ['Evangelhos', 'Histórico', 'Cartas paulinas', 'Cartas pastorais', 'Carta pessoal', 'Cartas gerais', 'Apocalíptico'],
 ]
 const intervals = [
   { label: 'Séculos VIII–VII a.C.', min: -800, max: -601 },
