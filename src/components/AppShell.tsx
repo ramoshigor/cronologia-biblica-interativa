@@ -22,7 +22,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return () => { window.removeEventListener('online', update); window.removeEventListener('offline', update) }
   }, [])
   return (
-    <div className="app-frame">
+    <div className="app-frame" style={{ backgroundImage: `linear-gradient(#f8f6f0f3, #f8f6f0f3), url(${import.meta.env.BASE_URL}media/v2/textura-papel.webp)` }}>
       <a href="#conteudo" className="skip-link">Pular para o conteúdo</a>
       <header className="topbar">
         <div className="topbar-inner">

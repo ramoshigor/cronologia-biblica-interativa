@@ -4,6 +4,8 @@ import { periods, events, persons } from '../repositories/catalogRepository'
 import { historyService } from '../services/historyService'
 import { SectionHeading } from '../components/Shared'
 import { formatYear } from '../utils/dates'
+import { EditorialImage } from '../components/EditorialImage'
+import { editorialImages } from '../media/manifest'
 
 export default function HomePage() {
   const recent = historyService.list()
@@ -19,6 +21,7 @@ export default function HomePage() {
         <div className="hero-footnote"><span className="status-dot" /> Datas com indicação de precisão e referências bíblicas</div>
       </div>
       <div className="hero-art" aria-label="Ilustração abstrata de uma linha do tempo histórica" role="img">
+        <EditorialImage image={editorialImages.hero} className="hero-editorial" eager />
         <div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" /><div className="art-sun" />
         <div className="art-scripture">בְּרֵאשִׁית<br /><span>no princípio</span></div>
         <div className="art-line"><span className="art-point point-one" /><span className="art-point point-two" /><span className="art-point point-three" /><span className="art-point point-four" /></div>
@@ -49,7 +52,7 @@ export default function HomePage() {
         <Link to="/favoritos" className="continue-footer"><Sparkles size={15} /> Favoritos e anotações ficam guardados neste navegador</Link>
       </div>
       <Link to={`/evento/${featured.slug}`} className="featured-event-card">
-        <div className="featured-image"><span className="featured-kicker">EM FOCO · EXÍLIO</span><div className="featured-city"><div className="city-sun"/><div className="city-wall wall-back"/><div className="city-wall wall-front"/><div className="city-tower tower-left"/><div className="city-tower tower-right"/><div className="city-river"/></div><span className="featured-year">587/586 a.C.</span></div>
+        <div className="featured-image"><span className="featured-kicker">EM FOCO · EXÍLIO</span><EditorialImage image={editorialImages.fall} className="featured-editorial" /><span className="featured-year">587/586 a.C.</span><span className="featured-art-note">Ilustração interpretativa</span></div>
         <div className="featured-info"><span className="eyebrow">EVENTO EM DESTAQUE</span><h3>{featured.title}</h3><p>{featured.shortDescription}</p><span className="text-link">Ler contexto <ArrowRight size={15} /></span></div>
       </Link>
     </section>

@@ -1,0 +1,20 @@
+.search-wrap { position: relative; width: 100%; }
+.search-field { height: 39px; display: flex; align-items: center; gap: 9px; padding: 0 10px 0 12px; border: 1px solid #e9e6dd; background: #f9f8f3; border-radius: 9px; transition: .2s ease; }
+.search-field.focused { border-color: #9aab9b; background: white; box-shadow: 0 0 0 3px #728d6b18; }
+.search-field input { min-width: 0; width: 100%; background: transparent; border: 0; outline: 0; color: var(--ink); font-size: 13px; }
+.search-field input::placeholder { color: #989b92; }
+.search-icon { flex: 0 0 auto; color: #899188; }
+.search-field kbd { white-space: nowrap; padding: 3px 5px; border: 1px solid #e4e0d6; border-radius: 4px; color: #939388; background: #fffefa; font: 12px/1.2 inherit; font-family: inherit; }
+.search-clear { padding: 3px; border: 0; background: transparent; color: #8e948d; cursor: pointer; }
+.search-popover { position: absolute; top: calc(100% + 9px); left: 0; right: 0; z-index: 100; padding: 8px; border: 1px solid #ece7da; border-radius: 12px; background: #fffefa; box-shadow: 0 18px 45px #20382d20; }
+.popover-label { padding: 9px 10px 7px; color: #989180; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; }
+.search-option { display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 7px 9px; border-radius: 8px; }
+.search-option:hover { background: #f5f3ec; }
+.search-option-icon { width: 30px; height: 30px; flex: 0 0 auto; display: grid; place-items: center; color: #526d5b; background: #edf0e8; border-radius: 8px; }
+.search-option-copy { min-width: 0; flex: 1; display: grid; gap: 2px; }
+.search-option-copy strong { overflow: hidden; color: #34483d; font-size: 13px; text-overflow: ellipsis; white-space: nowrap; }
+.search-option-copy small { overflow: hidden; color: #92958d; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.search-type { color: #a09b8c; font-size: 12px; }
+.search-hint { padding: 9px 10px 4px; border-top: 1px solid #f0ede5; color: #96958c; font-size: 12px; }
+.empty-search { margin: 4px 10px 12px; color: #87887f; font-size: 13px; }
+
