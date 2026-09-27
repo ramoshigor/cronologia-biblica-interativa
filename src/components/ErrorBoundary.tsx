@@ -15,7 +15,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
   override render() {
     if (this.state.hasError) {
-      return <div className="error-state"><span><AlertTriangle size={21} /></span><h2>Não foi possível carregar esta tela.</h2><p>Tente novamente. Seus favoritos e anotações locais continuam salvos.</p><button className="button button-dark" onClick={() => this.setState({ hasError: false })}><RotateCcw size={15} /> Tentar novamente</button></div>
+      return <div className="error-state"><span><AlertTriangle size={21} /></span><h2>Não foi possível carregar esta tela.</h2><p>Tente novamente para abrir esta consulta.</p><button className="button button-dark" onClick={() => this.setState({ hasError: false })}><RotateCcw size={15} /> Tentar novamente</button></div>
     }
     return this.props.children
   }

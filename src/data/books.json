@@ -1,15 +1,1950 @@
 [
-  { "id": "genesis", "slug": "genesis", "title": "Gênesis", "testament": "AT", "category": "Pentateuco", "periodId": "patriarchs", "narrativeStartYear": -4000, "narrativeEndYear": -1800, "compositionLabel": "Data e processo de composição debatidos", "description": "O livro apresenta a criação, as primeiras gerações e os ciclos dos patriarcas Abraão, Isaque, Jacó e José.", "references": [{ "book": "Gênesis", "chapter": 1, "verseStart": 1, "label": "Gênesis 1:1" }], "personIds": ["abraham"], "sourceIds": ["bible"] },
-  { "id": "exodus", "slug": "exodo", "title": "Êxodo", "testament": "AT", "category": "Pentateuco", "periodId": "exodus", "narrativeStartYear": -1500, "narrativeEndYear": -1200, "compositionLabel": "Data e processo de composição debatidos", "description": "O livro narra a libertação do Egito, a aliança no Sinai e a construção do tabernáculo.", "references": [{ "book": "Êxodo", "chapter": 1, "verseStart": 1, "label": "Êxodo 1:1" }], "personIds": ["moses"], "sourceIds": ["bible"] },
-  { "id": "1-samuel", "slug": "1-samuel", "title": "1 Samuel", "testament": "AT", "category": "Histórico", "periodId": "united", "narrativeStartYear": -1100, "narrativeEndYear": -1010, "compositionLabel": "Forma final situada em período posterior aos eventos", "description": "Narra Samuel, Saul e o início da ascensão de Davi.", "references": [{ "book": "1 Samuel", "chapter": 1, "verseStart": 1, "label": "1 Samuel 1:1" }], "personIds": ["samuel", "saul", "david"], "sourceIds": ["bible"] },
-  { "id": "2-samuel", "slug": "2-samuel", "title": "2 Samuel", "testament": "AT", "category": "Histórico", "periodId": "united", "narrativeStartYear": -1010, "narrativeEndYear": -970, "compositionLabel": "Forma final situada em período posterior aos eventos", "description": "Apresenta o reinado de Davi, a consolidação do reino e os conflitos dentro de sua casa.", "references": [{ "book": "2 Samuel", "chapter": 1, "verseStart": 1, "label": "2 Samuel 1:1" }], "personIds": ["david"], "sourceIds": ["bible"] },
-  { "id": "1-kings", "slug": "1-reis", "title": "1 Reis", "testament": "AT", "category": "Histórico", "periodId": "divided", "narrativeStartYear": -970, "narrativeEndYear": -850, "compositionLabel": "Data e processo de composição debatidos", "description": "Relata Salomão, a divisão do reino e os ministérios proféticos de Elias e Eliseu.", "references": [{ "book": "1 Reis", "chapter": 1, "verseStart": 1, "label": "1 Reis 1:1" }], "personIds": ["solomon", "elijah"], "sourceIds": ["bible"] },
-  { "id": "isaiah", "slug": "isaias", "title": "Isaías", "testament": "AT", "category": "Profético", "periodId": "divided", "narrativeStartYear": -740, "narrativeEndYear": -680, "compositionLabel": "História de composição discutida", "description": "O livro reúne oráculos, narrativas e visões associados a Isaías e à história de Judá.", "references": [{ "book": "Isaías", "chapter": 1, "verseStart": 1, "label": "Isaías 1:1" }], "personIds": ["isaiah"], "sourceIds": ["bible", "anchor"] },
-  { "id": "jeremiah", "slug": "jeremias", "title": "Jeremias", "testament": "AT", "category": "Profético", "periodId": "exile", "narrativeStartYear": -627, "narrativeEndYear": -580, "compositionLabel": "Coleção formada ao longo do tempo", "description": "Profecias e narrativas ligadas aos últimos anos de Judá e ao início do exílio babilônico.", "references": [{ "book": "Jeremias", "chapter": 1, "verseStart": 1, "label": "Jeremias 1:1" }], "personIds": ["jeremiah"], "sourceIds": ["bible"] },
-  { "id": "daniel", "slug": "daniel", "title": "Daniel", "testament": "AT", "category": "Profético", "periodId": "exile", "narrativeStartYear": -605, "narrativeEndYear": -530, "compositionLabel": "Data de composição debatida", "description": "Narrativas de corte e visões apocalípticas ambientadas em contextos babilônico e persa.", "references": [{ "book": "Daniel", "chapter": 1, "verseStart": 1, "label": "Daniel 1:1" }], "personIds": ["daniel"], "sourceIds": ["bible", "anchor"] },
-  { "id": "mark", "slug": "marcos", "title": "Marcos", "testament": "NT", "category": "Evangelho", "periodId": "jesus", "narrativeStartYear": -4, "narrativeEndYear": 30, "compositionLabel": "Data e autoria tradicional avaliadas por propostas distintas", "description": "Apresenta a vida, o ministério, a morte e a ressurreição de Jesus.", "references": [{ "book": "Marcos", "chapter": 1, "verseStart": 1, "label": "Marcos 1:1" }], "personIds": ["jesus"], "sourceIds": ["bible"] },
-  { "id": "luke", "slug": "lucas", "title": "Lucas", "testament": "NT", "category": "Evangelho", "periodId": "jesus", "narrativeStartYear": -4, "narrativeEndYear": 30, "compositionLabel": "Data de composição debatida", "description": "Evangelho que apresenta a vida de Jesus e destaca sua missão entre diversos grupos.", "references": [{ "book": "Lucas", "chapter": 1, "verseStart": 1, "label": "Lucas 1:1" }], "personIds": ["jesus"], "sourceIds": ["bible"] },
-  { "id": "acts", "slug": "atos", "title": "Atos dos Apóstolos", "testament": "NT", "category": "Histórico", "periodId": "church", "narrativeStartYear": 30, "narrativeEndYear": 62, "compositionLabel": "Data e autoria tradicional avaliadas por propostas distintas", "description": "Narra a expansão da igreja de Jerusalém ao mundo mediterrâneo, com destaque para Pedro e Paulo.", "references": [{ "book": "Atos", "chapter": 1, "verseStart": 1, "label": "Atos 1:1" }], "personIds": ["peter", "paul"], "sourceIds": ["bible"] },
-  { "id": "romans", "slug": "romanos", "title": "Romanos", "testament": "NT", "category": "Epístola", "periodId": "church", "narrativeStartYear": 55, "narrativeEndYear": 58, "compositionLabel": "c. 56–58 d.C.", "description": "Carta de Paulo que expõe temas centrais de sua proclamação e trata da comunidade cristã em Roma.", "references": [{ "book": "Romanos", "chapter": 1, "verseStart": 1, "label": "Romanos 1:1" }], "personIds": ["paul"], "sourceIds": ["bible"] },
-  { "id": "psalms", "slug": "salmos", "title": "Salmos", "testament": "AT", "category": "Poético", "periodId": "united", "narrativeStartYear": -1000, "narrativeEndYear": -400, "compositionLabel": "Coleção composta ao longo de vários séculos", "description": "Coleção de cânticos, orações e poemas atribuídos a vários autores em diferentes períodos.", "references": [{ "book": "Salmos", "chapter": 1, "verseStart": 1, "label": "Salmos 1:1" }], "personIds": ["david"], "sourceIds": ["bible"] }
+  {
+    "id": "genesis",
+    "slug": "genesis",
+    "title": "Gênesis",
+    "testament": "AT",
+    "category": "Pentateuco",
+    "periodId": "patriarchs",
+    "narrativeStartYear": -4000,
+    "narrativeEndYear": -1800,
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "description": "O livro apresenta a criação, as primeiras gerações e os ciclos dos patriarcas Abraão, Isaque, Jacó e José.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Gênesis 1:1"
+      }
+    ],
+    "personIds": [
+      "abraham",
+      "melchizedek",
+      "isaac",
+      "joseph"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 1,
+    "authorshipLabel": "Moisés, na tradição; composição em etapas debatida"
+  },
+  {
+    "id": "exodus",
+    "slug": "exodo",
+    "title": "Êxodo",
+    "testament": "AT",
+    "category": "Pentateuco",
+    "periodId": "exodus",
+    "narrativeStartYear": -1500,
+    "narrativeEndYear": -1200,
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "description": "O livro narra a libertação do Egito, a aliança no Sinai e a construção do tabernáculo.",
+    "references": [
+      {
+        "book": "Êxodo",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Êxodo 1:1"
+      }
+    ],
+    "personIds": [
+      "moses"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 2,
+    "authorshipLabel": "Moisés, na tradição; composição em etapas debatida"
+  },
+  {
+    "id": "leviticus",
+    "slug": "levitico",
+    "title": "Levítico",
+    "description": "Apresenta leis e culto de Israel no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Levítico",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Levítico 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Pentateuco",
+    "periodId": "exodus",
+    "narrativeStartYear": -1300,
+    "narrativeEndYear": -1200,
+    "canonOrder": 3,
+    "authorshipLabel": "Moisés, na tradição; composição em etapas debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "numbers",
+    "slug": "numeros",
+    "title": "Números",
+    "description": "Apresenta caminhada no deserto no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Números",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Números 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Pentateuco",
+    "periodId": "exodus",
+    "narrativeStartYear": -1300,
+    "narrativeEndYear": -1200,
+    "canonOrder": 4,
+    "authorshipLabel": "Moisés, na tradição; composição em etapas debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "deuteronomy",
+    "slug": "deuteronomio",
+    "title": "Deuteronômio",
+    "description": "Apresenta discursos da aliança no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Deuteronômio",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Deuteronômio 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Pentateuco",
+    "periodId": "exodus",
+    "narrativeStartYear": -1300,
+    "narrativeEndYear": -1200,
+    "canonOrder": 5,
+    "authorshipLabel": "Moisés, na tradição; formação debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "joshua",
+    "slug": "josue",
+    "title": "Josué",
+    "description": "Apresenta entrada na terra no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Josué",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Josué 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "conquest",
+    "narrativeStartYear": -1250,
+    "narrativeEndYear": -1100,
+    "canonOrder": 6,
+    "authorshipLabel": "Josué, na tradição; redação posterior debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "judges",
+    "slug": "juizes",
+    "title": "Juízes",
+    "description": "Apresenta ciclos dos juízes no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Juízes",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Juízes 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "conquest",
+    "narrativeStartYear": -1200,
+    "narrativeEndYear": -1050,
+    "canonOrder": 7,
+    "authorshipLabel": "Autor não identificado; compilação posterior",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "ruth",
+    "slug": "rute",
+    "title": "Rute",
+    "description": "Apresenta Rute e Noemi no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Rute",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Rute 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "conquest",
+    "narrativeStartYear": -1150,
+    "narrativeEndYear": -1000,
+    "canonOrder": 8,
+    "authorshipLabel": "Autor não identificado",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "1-samuel",
+    "slug": "1-samuel",
+    "title": "1 Samuel",
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "united",
+    "narrativeStartYear": -1100,
+    "narrativeEndYear": -1010,
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "description": "Narra Samuel, Saul e o início da ascensão de Davi.",
+    "references": [
+      {
+        "book": "1 Samuel",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Samuel 1:1"
+      }
+    ],
+    "personIds": [
+      "samuel",
+      "saul",
+      "david"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 9,
+    "authorshipLabel": "Samuel, Natã e Gade, na tradição; redação posterior"
+  },
+  {
+    "id": "2-samuel",
+    "slug": "2-samuel",
+    "title": "2 Samuel",
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "united",
+    "narrativeStartYear": -1010,
+    "narrativeEndYear": -970,
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "description": "Apresenta o reinado de Davi, a consolidação do reino e os conflitos dentro de sua casa.",
+    "references": [
+      {
+        "book": "2 Samuel",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Samuel 1:1"
+      }
+    ],
+    "personIds": [
+      "david"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 10,
+    "authorshipLabel": "Natã e Gade, na tradição; redação posterior"
+  },
+  {
+    "id": "1-kings",
+    "slug": "1-reis",
+    "title": "1 Reis",
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "divided",
+    "narrativeStartYear": -970,
+    "narrativeEndYear": -850,
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "description": "Relata Salomão, a divisão do reino e os ministérios proféticos de Elias e Eliseu.",
+    "references": [
+      {
+        "book": "1 Reis",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Reis 1:1"
+      }
+    ],
+    "personIds": [
+      "solomon",
+      "elijah"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 11,
+    "authorshipLabel": "Jeremias, na tradição; compilação posterior"
+  },
+  {
+    "id": "2-kings",
+    "slug": "2-reis",
+    "title": "2 Reis",
+    "description": "Apresenta os reinos até o exílio no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 Reis",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Reis 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "exile",
+    "narrativeStartYear": -850,
+    "narrativeEndYear": -586,
+    "canonOrder": 12,
+    "authorshipLabel": "Jeremias, na tradição; compilação no exílio",
+    "compositionStartYear": -600,
+    "compositionEndYear": -500,
+    "compositionLabel": "Proposta ampla: 600 a.C. a 500 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "1-chronicles",
+    "slug": "1-cronicas",
+    "title": "1 Crônicas",
+    "description": "Apresenta genealogias e Davi no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "1 Crônicas",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Crônicas 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "united",
+    "narrativeStartYear": -1050,
+    "narrativeEndYear": -970,
+    "canonOrder": 13,
+    "authorshipLabel": "Esdras, na tradição; cronista não identificado",
+    "compositionStartYear": -450,
+    "compositionEndYear": -300,
+    "compositionLabel": "Proposta ampla: 450 a.C. a 300 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "2-chronicles",
+    "slug": "2-cronicas",
+    "title": "2 Crônicas",
+    "description": "Apresenta reis de Judá e templo no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 Crônicas",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Crônicas 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "return",
+    "narrativeStartYear": -970,
+    "narrativeEndYear": -538,
+    "canonOrder": 14,
+    "authorshipLabel": "Esdras, na tradição; cronista não identificado",
+    "compositionStartYear": -450,
+    "compositionEndYear": -300,
+    "compositionLabel": "Proposta ampla: 450 a.C. a 300 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "ezra",
+    "slug": "esdras",
+    "title": "Esdras",
+    "description": "Apresenta retorno e reconstrução no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Esdras",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Esdras 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "return",
+    "narrativeStartYear": -538,
+    "narrativeEndYear": -450,
+    "canonOrder": 15,
+    "authorshipLabel": "Esdras, na tradição; composição de diversas fontes",
+    "compositionStartYear": -450,
+    "compositionEndYear": -300,
+    "compositionLabel": "Proposta ampla: 450 a.C. a 300 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "nehemiah",
+    "slug": "neemias",
+    "title": "Neemias",
+    "description": "Apresenta reconstrução de Jerusalém no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Neemias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Neemias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "return",
+    "narrativeStartYear": -450,
+    "narrativeEndYear": -430,
+    "canonOrder": 16,
+    "authorshipLabel": "Neemias, na tradição; composição de diversas fontes",
+    "compositionStartYear": -450,
+    "compositionEndYear": -300,
+    "compositionLabel": "Proposta ampla: 450 a.C. a 300 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "esther",
+    "slug": "ester",
+    "title": "Ester",
+    "description": "Apresenta judeus na Pérsia no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Ester",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Ester 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Históricos",
+    "periodId": "return",
+    "narrativeStartYear": -480,
+    "narrativeEndYear": -450,
+    "canonOrder": 17,
+    "authorshipLabel": "Autor não identificado",
+    "compositionStartYear": -400,
+    "compositionEndYear": -200,
+    "compositionLabel": "Proposta ampla: 400 a.C. a 200 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "job",
+    "slug": "jo",
+    "title": "Jó",
+    "description": "Apresenta sofrimento e sabedoria no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Jó",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Jó 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Poéticos",
+    "periodId": "patriarchs",
+    "narrativeStartYear": -2000,
+    "narrativeEndYear": -1000,
+    "canonOrder": 18,
+    "authorshipLabel": "Autor não identificado; data debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "psalms",
+    "slug": "salmos",
+    "title": "Salmos",
+    "testament": "AT",
+    "category": "Poéticos",
+    "periodId": "return",
+    "narrativeStartYear": -1000,
+    "narrativeEndYear": -400,
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "description": "Coleção de cânticos, orações e poemas atribuídos a vários autores em diferentes períodos.",
+    "references": [
+      {
+        "book": "Salmos",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Salmos 1:1"
+      }
+    ],
+    "personIds": [
+      "david"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 19,
+    "authorshipLabel": "Davi e outros salmistas; coleção de épocas distintas"
+  },
+  {
+    "id": "proverbs",
+    "slug": "proverbios",
+    "title": "Provérbios",
+    "description": "Apresenta ditos de sabedoria no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Provérbios",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Provérbios 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Poéticos",
+    "periodId": "united",
+    "narrativeStartYear": -1000,
+    "narrativeEndYear": -500,
+    "canonOrder": 20,
+    "authorshipLabel": "Salomão e outros sábios; coleção de épocas distintas",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "ecclesiastes",
+    "slug": "eclesiastes",
+    "title": "Eclesiastes",
+    "description": "Apresenta reflexões sobre a vida no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Eclesiastes",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Eclesiastes 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Poéticos",
+    "periodId": "united",
+    "narrativeStartYear": -970,
+    "narrativeEndYear": -930,
+    "canonOrder": 21,
+    "authorshipLabel": "Salomão, na tradição; Qohelet de data debatida",
+    "compositionStartYear": -350,
+    "compositionEndYear": -200,
+    "compositionLabel": "Proposta ampla: 350 a.C. a 200 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "song",
+    "slug": "cantico-dos-canticos",
+    "title": "Cântico dos Cânticos",
+    "description": "Apresenta poemas de amor no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Cântico dos Cânticos",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Cântico dos Cânticos 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Poéticos",
+    "periodId": "united",
+    "narrativeStartYear": -970,
+    "narrativeEndYear": -930,
+    "canonOrder": 22,
+    "authorshipLabel": "Salomão, na tradição; autoria debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "isaiah",
+    "slug": "isaias",
+    "title": "Isaías",
+    "testament": "AT",
+    "category": "Profetas maiores",
+    "periodId": "divided",
+    "narrativeStartYear": -740,
+    "narrativeEndYear": -680,
+    "compositionLabel": "Proposta ampla: 740 a.C. a 500 a.C.; data aproximada e debatida.",
+    "description": "O livro reúne oráculos, narrativas e visões associados a Isaías e à história de Judá.",
+    "references": [
+      {
+        "book": "Isaías",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Isaías 1:1"
+      }
+    ],
+    "personIds": [
+      "isaiah"
+    ],
+    "sourceIds": [
+      "bible",
+      "anchor",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 23,
+    "authorshipLabel": "Isaías de Jerusalém e tradição profética; múltiplas etapas",
+    "compositionStartYear": -740,
+    "compositionEndYear": -500
+  },
+  {
+    "id": "jeremiah",
+    "slug": "jeremias",
+    "title": "Jeremias",
+    "testament": "AT",
+    "category": "Profetas maiores",
+    "periodId": "exile",
+    "narrativeStartYear": -627,
+    "narrativeEndYear": -580,
+    "compositionLabel": "Proposta ampla: 630 a.C. a 500 a.C.; data aproximada e debatida.",
+    "description": "Profecias e narrativas ligadas aos últimos anos de Judá e ao início do exílio babilônico.",
+    "references": [
+      {
+        "book": "Jeremias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Jeremias 1:1"
+      }
+    ],
+    "personIds": [
+      "jeremiah"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 24,
+    "authorshipLabel": "Jeremias, com tradições de Baruque; coleção posterior",
+    "compositionStartYear": -630,
+    "compositionEndYear": -500
+  },
+  {
+    "id": "lamentations",
+    "slug": "lamentacoes",
+    "title": "Lamentações",
+    "description": "Apresenta lamento pela destruição no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Lamentações",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Lamentações 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas maiores",
+    "periodId": "exile",
+    "narrativeStartYear": -586,
+    "narrativeEndYear": -580,
+    "canonOrder": 25,
+    "authorshipLabel": "Jeremias, na tradição; autoria debatida",
+    "compositionStartYear": -586,
+    "compositionEndYear": -450,
+    "compositionLabel": "Proposta ampla: 586 a.C. a 450 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "ezekiel",
+    "slug": "ezequiel",
+    "title": "Ezequiel",
+    "description": "Apresenta visões no exílio no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Ezequiel",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Ezequiel 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas maiores",
+    "periodId": "exile",
+    "narrativeStartYear": -593,
+    "narrativeEndYear": -570,
+    "canonOrder": 26,
+    "authorshipLabel": "Ezequiel e tradição de seus discípulos",
+    "compositionStartYear": -593,
+    "compositionEndYear": -500,
+    "compositionLabel": "Proposta ampla: 593 a.C. a 500 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "daniel",
+    "slug": "daniel",
+    "title": "Daniel",
+    "testament": "AT",
+    "category": "Profetas maiores",
+    "periodId": "exile",
+    "narrativeStartYear": -605,
+    "narrativeEndYear": -530,
+    "compositionLabel": "Proposta ampla: 200 a.C. a 160 a.C.; data aproximada e debatida.",
+    "description": "Narrativas de corte e visões apocalípticas ambientadas em contextos babilônico e persa.",
+    "references": [
+      {
+        "book": "Daniel",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Daniel 1:1"
+      }
+    ],
+    "personIds": [
+      "daniel"
+    ],
+    "sourceIds": [
+      "bible",
+      "anchor",
+      "bibleodyssey-method"
+    ],
+    "canonOrder": 27,
+    "authorshipLabel": "Daniel, na tradição; redação final debatida",
+    "compositionStartYear": -200,
+    "compositionEndYear": -160
+  },
+  {
+    "id": "hosea",
+    "slug": "oseias",
+    "title": "Oséias",
+    "description": "Apresenta mensagem ao reino do Norte no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Oséias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Oséias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "divided",
+    "narrativeStartYear": -750,
+    "narrativeEndYear": -720,
+    "canonOrder": 28,
+    "authorshipLabel": "Oséias e tradição posterior",
+    "compositionStartYear": -750,
+    "compositionEndYear": -600,
+    "compositionLabel": "Proposta ampla: 750 a.C. a 600 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "joel",
+    "slug": "joel",
+    "title": "Joel",
+    "description": "Apresenta dia do Senhor no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Joel",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Joel 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "return",
+    "narrativeStartYear": -500,
+    "narrativeEndYear": -350,
+    "canonOrder": 29,
+    "authorshipLabel": "Joel; data do livro debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "amos",
+    "slug": "amos",
+    "title": "Amós",
+    "description": "Apresenta justiça e juízo no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Amós",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Amós 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "divided",
+    "narrativeStartYear": -760,
+    "narrativeEndYear": -750,
+    "canonOrder": 30,
+    "authorshipLabel": "Amós e tradição posterior",
+    "compositionStartYear": -760,
+    "compositionEndYear": -600,
+    "compositionLabel": "Proposta ampla: 760 a.C. a 600 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "obadiah",
+    "slug": "obadias",
+    "title": "Obadias",
+    "description": "Apresenta oráculo contra Edom no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Obadias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Obadias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "exile",
+    "narrativeStartYear": -586,
+    "narrativeEndYear": -500,
+    "canonOrder": 31,
+    "authorshipLabel": "Obadias; data debatida",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "jonah",
+    "slug": "jonas",
+    "title": "Jonas",
+    "description": "Apresenta Jonas e Nínive no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Jonas",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Jonas 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "divided",
+    "narrativeStartYear": -780,
+    "narrativeEndYear": -750,
+    "canonOrder": 32,
+    "authorshipLabel": "Autor não identificado; narrativa sobre Jonas",
+    "compositionLabel": "Composição em etapas ou data sem consenso; não há ano único confiável.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "micah",
+    "slug": "miqueias",
+    "title": "Miquéias",
+    "description": "Apresenta juízo e restauração no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Miquéias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Miquéias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "divided",
+    "narrativeStartYear": -740,
+    "narrativeEndYear": -700,
+    "canonOrder": 33,
+    "authorshipLabel": "Miquéias e tradição posterior",
+    "compositionStartYear": -740,
+    "compositionEndYear": -600,
+    "compositionLabel": "Proposta ampla: 740 a.C. a 600 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "nahum",
+    "slug": "naum",
+    "title": "Naum",
+    "description": "Apresenta queda de Nínive no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Naum",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Naum 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "divided",
+    "narrativeStartYear": -663,
+    "narrativeEndYear": -612,
+    "canonOrder": 34,
+    "authorshipLabel": "Naum; redação debatida",
+    "compositionStartYear": -660,
+    "compositionEndYear": -600,
+    "compositionLabel": "Proposta ampla: 660 a.C. a 600 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "habakkuk",
+    "slug": "habacuque",
+    "title": "Habacuque",
+    "description": "Apresenta fé diante da violência no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Habacuque",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Habacuque 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "exile",
+    "narrativeStartYear": -620,
+    "narrativeEndYear": -590,
+    "canonOrder": 35,
+    "authorshipLabel": "Habacuque; redação debatida",
+    "compositionStartYear": -620,
+    "compositionEndYear": -550,
+    "compositionLabel": "Proposta ampla: 620 a.C. a 550 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "zephaniah",
+    "slug": "sofonias",
+    "title": "Sofonias",
+    "description": "Apresenta dia do Senhor em Judá no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Sofonias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Sofonias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "divided",
+    "narrativeStartYear": -640,
+    "narrativeEndYear": -610,
+    "canonOrder": 36,
+    "authorshipLabel": "Sofonias; redação debatida",
+    "compositionStartYear": -640,
+    "compositionEndYear": -550,
+    "compositionLabel": "Proposta ampla: 640 a.C. a 550 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "haggai",
+    "slug": "ageu",
+    "title": "Ageu",
+    "description": "Apresenta reconstrução do templo no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Ageu",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Ageu 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "return",
+    "narrativeStartYear": -520,
+    "narrativeEndYear": -520,
+    "canonOrder": 37,
+    "authorshipLabel": "Ageu e tradição de seus oráculos",
+    "compositionStartYear": -520,
+    "compositionEndYear": -500,
+    "compositionLabel": "Proposta ampla: 520 a.C. a 500 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "zechariah",
+    "slug": "zacarias",
+    "title": "Zacarias",
+    "description": "Apresenta visões e restauração no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Zacarias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Zacarias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "return",
+    "narrativeStartYear": -520,
+    "narrativeEndYear": -480,
+    "canonOrder": 38,
+    "authorshipLabel": "Zacarias e tradições posteriores",
+    "compositionStartYear": -520,
+    "compositionEndYear": -300,
+    "compositionLabel": "Proposta ampla: 520 a.C. a 300 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "malachi",
+    "slug": "malaquias",
+    "title": "Malaquias",
+    "description": "Apresenta aliança e culto no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Malaquias",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Malaquias 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "AT",
+    "category": "Profetas menores",
+    "periodId": "return",
+    "narrativeStartYear": -460,
+    "narrativeEndYear": -400,
+    "canonOrder": 39,
+    "authorshipLabel": "Malaquias; identificação debatida",
+    "compositionStartYear": -500,
+    "compositionEndYear": -400,
+    "compositionLabel": "Proposta ampla: 500 a.C. a 400 a.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method"
+    ]
+  },
+  {
+    "id": "matthew",
+    "slug": "mateus",
+    "title": "Mateus",
+    "description": "Apresenta Jesus e o reino dos céus no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Mateus",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Mateus 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Evangelhos",
+    "periodId": "jesus",
+    "narrativeStartYear": -4,
+    "narrativeEndYear": 30,
+    "canonOrder": 40,
+    "authorshipLabel": "Mateus, na tradição; autoria literária debatida",
+    "compositionStartYear": 70,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 70 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "mark",
+    "slug": "marcos",
+    "title": "Marcos",
+    "testament": "NT",
+    "category": "Evangelhos",
+    "periodId": "jesus",
+    "narrativeStartYear": -4,
+    "narrativeEndYear": 30,
+    "compositionLabel": "Proposta ampla: 65 d.C. a 75 d.C.; data aproximada e debatida.",
+    "description": "Apresenta a vida, o ministério, a morte e a ressurreição de Jesus.",
+    "references": [
+      {
+        "book": "Marcos",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Marcos 1:1"
+      }
+    ],
+    "personIds": [
+      "jesus",
+      "john-baptist"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ],
+    "canonOrder": 41,
+    "authorshipLabel": "João Marcos, na tradição; autoria debatida",
+    "compositionStartYear": 65,
+    "compositionEndYear": 75
+  },
+  {
+    "id": "luke",
+    "slug": "lucas",
+    "title": "Lucas",
+    "testament": "NT",
+    "category": "Evangelhos",
+    "periodId": "jesus",
+    "narrativeStartYear": -4,
+    "narrativeEndYear": 30,
+    "compositionLabel": "Proposta ampla: 70 d.C. a 95 d.C.; data aproximada e debatida.",
+    "description": "Evangelho que apresenta a vida de Jesus e destaca sua missão entre diversos grupos.",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Lucas 1:1"
+      }
+    ],
+    "personIds": [
+      "jesus"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ],
+    "canonOrder": 42,
+    "authorshipLabel": "Lucas, na tradição; autor não nomeado no texto",
+    "compositionStartYear": 70,
+    "compositionEndYear": 95
+  },
+  {
+    "id": "john",
+    "slug": "joao",
+    "title": "João",
+    "description": "Apresenta sinais e discursos de Jesus no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "João",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "João 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Evangelhos",
+    "periodId": "jesus",
+    "narrativeStartYear": -4,
+    "narrativeEndYear": 30,
+    "canonOrder": 43,
+    "authorshipLabel": "João, na tradição; comunidade e composição debatidas",
+    "compositionStartYear": 85,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 85 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "acts",
+    "slug": "atos",
+    "title": "Atos dos Apóstolos",
+    "testament": "NT",
+    "category": "Histórico",
+    "periodId": "church",
+    "narrativeStartYear": 30,
+    "narrativeEndYear": 62,
+    "compositionLabel": "Proposta ampla: 70 d.C. a 100 d.C.; data aproximada e debatida.",
+    "description": "Narra a expansão da igreja de Jerusalém ao mundo mediterrâneo, com destaque para Pedro e Paulo.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Atos 1:1"
+      }
+    ],
+    "personIds": [
+      "peter",
+      "paul",
+      "stephen",
+      "barnabas",
+      "james-brother",
+      "timothy",
+      "lydia",
+      "priscilla",
+      "philip"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ],
+    "canonOrder": 44,
+    "authorshipLabel": "Mesmo autor de Lucas; identificação tradicional com Lucas",
+    "compositionStartYear": 70,
+    "compositionEndYear": 100
+  },
+  {
+    "id": "romans",
+    "slug": "romanos",
+    "title": "Romanos",
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 55,
+    "narrativeEndYear": 58,
+    "compositionLabel": "Proposta ampla: 55 d.C. a 58 d.C.; data aproximada e debatida.",
+    "description": "Carta de Paulo que expõe temas centrais de sua proclamação e trata da comunidade cristã em Roma.",
+    "references": [
+      {
+        "book": "Romanos",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Romanos 1:1"
+      }
+    ],
+    "personIds": [
+      "paul"
+    ],
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ],
+    "canonOrder": 45,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 55,
+    "compositionEndYear": 58
+  },
+  {
+    "id": "1-corinthians",
+    "slug": "1-corintios",
+    "title": "1 Coríntios",
+    "description": "Apresenta questões da igreja de Corinto no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "1 Coríntios",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Coríntios 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 53,
+    "narrativeEndYear": 55,
+    "canonOrder": 46,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 53,
+    "compositionEndYear": 55,
+    "compositionLabel": "Proposta ampla: 53 d.C. a 55 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "2-corinthians",
+    "slug": "2-corintios",
+    "title": "2 Coríntios",
+    "description": "Apresenta ministério e reconciliação no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 Coríntios",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Coríntios 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 55,
+    "narrativeEndYear": 57,
+    "canonOrder": 47,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 55,
+    "compositionEndYear": 57,
+    "compositionLabel": "Proposta ampla: 55 d.C. a 57 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "galatians",
+    "slug": "galatas",
+    "title": "Gálatas",
+    "description": "Apresenta fé e liberdade em Cristo no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Gálatas",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Gálatas 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 48,
+    "narrativeEndYear": 57,
+    "canonOrder": 48,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 48,
+    "compositionEndYear": 57,
+    "compositionLabel": "Proposta ampla: 48 d.C. a 57 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "ephesians",
+    "slug": "efesios",
+    "title": "Efésios",
+    "description": "Apresenta unidade da igreja no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Efésios",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Efésios 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 95,
+    "canonOrder": 49,
+    "authorshipLabel": "Paulo, na tradição; autoria debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 95,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 95 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "philippians",
+    "slug": "filipenses",
+    "title": "Filipenses",
+    "description": "Apresenta alegria e perseverança no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Filipenses",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Filipenses 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 54,
+    "narrativeEndYear": 62,
+    "canonOrder": 50,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 54,
+    "compositionEndYear": 62,
+    "compositionLabel": "Proposta ampla: 54 d.C. a 62 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "colossians",
+    "slug": "colossenses",
+    "title": "Colossenses",
+    "description": "Apresenta Cristo e a comunidade no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Colossenses",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Colossenses 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 90,
+    "canonOrder": 51,
+    "authorshipLabel": "Paulo, na tradição; autoria debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 90,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 90 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "1-thessalonians",
+    "slug": "1-tessalonicenses",
+    "title": "1 Tessalonicenses",
+    "description": "Apresenta perseverança e esperança no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "1 Tessalonicenses",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Tessalonicenses 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 50,
+    "narrativeEndYear": 52,
+    "canonOrder": 52,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 50,
+    "compositionEndYear": 52,
+    "compositionLabel": "Proposta ampla: 50 d.C. a 52 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "2-thessalonians",
+    "slug": "2-tessalonicenses",
+    "title": "2 Tessalonicenses",
+    "description": "Apresenta esperança e conduta no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 Tessalonicenses",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Tessalonicenses 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 50,
+    "narrativeEndYear": 100,
+    "canonOrder": 53,
+    "authorshipLabel": "Paulo, na tradição; autoria debatida",
+    "compositionStartYear": 50,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 50 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "1-timothy",
+    "slug": "1-timoteo",
+    "title": "1 Timóteo",
+    "description": "Apresenta organização comunitária no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "1 Timóteo",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Timóteo 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas pastorais",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 100,
+    "canonOrder": 54,
+    "authorshipLabel": "Paulo, na tradição; autoria debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "2-timothy",
+    "slug": "2-timoteo",
+    "title": "2 Timóteo",
+    "description": "Apresenta perseverança no ministério no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 Timóteo",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Timóteo 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas pastorais",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 100,
+    "canonOrder": 55,
+    "authorshipLabel": "Paulo, na tradição; autoria debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "titus",
+    "slug": "tito",
+    "title": "Tito",
+    "description": "Apresenta liderança nas comunidades no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Tito",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Tito 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas pastorais",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 100,
+    "canonOrder": 56,
+    "authorshipLabel": "Paulo, na tradição; autoria debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "philemon",
+    "slug": "filemom",
+    "title": "Filemom",
+    "description": "Apresenta pedido em favor de Onésimo no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Filemom",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Filemom 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas paulinas",
+    "periodId": "church",
+    "narrativeStartYear": 54,
+    "narrativeEndYear": 62,
+    "canonOrder": 57,
+    "authorshipLabel": "Paulo",
+    "compositionStartYear": 54,
+    "compositionEndYear": 62,
+    "compositionLabel": "Proposta ampla: 54 d.C. a 62 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "hebrews",
+    "slug": "hebreus",
+    "title": "Hebreus",
+    "description": "Apresenta Cristo e o sacerdócio no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Hebreus",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Hebreus 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 95,
+    "canonOrder": 58,
+    "authorshipLabel": "Autor não identificado; atribuição a Paulo é debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 95,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 95 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "james",
+    "slug": "tiago",
+    "title": "Tiago",
+    "description": "Apresenta fé e prática no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Tiago",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Tiago 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 45,
+    "narrativeEndYear": 100,
+    "canonOrder": 59,
+    "authorshipLabel": "Tiago, na tradição; autoria e data debatidas",
+    "compositionStartYear": 45,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 45 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "1-peter",
+    "slug": "1-pedro",
+    "title": "1 Pedro",
+    "description": "Apresenta esperança em meio ao sofrimento no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "1 Pedro",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 Pedro 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 60,
+    "narrativeEndYear": 95,
+    "canonOrder": 60,
+    "authorshipLabel": "Pedro, na tradição; autoria debatida",
+    "compositionStartYear": 60,
+    "compositionEndYear": 95,
+    "compositionLabel": "Proposta ampla: 60 d.C. a 95 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "2-peter",
+    "slug": "2-pedro",
+    "title": "2 Pedro",
+    "description": "Apresenta memória e perseverança no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 Pedro",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 Pedro 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 65,
+    "narrativeEndYear": 125,
+    "canonOrder": 61,
+    "authorshipLabel": "Pedro, na tradição; autoria debatida",
+    "compositionStartYear": 65,
+    "compositionEndYear": 125,
+    "compositionLabel": "Proposta ampla: 65 d.C. a 125 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "1-john",
+    "slug": "1-joao",
+    "title": "1 João",
+    "description": "Apresenta amor e verdade no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "1 João",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "1 João 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 85,
+    "narrativeEndYear": 110,
+    "canonOrder": 62,
+    "authorshipLabel": "Tradição joanina; autor não identificado",
+    "compositionStartYear": 85,
+    "compositionEndYear": 110,
+    "compositionLabel": "Proposta ampla: 85 d.C. a 110 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "2-john",
+    "slug": "2-joao",
+    "title": "2 João",
+    "description": "Apresenta verdade e hospitalidade no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "2 João",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "2 João 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 85,
+    "narrativeEndYear": 110,
+    "canonOrder": 63,
+    "authorshipLabel": "O Presbítero; identificação debatida",
+    "compositionStartYear": 85,
+    "compositionEndYear": 110,
+    "compositionLabel": "Proposta ampla: 85 d.C. a 110 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "3-john",
+    "slug": "3-joao",
+    "title": "3 João",
+    "description": "Apresenta hospitalidade e liderança no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "3 João",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "3 João 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 85,
+    "narrativeEndYear": 110,
+    "canonOrder": 64,
+    "authorshipLabel": "O Presbítero; identificação debatida",
+    "compositionStartYear": 85,
+    "compositionEndYear": 110,
+    "compositionLabel": "Proposta ampla: 85 d.C. a 110 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "jude",
+    "slug": "judas",
+    "title": "Judas",
+    "description": "Apresenta fidelidade à fé no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Judas",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Judas 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Cartas gerais",
+    "periodId": "church",
+    "narrativeStartYear": 65,
+    "narrativeEndYear": 100,
+    "canonOrder": 65,
+    "authorshipLabel": "Judas, na tradição; identificação debatida",
+    "compositionStartYear": 65,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 65 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  },
+  {
+    "id": "revelation",
+    "slug": "apocalipse",
+    "title": "Apocalipse",
+    "description": "Apresenta visões às igrejas no conjunto dos livros bíblicos.",
+    "references": [
+      {
+        "book": "Apocalipse",
+        "chapter": 1,
+        "verseStart": 1,
+        "label": "Apocalipse 1:1"
+      }
+    ],
+    "personIds": [],
+    "testament": "NT",
+    "category": "Apocalíptico",
+    "periodId": "church",
+    "narrativeStartYear": 90,
+    "narrativeEndYear": 100,
+    "canonOrder": 66,
+    "authorshipLabel": "João de Patmos; identidade debatida",
+    "compositionStartYear": 90,
+    "compositionEndYear": 100,
+    "compositionLabel": "Proposta ampla: 90 d.C. a 100 d.C.; data aproximada e debatida.",
+    "sourceIds": [
+      "bible",
+      "bibleodyssey-method",
+      "abs-nt"
+    ]
+  }
 ]

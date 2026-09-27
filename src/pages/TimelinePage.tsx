@@ -1,34 +1,30 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router'
-import { BookmarkPlus, ChevronDown, Filter, Focus, Minus, Plus, RotateCcw, X } from 'lucide-react'
+import { ChevronDown, Filter, Focus, Minus, Plus, RotateCcw, X } from 'lucide-react'
 import { DateBadge } from '../components/Shared'
 import { empires, events, getPeriod, periods, persons, books } from '../repositories/catalogRepository'
 import { formatYear, timelinePercent, yearsOverlap } from '../utils/dates'
 import { filterByDateWindow, filterByPeriod } from '../utils/timelineFilters'
-import { storageService } from '../services/storageService'
 import type { EventRecord } from '../types'
 import { EditorialImage } from '../components/EditorialImage'
 import { imageForPeriod } from '../media/manifest'
 
 type Layer = 'events' | 'persons' | 'empires' | 'books'
-interface Preset { id: string; name: string; periodId?: string; layers: Layer[] }
 interface Point<T> { item: T; left: number; row: number; width?: number }
 const MIN_YEAR = -2100
 const MAX_YEAR = 100
 const TRACK_BASE_WIDTH = 2350
-const LAYER_NAMES: Record<Layer, string> = { events: 'Acontecimentos', persons: 'Personagens', empires: 'Impérios', books: 'Livros bíblicos' }
+const LAYER_NAMES: Record<Layer, string> = { events: 'Acontecimentos', persons: 'Personagens (contexto)', empires: 'Impérios', books: 'Livros bíblicos' }
 
 export default function TimelinePage() {
   const [params, setParams] = useSearchParams()
   const selectedPeriod = params.get('period') || ''
   const selectedEmpire = empires.find((empire) => empire.id === params.get('imp'))
   const [mobileView, setMobileView] = useState<'list' | 'panorama'>('list')
-  const [visibleLayers, setVisibleLayers] = useState<Layer[]>(['events', 'persons', 'empires', 'books'])
+  const [visibleLayers, setVisibleLayers] = useState<Layer[]>(['events'])
   const [filterOpen, setFilterOpen] = useState(false)
   const [zoom, setZoom] = useState(1)
   const [selectedEvent, setSelectedEvent] = useState<EventRecord | null>(null)
-  const [presets, setPresets] = useState<Preset[]>(() => storageService.read<Preset[]>('cronologia:timeline-presets:v1', []))
-  const [presetName, setPresetName] = useState('Minha visão')
   const activePeriod = getPeriod(selectedPeriod)
   const minYear = activePeriod ? activePeriod.startYear : MIN_YEAR
   const maxYear = activePeriod ? activePeriod.endYear : MAX_YEAR
@@ -41,19 +37,11 @@ export default function TimelinePage() {
 
   const toggleLayer = (layer: Layer) => setVisibleLayers((current) => current.includes(layer) ? current.filter((item) => item !== layer) : [...current, layer])
   const selectPeriod = (id: string) => { setSelectedEvent(null); setParams(id ? { period: id } : {}) }
-  const savePreset = () => {
-    if (!presetName.trim()) return
-    const next = [{ id: crypto.randomUUID(), name: presetName.trim(), periodId: selectedPeriod || undefined, layers: visibleLayers }, ...presets]
-    setPresets(next)
-    storageService.write('cronologia:timeline-presets:v1', next)
-  }
-  const loadPreset = (preset: Preset) => { setVisibleLayers(preset.layers); setParams(preset.periodId ? { period: preset.periodId } : {}) }
-  const deletePreset = (id: string) => { const next = presets.filter((preset) => preset.id !== id); setPresets(next); storageService.write('cronologia:timeline-presets:v1', next) }
 
   return <div className="timeline-page">
-    <div className="page-intro-row"><div><div className="breadcrumbs"><Link to="/">Início</Link><span>›</span><span>Cronologia</span></div><span className="eyebrow">ATLAS HISTÓRICO</span><h1>Linha do tempo</h1><p>Conecte acontecimentos, pessoas e livros através dos séculos.</p></div><div className="timeline-actions"><button className={`button button-outline ${filterOpen ? 'active' : ''}`} onClick={() => setFilterOpen(!filterOpen)}><Filter size={16} /> Filtros <span className="filter-count">{visibleLayers.length}</span></button><button className="icon-button border-button" onClick={() => { setZoom(1); setParams({}) }} aria-label="Centralizar linha do tempo" title="Centralizar"><Focus size={17} /></button></div></div>
+    <div className="page-intro-row"><div><div className="breadcrumbs"><Link to="/">Início</Link><span>›</span><span>Cronologia</span></div><span className="eyebrow">ATLAS HISTÓRICO</span><h1>Linha do tempo</h1><p>Comece pelos acontecimentos. Ative outras camadas nos filtros quando quiser aprofundar.</p></div><div className="timeline-actions"><button className={`button button-outline ${filterOpen ? 'active' : ''}`} onClick={() => setFilterOpen(!filterOpen)}><Filter size={16} /> Filtros <span className="filter-count">{visibleLayers.length}</span></button><button className="icon-button border-button" onClick={() => { setZoom(1); setParams({}) }} aria-label="Centralizar linha do tempo" title="Centralizar"><Focus size={17} /></button></div></div>
 
-    {filterOpen && <section className="timeline-filter-panel"><div className="filter-panel-title"><div><strong>Camadas e filtros</strong><small>Escolha o que aparece na cronologia.</small></div><button className="icon-button" onClick={() => setFilterOpen(false)} aria-label="Fechar filtros"><X size={18} /></button></div><div className="layer-options">{(Object.keys(LAYER_NAMES) as Layer[]).map((layer) => <label key={layer} className="layer-checkbox"><input type="checkbox" checked={visibleLayers.includes(layer)} onChange={() => toggleLayer(layer)} /><span className={`layer-dot layer-${layer}`} />{LAYER_NAMES[layer]}</label>)}</div><div className="filter-period-row"><label htmlFor="period-select">Período selecionado</label><div className="select-wrap"><select id="period-select" value={selectedPeriod} onChange={(event) => setParams(event.target.value ? { period: event.target.value } : {})}><option value="">Visão geral</option>{periods.map((period) => <option key={period.id} value={period.id}>{period.title}</option>)}</select><ChevronDown size={15} /></div><button className="text-button" onClick={() => { setVisibleLayers(['events', 'persons', 'empires', 'books']); setParams({}) }}><RotateCcw size={14} /> Limpar</button></div><div className="preset-save-row"><input value={presetName} onChange={(event) => setPresetName(event.target.value)} aria-label="Nome da visão salva" /><button className="button button-small button-dark" onClick={savePreset}><BookmarkPlus size={14} /> Salvar visão</button></div>{presets.length > 0 && <div className="preset-list"><span className="eyebrow">VISÕES SALVAS</span>{presets.map((preset) => <div key={preset.id} className="preset-chip"><button onClick={() => loadPreset(preset)}>{preset.name}</button><button aria-label={`Excluir visão ${preset.name}`} onClick={() => deletePreset(preset.id)}><X size={13} /></button></div>)}</div>}</section>}
+    {filterOpen && <section className="timeline-filter-panel"><div className="filter-panel-title"><div><strong>Camadas e filtros</strong><small>Escolha o que aparece na cronologia.</small></div><button className="icon-button" onClick={() => setFilterOpen(false)} aria-label="Fechar filtros"><X size={18} /></button></div><div className="layer-options">{(Object.keys(LAYER_NAMES) as Layer[]).map((layer) => <label key={layer} className="layer-checkbox"><input type="checkbox" checked={visibleLayers.includes(layer)} onChange={() => toggleLayer(layer)} /><span className={`layer-dot layer-${layer}`} />{LAYER_NAMES[layer]}</label>)}</div><div className="filter-period-row"><label htmlFor="period-select">Período selecionado</label><div className="select-wrap"><select id="period-select" value={selectedPeriod} onChange={(event) => setParams(event.target.value ? { period: event.target.value } : {})}><option value="">Visão geral</option>{periods.map((period) => <option key={period.id} value={period.id}>{period.title}</option>)}</select><ChevronDown size={15} /></div><button className="text-button" onClick={() => { setVisibleLayers(['events']); setParams({}) }}><RotateCcw size={14} /> Limpar</button></div></section>}
 
     <div className="period-quick-nav"><span className="quick-nav-label">PULAR PARA</span>{periods.map((period) => <button key={period.id} onClick={() => selectPeriod(period.id)} className={selectedPeriod === period.id ? 'selected' : ''}>{period.shortTitle}</button>)}{activePeriod && <button className="clear-period" onClick={() => selectPeriod('')}><X size={13} /> Visão geral</button>}</div>
 
@@ -62,10 +50,10 @@ export default function TimelinePage() {
 
     <div className={`timeline-mobile-list ${mobileView === 'panorama' ? 'mobile-hidden' : ''}`}>{periods.filter((period) => !activePeriod || period.id === activePeriod.id).map((period) => {
       const items = events.filter((event) => event.periodId === period.id && visibleLayers.includes('events'))
-      const people = persons.filter((person) => period.id !== 'origins' && visibleLayers.includes('persons') && yearsOverlap(person.birthYear, person.deathYear ?? person.startYear, period.startYear, period.endYear))
+      const people = persons.filter((person) => period.id !== 'origins' && visibleLayers.includes('persons') && yearsOverlap(person.startYear, person.endYear ?? person.startYear, period.startYear, period.endYear))
       const kingdoms = empires.filter((empire) => period.id !== 'origins' && visibleLayers.includes('empires') && yearsOverlap(empire.startYear, empire.endYear, period.startYear, period.endYear))
       const texts = books.filter((book) => visibleLayers.includes('books') && yearsOverlap(book.narrativeStartYear, book.narrativeEndYear, period.startYear, period.endYear))
-      return <section className="mobile-period" key={period.id} style={{ '--era-color': period.color } as React.CSSProperties}>{imageForPeriod[period.id] && <div className="mobile-period-image"><EditorialImage image={imageForPeriod[period.id]!} /><span>Ilustração interpretativa</span></div>}<div className="mobile-period-heading"><div><span className="eyebrow">{period.dateLabel}</span><h2>{period.title}</h2><p>{period.description}</p></div><button onClick={() => { setParams({ period: period.id }); setMobileView('panorama') }}>Ver faixa</button></div>{items.map((event) => <Link key={event.id} className="mobile-timeline-item" to={`/evento/${event.slug}`}><span className="mobile-timeline-point"/><span><strong>{event.title}</strong><small>{event.dateLabel} · {event.dateType === 'disputed' ? 'data debatida' : event.dateType === 'approximate' ? 'aproximada' : 'evento'}</small></span></Link>)}{people.length > 0 && <div className="mobile-related"><strong>Personagens</strong><div>{people.map((person) => <Link key={person.id} to={`/personagem/${person.slug}`}>{person.title}</Link>)}</div></div>}{kingdoms.length > 0 && <div className="mobile-related"><strong>Impérios</strong><div>{kingdoms.map((empire) => <span key={empire.id} className={selectedEmpire?.id === empire.id ? 'empire-selected' : ''}>{empire.title} · {empire.dateLabel}</span>)}</div></div>}{texts.length > 0 && <div className="mobile-related"><strong>Livros (período narrado)</strong><div>{texts.map((book) => <Link key={book.id} to={`/livro/${book.slug}`}>{book.title}</Link>)}</div></div>}{!items.length && !people.length && !kingdoms.length && !texts.length && <p className="muted">Sem registros nas camadas selecionadas.</p>}</section>
+      return <section className="mobile-period" key={period.id} style={{ '--era-color': period.color } as React.CSSProperties}>{imageForPeriod[period.id] && <div className="mobile-period-image"><EditorialImage image={imageForPeriod[period.id]!} /><span>Ilustração interpretativa</span></div>}<div className="mobile-period-heading"><div><span className="eyebrow">{period.dateLabel}</span><h2>{period.title}</h2><p>{period.description}</p></div><button onClick={() => { setParams({ period: period.id }); setMobileView('panorama') }}>Ver faixa</button></div>{items.map((event) => <Link key={event.id} className="mobile-timeline-item" to={`/evento/${event.slug}`}><span className="mobile-timeline-point"/><span><strong>{event.title}</strong><small>{event.dateLabel} · {event.dateType === 'disputed' ? 'data debatida' : event.dateType === 'approximate' ? 'aproximada' : 'evento'}</small></span></Link>)}{people.length > 0 && <div className="mobile-related"><strong>Personagens</strong><div>{people.map((person) => <Link key={person.id} to={`/personagem/${person.slug}`}>{person.title}</Link>)}</div></div>}{kingdoms.length > 0 && <div className="mobile-related"><strong>Impérios</strong><div>{kingdoms.map((empire) => <span key={empire.id} className={selectedEmpire?.id === empire.id ? 'empire-selected' : ''}>{empire.title} · {empire.dateLabel}</span>)}</div></div>}{texts.length > 0 && <div className="mobile-related"><strong>Livros (período narrado)</strong><div>{texts.map((book) => <Link key={book.id} to={`/livro/${book.slug}`}>{book.title}</Link>)}</div></div>}{period.id === 'origins' && <p className="muted">Relatos de origens sem posição numérica. <Link to="/livro/genesis">Consultar Gênesis →</Link></p>}{period.id !== 'origins' && !items.length && !people.length && !kingdoms.length && !texts.length && <p className="muted">Sem registros nas camadas selecionadas.</p>}</section>
     })}</div>
 
     <section className={`timeline-card ${mobileView === 'list' ? 'mobile-hidden' : ''}`}>
@@ -83,7 +71,7 @@ export default function TimelinePage() {
         </div>
       </div>
       }
-      <div className="timeline-legend"><span><i className="legend-event" />Acontecimentos</span><span><i className="legend-person" />Personagens</span><span><i className="legend-empire" />Impérios</span><span><i className="legend-book" />Livros (período narrado)</span><span className="legend-note">Rótulos históricos são aproximados quando indicado.</span></div>
+      <div className="timeline-legend"><span><i className="legend-event" />Acontecimentos</span><span><i className="legend-person" />Personagens</span><span><i className="legend-empire" />Impérios</span><span><i className="legend-book" />Livros (período narrado)</span><span className="legend-note">Livros nesta faixa mostram o contexto narrado, não a data em que foram escritos. <Link to="/livros">Ver composição dos livros →</Link></span></div>
     </section>
 
     {selectedEvent && <aside className="quick-card"><div className="quick-card-top"><span className="eyebrow">ACONTECIMENTO</span><button className="icon-button" aria-label="Fechar detalhes" onClick={() => setSelectedEvent(null)}><X size={17} /></button></div><h3>{selectedEvent.title}</h3><DateBadge label={selectedEvent.dateLabel} type={selectedEvent.dateType} /><p>{selectedEvent.shortDescription}</p><div className="quick-references"><span className="eyebrow">REFERÊNCIAS</span><div>{selectedEvent.references.slice(0, 3).map((ref) => <span key={ref.label}>{ref.label}</span>)}</div></div><Link to={`/evento/${selectedEvent.slug}`} className="button button-dark button-full">Ver detalhes <ChevronDown size={15} className="rotated" /></Link></aside>}

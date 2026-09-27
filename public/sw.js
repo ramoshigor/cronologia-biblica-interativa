@@ -1,5 +1,5 @@
-const CACHE_NAME = 'cronologia-biblica-v5'
-const MEDIA = ['atlas-hero', 'queda-jerusalem', 'jornada-abraao', 'sinai-deserto', 'jerusalem-reinos', 'retorno-exilio', 'galileia-seculo-i', 'porto-igreja-primitiva', 'canaa-juizes', 'reinos-divididos', 'mediterraneo-helenistico', 'belem-noite', 'jerusalem-seculo-i']
+const CACHE_NAME = 'cronologia-biblica-v6'
+const MEDIA = ['atlas-hero', 'queda-jerusalem', 'jornada-abraao', 'sinai-deserto', 'jerusalem-reinos', 'retorno-exilio', 'galileia-seculo-i', 'porto-igreja-primitiva', 'canaa-juizes', 'reinos-divididos', 'mediterraneo-helenistico', 'belem-noite', 'jerusalem-seculo-i', 'melquisedeque-salem', 'manuscritos-biblicos', 'joao-jordao']
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {

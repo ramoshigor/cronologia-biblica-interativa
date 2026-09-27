@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router'
 import { AppShell } from './components/AppShell'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { LoadingPage } from './components/Shared'
@@ -10,7 +10,7 @@ const EventPage = lazy(() => import('./pages/EventPage'))
 const PersonPage = lazy(() => import('./pages/PersonPage'))
 const ComparePage = lazy(() => import('./pages/ComparePage'))
 const ExplorePage = lazy(() => import('./pages/ExplorePage'))
-const FavoritesPage = lazy(() => import('./pages/FavoritesPage'))
+const BooksPage = lazy(() => import('./pages/BooksPage'))
 const BookPage = lazy(() => import('./pages/BookPage'))
 const PlacePage = lazy(() => import('./pages/PlacePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
@@ -28,7 +28,8 @@ export function App() {
               <Route path="/personagem/:slug" element={<PersonPage />} />
               <Route path="/comparar" element={<ComparePage />} />
               <Route path="/explorar" element={<ExplorePage />} />
-              <Route path="/favoritos" element={<FavoritesPage />} />
+              <Route path="/favoritos" element={<Navigate to="/explorar" replace />} />
+              <Route path="/livros" element={<BooksPage />} />
               <Route path="/livro/:slug" element={<BookPage />} />
               <Route path="/lugar/:slug" element={<PlacePage />} />
               <Route path="*" element={<NotFoundPage />} />
