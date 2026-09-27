@@ -9,10 +9,10 @@
 body { color: var(--text-primary); font-size: 16px; line-height: 1.5; }
 :where(p, small, .muted) { overflow-wrap: anywhere; }
 :where(button, a, input, select, textarea):focus-visible { outline-color: var(--focus); }
-:where(.button, .icon-button, .nav-link, .favorite-button, .period-quick-nav button, .explore-tabs button, .zoom-controls button, .selected-person button) { min-height: 44px; }
-:where(.body-copy, .detail-summary, .section-heading-row p, .section-heading > p, .hero-copy > p, .featured-info p, .era-card p, .explore-item-card p, .mobile-period p) { font-size: 16px; line-height: 1.65; }
+.button, .icon-button, .nav-link, .favorite-button, .period-quick-nav button, .explore-tabs button, .zoom-controls button, .selected-person button { min-height: 44px; }
+.body-copy, .detail-summary, .section-heading-row p, .section-heading > p, .hero-copy > p, .featured-info p, .era-card p, .explore-item-card p, .mobile-period p { font-size: 16px; line-height: 1.65; }
 :where(.eyebrow, .date-badge, .role-tag, .era-index, .era-card-bottom, .explore-card-bottom, .life-axis-legend, .site-footer, .breadcrumb, .breadcrumbs, .timeline-legend, .ruler-tick) { font-size: 12px; }
-:where(.search-field input, .explore-search input, .filter-period-row select) { font-size: 16px; }
+.search-field input, .explore-search input, .filter-period-row select { font-size: 16px; }
 :where(.page-title-row h1, .page-intro-row h1) { line-height: 1.1; }
 .search-field { min-height: 44px; }
 .search-clear { min-width: 36px; min-height: 36px; }
