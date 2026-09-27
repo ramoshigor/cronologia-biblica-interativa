@@ -1,9 +1,20 @@
-const CACHE_NAME = 'cronologia-biblica-v2'
+const CACHE_NAME = 'cronologia-biblica-v3'
+const MEDIA = ['atlas-hero', 'queda-jerusalem', 'jornada-abraao', 'sinai-deserto', 'jerusalem-reinos', 'retorno-exilio', 'galileia-seculo-i', 'porto-igreja-primitiva']
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME)
-    await cache.add(new URL('index.html', self.registration.scope).toString())
+    const scope = self.registration.scope
+    await cache.add(new URL('index.html', scope).toString())
+    const manifestResponse = await fetch(new URL('.vite/manifest.json', scope))
+    if (manifestResponse.ok) {
+      const manifest = await manifestResponse.json()
+      const assets = new Set(Object.values(manifest).flatMap((entry) => [entry.file, ...(entry.css || []), ...(entry.assets || [])]).filter(Boolean))
+      await Promise.allSettled([...assets].map((file) => cache.add(new URL(file, scope).toString())))
+    }
+    const media = MEDIA.flatMap((name) => [`media/v2/${name}.webp`, `media/v2/${name}-sm.webp`])
+    media.push('media/v2/textura-papel.webp', 'media/v2/mapa-levante.svg')
+    await Promise.allSettled(media.map((file) => cache.add(new URL(file, scope).toString())))
     await self.skipWaiting()
   })())
 })
