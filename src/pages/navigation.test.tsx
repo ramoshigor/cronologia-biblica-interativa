@@ -29,11 +29,11 @@ async function renderAt(path: string, element: React.ReactNode) {
 describe('navegação por endereço', () => {
   it('atualiza a aba ao voltar no histórico', async () => {
     const router = await renderAt('/explorar?tab=personagens', <ExplorePage />)
-    expect(host!.querySelector('[role="tab"][aria-selected="true"]')?.textContent).toContain('Personagens')
+    expect(host!.querySelector('[role="group"][aria-label="Categoria de conteúdo"] button[aria-pressed="true"]')?.textContent).toContain('Personagens')
     await act(async () => router.navigate('/explorar?tab=lugares'))
-    expect(host!.querySelector('[role="tab"][aria-selected="true"]')?.textContent).toContain('Lugares')
+    expect(host!.querySelector('[role="group"][aria-label="Categoria de conteúdo"] button[aria-pressed="true"]')?.textContent).toContain('Lugares')
     await act(async () => router.navigate(-1))
-    expect(host!.querySelector('[role="tab"][aria-selected="true"]')?.textContent).toContain('Personagens')
+    expect(host!.querySelector('[role="group"][aria-label="Categoria de conteúdo"] button[aria-pressed="true"]')?.textContent).toContain('Personagens')
   })
 
   it('mostra o império indicado pela busca e a lista por período', async () => {

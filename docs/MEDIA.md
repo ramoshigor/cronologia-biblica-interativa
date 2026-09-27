@@ -1,6 +1,6 @@
-# Mídia editorial v0.3
+# Mídia editorial v0.4
 
-As onze cenas foram produzidas com geração de imagem e selecionadas como ilustração interpretativa. Não são fotografias, mapas, retratos de pessoas bíblicas nem reconstruções arqueológicas. Cada imagem possui uma variante pequena para telas de até 800 px; `src/media/manifest.ts` define alt, legenda e contexto.
+As treze cenas foram produzidas com geração de imagem e selecionadas como ilustração interpretativa. Não são fotografias, mapas, retratos de pessoas bíblicas nem reconstruções arqueológicas. Cada imagem possui uma variante pequena para telas de até 800 px; `src/media/manifest.ts` define alt, legenda e contexto.
 
 | ID | Arquivo | Uso |
 | --- | --- | --- |
@@ -15,6 +15,8 @@ As onze cenas foram produzidas com geração de imagem e selecionadas como ilust
 | I09 | `canaa-juizes.webp` | Paisagem temática para conquista e juízes |
 | I10 | `reinos-divididos.webp` | Reino dividido e eventos da expansão assíria |
 | I11 | `mediterraneo-helenistico.webp` | Ambiente do período intertestamentário |
+| I12 | `belem-noite.webp` | Contexto do nascimento de Jesus |
+| I13 | `jerusalem-seculo-i.webp` | Contexto da morte e ressurreição de Jesus |
 | — | `textura-papel.webp` | Fundo sutil; uso opcional |
 
 As cenas aparecem nos cartões de períodos e na lista vertical da cronologia. Os três novos arquivos foram convertidos para WebP a 1536 × 1024 e 800 × 533 px. Cidades, embarcações e paisagens são composições genéricas; a associação a um período não identifica um sítio arqueológico.
@@ -36,4 +38,6 @@ Estilo comum: pintura digital editorial de atlas bíblico, leve textura de gravu
 - I09: colinas e aldeias genéricas de Canaã, terraços cultivados e caminho em primeiro plano, sem batalha ou personagem identificável.
 - I10: duas cidades genéricas em colinas separadas por vale e estrada, sem monumento específico ou governante.
 - I11: porto mediterrâneo genérico com embarcações, cais e povoado, sem inscrição, bandeira ou monumento identificado.
+- I12: aldeia genérica nas colinas da Judeia à noite, sem personagens bíblicos ou arquitetura específica de Belém.
+- I13: cidade murada genérica nas colinas da Judeia ao entardecer, sem cruzes nem reconstrução do templo ou de Jerusalém.
 - Textura: padrão quadrado discreto de fibra de papel/linho, contraste baixíssimo.

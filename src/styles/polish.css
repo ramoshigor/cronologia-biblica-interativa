@@ -1,0 +1,31 @@
+/* Keep contextual date hints inside their cards, including narrow viewports. */
+.date-certainty { left: auto; right: 0; }
+.featured-kicker { max-width: calc(100% - 24px); line-height: 1.35; letter-spacing: .06em; overflow-wrap: anywhere; }
+.featured-kicker, .featured-year { position: absolute; }
+.featured-art-note { left: auto; right: 12px; }
+
+/* Scrollable category buttons must not extend the document itself. */
+.explore-page, .explore-results, .explore-card-grid { min-width: 0; }
+.explore-tabs { max-width: 100%; margin-right: 0; }
+
+@media (max-width: 640px) {
+  .timeline-mobile-list { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+  .mobile-period { min-width: 0; width: 100%; }
+  .mobile-period-heading { min-width: 0; flex-wrap: wrap; }
+  .mobile-period-heading > div { min-width: 0; flex: 1 1 160px; }
+  .mobile-period-heading h2 { overflow-wrap: anywhere; }
+  .mobile-period-heading button { margin-left: auto; }
+  .explore-tabs { margin-right: 0; }
+}
+
+@media (min-width: 481px) and (max-width: 1100px) {
+  .featured-art-note { display: none; }
+}
+
+@media (max-width: 480px) {
+  .featured-event-card { grid-template-columns: minmax(0, 1fr); }
+  .featured-image { min-height: 170px; }
+  .featured-info { padding: 18px; }
+  .featured-kicker { max-width: calc(100% - 32px); }
+  .featured-art-note { left: auto; right: 12px; }
+}
