@@ -5,7 +5,7 @@ import { historyService } from '../services/historyService'
 import { SectionHeading } from '../components/Shared'
 import { formatYear } from '../utils/dates'
 import { EditorialImage } from '../components/EditorialImage'
-import { editorialImages } from '../media/manifest'
+import { editorialImages, imageForPeriod } from '../media/manifest'
 
 export default function HomePage() {
   const recent = historyService.list()
@@ -40,6 +40,7 @@ export default function HomePage() {
     <section className="home-section eras-section">
       <SectionHeading eyebrow="PERCORRA A NARRATIVA" title="Eras da história bíblica" description="Escolha um período e veja o que acontecia ao redor." action={<Link to="/linha-do-tempo" className="text-link">Abrir cronologia <ArrowRight size={15} /></Link>} />
       <div className="era-grid">{periods.map((period, index) => <Link key={period.id} to={`/linha-do-tempo?period=${period.id}`} className="era-card" style={{ '--era-color': period.color } as React.CSSProperties}>
+        {imageForPeriod[period.id] && <div className="era-card-image"><EditorialImage image={imageForPeriod[period.id]!} /><span>Ilustração interpretativa</span></div>}
         <div className="era-card-top"><span className="era-icon">{period.icon}</span><span className="era-index">{String(index + 1).padStart(2, '0')}</span></div>
         <h3>{period.title}</h3><p>{period.description}</p><div className="era-card-bottom"><span>{period.dateLabel}</span><ArrowRight size={15} /></div>
       </Link>)}</div>

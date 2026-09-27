@@ -19,6 +19,9 @@ export const editorialImages = {
   return: image('I06', 'retorno-exilio', 'Viajantes seguem por uma estrada em um vale próximo a um rio.', 'Ilustração interpretativa do retorno do exílio.'),
   galilee: image('I07', 'galileia-seculo-i', 'Lago da Galileia com barcos distantes ao amanhecer.', 'Ilustração interpretativa da Galileia no século I.'),
   church: image('I08', 'porto-igreja-primitiva', 'Pequeno porto mediterrâneo com barcos e viajantes.', 'Ilustração interpretativa das viagens da igreja primitiva.'),
+  judges: image('I09', 'canaa-juizes', 'Colinas, campos e aldeias em uma paisagem de Canaã.', 'Ilustração interpretativa do período dos juízes.'),
+  divided: image('I10', 'reinos-divididos', 'Duas cidades distantes em colinas separadas por um vale.', 'Ilustração interpretativa dos reinos de Israel e Judá.'),
+  hellenistic: image('I11', 'mediterraneo-helenistico', 'Porto mediterrâneo com embarcações e povoado nas colinas.', 'Ilustração interpretativa do ambiente mediterrâneo entre os Testamentos.'),
 } satisfies Record<string, EditorialImage>
 
 export const imageForEvent: Record<string, EditorialImage> = {
@@ -41,15 +44,21 @@ export const imageForEvent: Record<string, EditorialImage> = {
   'first-journey': editorialImages.church,
   'council-jerusalem': editorialImages.church,
   'cornelius-conversion': editorialImages.church,
+  'kingdom-divided': editorialImages.divided,
+  'elijah-carmel': editorialImages.divided,
+  'assyria-samaria': editorialImages.divided,
+  'jerusalem-assyria': editorialImages.divided,
 }
 
 export const imageForPeriod: Record<string, EditorialImage> = {
   patriarchs: editorialImages.abraham,
   exodus: editorialImages.sinai,
+  conquest: editorialImages.judges,
   united: editorialImages.kingdom,
-  divided: editorialImages.kingdom,
+  divided: editorialImages.divided,
   exile: editorialImages.fall,
   return: editorialImages.return,
+  intertestamental: editorialImages.hellenistic,
   jesus: editorialImages.galilee,
   church: editorialImages.church,
 }
