@@ -1,0 +1,7 @@
+[
+  { "id": "egypt-empire", "title": "Egito", "startYear": -3100, "endYear": -525, "dateLabel": "c. 3100–525 a.C.", "color": "#a77942" },
+  { "id": "assyria-empire", "title": "Assíria", "startYear": -900, "endYear": -609, "dateLabel": "c. 900–609 a.C.", "color": "#8d604e" },
+  { "id": "babylon-empire", "title": "Babilônia", "startYear": -626, "endYear": -539, "dateLabel": "626–539 a.C.", "color": "#89718d" },
+  { "id": "persia-empire", "title": "Pérsia", "startYear": -550, "endYear": -330, "dateLabel": "c. 550–330 a.C.", "color": "#527e75" },
+  { "id": "rome-empire", "title": "Roma", "startYear": -27, "endYear": 476, "dateLabel": "27 a.C.–476 d.C.", "color": "#a75243" }
+]

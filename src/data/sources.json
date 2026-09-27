@@ -1,0 +1,6 @@
+[
+  { "id": "bible", "title": "Texto bíblico", "author": "Referências indicadas em cada registro", "note": "As referências bíblicas fundamentam o vínculo textual; datas históricas aproximadas requerem leitura das notas cronológicas." },
+  { "id": "oxford", "title": "The Oxford Bible Atlas", "author": "Herbert G. May (org.)", "publisher": "Oxford University Press", "note": "Referência geral de geografia e contexto histórico bíblico." },
+  { "id": "edwards", "title": "A History of Israel", "author": "John Bright", "publisher": "Westminster John Knox Press", "note": "Uma proposta acadêmica de síntese histórica; cronologias antigas podem variar entre estudiosos." },
+  { "id": "anchor", "title": "The Anchor Yale Bible Dictionary", "publisher": "Yale University Press", "note": "Obra de referência para contexto, lugares e personagens bíblicos." }
+]

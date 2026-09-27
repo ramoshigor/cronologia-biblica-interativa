@@ -1,0 +1,14 @@
+{
+  "name": "Cronologia Bíblica Interativa",
+  "short_name": "Cronologia Bíblica",
+  "description": "Explore a história bíblica em uma linha do tempo conectada.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f6f0",
+  "theme_color": "#173d3e",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

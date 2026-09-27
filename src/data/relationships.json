@@ -1,0 +1,10 @@
+[
+  { "id": "rel-samuel-david", "sourceType": "person", "sourceId": "samuel", "targetType": "person", "targetId": "david", "relationshipType": "ungiu" },
+  { "id": "rel-david-solomon", "sourceType": "person", "sourceId": "david", "targetType": "person", "targetId": "solomon", "relationshipType": "pai de" },
+  { "id": "rel-jeremiah-fall", "sourceType": "person", "sourceId": "jeremiah", "targetType": "event", "targetId": "jerusalem-fall", "relationshipType": "profetizou durante" },
+  { "id": "rel-daniel-fall", "sourceType": "person", "sourceId": "daniel", "targetType": "event", "targetId": "jerusalem-fall", "relationshipType": "viveu no período de" },
+  { "id": "rel-paul-council", "sourceType": "person", "sourceId": "paul", "targetType": "event", "targetId": "council-jerusalem", "relationshipType": "participou de" },
+  { "id": "rel-peter-council", "sourceType": "person", "sourceId": "peter", "targetType": "event", "targetId": "council-jerusalem", "relationshipType": "participou de" },
+  { "id": "rel-paul-antioch", "sourceType": "person", "sourceId": "paul", "targetType": "place", "targetId": "antioch", "relationshipType": "serviu em" },
+  { "id": "rel-abraham-genesis", "sourceType": "person", "sourceId": "abraham", "targetType": "book", "targetId": "genesis", "relationshipType": "personagem de" }
+]
