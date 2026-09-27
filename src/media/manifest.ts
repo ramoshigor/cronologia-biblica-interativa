@@ -1,0 +1,55 @@
+export interface EditorialImage {
+  id: string
+  file: string
+  width: number
+  height: number
+  alt: string
+  caption: string
+  focalPoint: string
+}
+
+const image = (id: string, file: string, alt: string, caption: string, width = 1536, height = 1024): EditorialImage => ({ id, file, width, height, alt, caption, focalPoint: 'center' })
+
+export const editorialImages = {
+  hero: image('I01', 'atlas-hero', 'Paisagem ilustrada com caminho entre colinas do antigo Oriente Próximo.', 'Ilustração interpretativa do ambiente antigo.', 1672, 941),
+  fall: image('I02', 'queda-jerusalem', 'Muralhas de uma cidade antiga vistas à distância após um conflito.', 'Ilustração interpretativa da queda de Jerusalém.'),
+  abraham: image('I03', 'jornada-abraao', 'Pequena caravana atravessa colinas áridas.', 'Ilustração interpretativa da jornada patriarcal.'),
+  sinai: image('I04', 'sinai-deserto', 'Montanhas rochosas e pequeno acampamento no deserto.', 'Ilustração interpretativa do cenário do Sinai.'),
+  kingdom: image('I05', 'jerusalem-reinos', 'Cidade de pedra sobre uma colina no antigo Levante.', 'Ilustração interpretativa do período dos reinos.'),
+  return: image('I06', 'retorno-exilio', 'Viajantes seguem por uma estrada em um vale próximo a um rio.', 'Ilustração interpretativa do retorno do exílio.'),
+  galilee: image('I07', 'galileia-seculo-i', 'Lago da Galileia com barcos distantes ao amanhecer.', 'Ilustração interpretativa da Galileia no século I.'),
+  church: image('I08', 'porto-igreja-primitiva', 'Pequeno porto mediterrâneo com barcos e viajantes.', 'Ilustração interpretativa das viagens da igreja primitiva.'),
+} satisfies Record<string, EditorialImage>
+
+export const imageForEvent: Record<string, EditorialImage> = {
+  'jerusalem-fall': editorialImages.fall,
+  'call-of-abraham': editorialImages.abraham,
+  'covenant-abraham': editorialImages.abraham,
+  exodus: editorialImages.sinai,
+  'sinai-covenant': editorialImages.sinai,
+  'anointing-saul': editorialImages.kingdom,
+  'anointing-david': editorialImages.kingdom,
+  'david-goliath': editorialImages.kingdom,
+  'jerusalem-david': editorialImages.kingdom,
+  'united-monarchy': editorialImages.kingdom,
+  'first-temple': editorialImages.kingdom,
+  'return-exile': editorialImages.return,
+  'birth-jesus': editorialImages.galilee,
+  'crucifixion': editorialImages.galilee,
+  pentecost: editorialImages.church,
+  'paul-conversion': editorialImages.church,
+  'first-journey': editorialImages.church,
+  'council-jerusalem': editorialImages.church,
+  'cornelius-conversion': editorialImages.church,
+}
+
+export const imageForPeriod: Record<string, EditorialImage> = {
+  patriarchs: editorialImages.abraham,
+  exodus: editorialImages.sinai,
+  united: editorialImages.kingdom,
+  divided: editorialImages.kingdom,
+  exile: editorialImages.fall,
+  return: editorialImages.return,
+  jesus: editorialImages.galilee,
+  church: editorialImages.church,
+}

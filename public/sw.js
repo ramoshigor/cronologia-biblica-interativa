@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cronologia-biblica-v1'
+const CACHE_NAME = 'cronologia-biblica-v2'
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {

@@ -6,6 +6,8 @@ import { empires, events, getEvent, getPeriod, places, persons, sources } from '
 import { historyService } from '../services/historyService'
 import { compareChronologically } from '../utils/dates'
 import NotFoundPage from './NotFoundPage'
+import { EditorialImage } from '../components/EditorialImage'
+import { imageForEvent } from '../media/manifest'
 
 export default function EventPage() {
   const { slug = '' } = useParams()
@@ -14,6 +16,7 @@ export default function EventPage() {
   if (!event) return <NotFoundPage />
 
   const period = getPeriod(event.periodId)
+  const artwork = imageForEvent[event.id]
   const relatedPeople = event.personIds.map((id) => persons.find((person) => person.id === id)).filter((person) => person !== undefined)
   const relatedPlaces = event.placeIds.map((id) => places.find((place) => place.id === id)).filter((place) => place !== undefined)
   const relatedEmpires = event.empireIds.map((id) => empires.find((empire) => empire.id === id)).filter((empire) => empire !== undefined)
@@ -24,7 +27,7 @@ export default function EventPage() {
 
   return <article className="detail-page">
     <Breadcrumbs items={[{ label: 'Início', href: '/' }, { label: 'Cronologia', href: '/linha-do-tempo' }, { label: event.title }]} />
-    <header className="detail-hero event-detail-hero"><div className="detail-hero-art"><span className="detail-art-ring"/><span className="detail-art-sun"/><span className="detail-art-temple">⌂</span><span className="detail-art-caption">{period?.shortTitle ?? 'HISTÓRIA BÍBLICA'}</span></div><div className="detail-hero-copy"><div className="detail-kicker"><span className="eyebrow">{period?.title ?? 'ACONTECIMENTO'}</span><span className="detail-category">{event.category === 'kingdom' ? 'Reino' : event.category === 'journey' ? 'Viagem' : event.category === 'covenant' ? 'Aliança' : event.category === 'ministry' ? 'Ministério' : 'Evento'}</span></div><h1>{event.title}</h1><p className="detail-summary">{event.shortDescription}</p><DateBadge label={event.dateLabel} type={event.dateType} /><div className="detail-actions"><Link to={`/linha-do-tempo?period=${event.periodId}`} className="button button-dark"><ArrowLeft size={16} /> Ver na cronologia</Link><FavoriteButton type="event" id={event.id} label="Salvar" /></div></div></header>
+    <header className="detail-hero event-detail-hero"><div className="detail-hero-art">{artwork && <EditorialImage image={artwork} className="detail-editorial" />}<span className="detail-art-ring"/><span className="detail-art-sun"/><span className="detail-art-temple">⌂</span><span className="detail-art-caption">{artwork ? 'ILUSTRAÇÃO INTERPRETATIVA' : period?.shortTitle ?? 'HISTÓRIA BÍBLICA'}</span></div><div className="detail-hero-copy"><div className="detail-kicker"><span className="eyebrow">{period?.title ?? 'ACONTECIMENTO'}</span><span className="detail-category">{event.category === 'kingdom' ? 'Reino' : event.category === 'journey' ? 'Viagem' : event.category === 'covenant' ? 'Aliança' : event.category === 'ministry' ? 'Ministério' : 'Evento'}</span></div><h1>{event.title}</h1><p className="detail-summary">{event.shortDescription}</p><DateBadge label={event.dateLabel} type={event.dateType} /><div className="detail-actions"><Link to={`/linha-do-tempo?period=${event.periodId}`} className="button button-dark"><ArrowLeft size={16} /> Ver na cronologia</Link><FavoriteButton type="event" id={event.id} label="Salvar" /></div></div></header>
 
     <div className="detail-layout"><div className="detail-main-column">
       <section className="content-card"><SectionHeading eyebrow="CONTEXTO HISTÓRICO" title="O que aconteceu" /><p className="body-copy">{event.description}</p><div className="event-period-callout"><span className="period-callout-mark" style={{ backgroundColor: period?.color }} /> <div><small>PERÍODO HISTÓRICO</small><strong>{period?.title ?? '—'}</strong><span>{period?.dateLabel}</span></div><Link to={`/linha-do-tempo?period=${event.periodId}`}>Explorar período <ArrowRight size={14} /></Link></div></section>

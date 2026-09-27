@@ -12,10 +12,10 @@ const all: SearchResult[] = [
 
 const fuse = new Fuse(all, { keys: ['title', 'subtitle'], threshold: 0.35, ignoreLocation: true, minMatchCharLength: 2 })
 
-export function searchCatalog(query: string): SearchResult[] {
+export function searchCatalog(query: string, limit = 12): SearchResult[] {
   const trimmed = query.trim()
   if (trimmed.length < 2) return []
-  return fuse.search(trimmed, { limit: 12 }).map((item) => item.item)
+  return fuse.search(trimmed, { limit }).map((item) => item.item)
 }
 
 export function getSearchIndex(): SearchResult[] { return all }

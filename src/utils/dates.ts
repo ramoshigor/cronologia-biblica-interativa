@@ -3,6 +3,7 @@ import type { DateType, TimelineEntity } from '../types'
 /** Uses signed historical years: 1000 a.C. = -1000, 1 d.C. = 1. There is no year zero. */
 export function formatYear(year: number): string {
   if (year < 0) return `${Math.abs(year)} a.C.`
+  if (year === 0) return '1 a.C. / 1 d.C.'
   return `${year} d.C.`
 }
 

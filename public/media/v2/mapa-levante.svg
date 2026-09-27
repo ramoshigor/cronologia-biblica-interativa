@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 420" role="img" aria-labelledby="title desc">
+<title id="title">Mapa esquemático de referência do Levante</title>
+<desc id="desc">Posições aproximadas de Damasco, Jerusalém e Belém, em uma grade de latitude e longitude. Esquema sem contornos políticos ou rotas históricas.</desc>
+<rect width="740" height="420" rx="18" fill="#eaf0e7"/>
+<rect x="0" width="180" height="420" rx="18" fill="#c9dfd8"/>
+<path d="M180 0V420" stroke="#8daaa4" stroke-width="3" stroke-dasharray="8 7"/>
+<g stroke="#a4b8a7" stroke-width="1" stroke-dasharray="4 7" opacity=".75">
+<path d="M215 50H700M215 140H700M215 230H700M215 320H700M215 395H700"/>
+<path d="M220 28V395M403 28V395M586 28V395"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="14" fill="#42625c">
+<text x="28" y="180">Mar</text><text x="28" y="201">Mediterrâneo</text>
+<text x="217" y="28">N ↑</text><text x="215" y="402">34° E</text><text x="578" y="402">36° E</text>
+<text x="648" y="57">34° N</text><text x="648" y="325">31° N</text>
+</g>
+<!-- Grade esquemática linear. Pontos: OSM Wiki Jerusalém 31.7963,35.1751; Damasco 33.5067,36.2783; Serviço Meteorológico Palestino Belém ~31.7,35.2. -->
+<g fill="#173d3e" stroke="#fffefa" stroke-width="4">
+<circle cx="637" cy="94" r="9"/><circle cx="435" cy="248" r="9"/><circle cx="440" cy="257" r="7"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="18" font-weight="650" fill="#173d3e">
+<text x="530" y="79">Damasco</text><text x="455" y="238">Jerusalém</text><text x="455" y="280">Belém</text>
+</g>
+<text x="30" y="385" font-family="system-ui,sans-serif" font-size="13" fill="#365b58">Esquema de referência · sem escala de rotas</text>
+</svg>

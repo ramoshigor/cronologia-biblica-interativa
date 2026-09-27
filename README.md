@@ -69,3 +69,9 @@ O workflow define `VITE_BASE_PATH` com o nome do repositório e copia o `index.h
 ## Evolução futura
 
 Para adicionar sincronização, login ou administração remota, implemente uma nova camada por trás das interfaces de repositório e serviço. Supabase ou Firebase não são dependências desta versão. A UI e os JSONs atuais podem ser preservados enquanto se adiciona uma fonte remota.
+
+## Atualização visual v0.2
+
+A cronologia oferece uma lista vertical por período no celular e conserva o panorama horizontal como alternativa. As imagens em `public/media/v2/` são ilustrações interpretativas, não reconstruções ou retratos históricos. O catálogo, as rotas e os dados de favoritos, notas e visões salvas no navegador permanecem com as mesmas chaves.
+
+O mapa regional em páginas de lugar marca apenas Jerusalém, Belém e Damasco com posições aproximadas de cidades atuais. Outros lugares continuam descritos em texto até haver base geográfica específica. Consulte `docs/MEDIA.md` para ativos, fontes e limitações editoriais.

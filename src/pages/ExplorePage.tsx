@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router'
 import { BookOpenText, CalendarDays, MapPin, Search, UserRound } from 'lucide-react'
 import { Breadcrumbs, DateBadge, SectionHeading } from '../components/Shared'
 import { books, events, persons, places } from '../repositories/catalogRepository'
+import { searchCatalog } from '../services/searchService'
 
 type Tab = 'eventos' | 'personagens' | 'livros' | 'lugares'
 const tabs: Array<{ id: Tab; label: string }> = [{ id: 'eventos', label: 'Acontecimentos' }, { id: 'personagens', label: 'Personagens' }, { id: 'livros', label: 'Livros bíblicos' }, { id: 'lugares', label: 'Lugares' }]
@@ -11,14 +12,15 @@ const normal = (text: string) => text.normalize('NFD').replace(/[\u0300-\u036f]/
 export default function ExplorePage() {
   const [params, setParams] = useSearchParams()
   const initial = params.get('tab')
-  const [tab, setTab] = useState<Tab>(initial === 'personagens' || initial === 'livros' || initial === 'lugares' ? initial : 'eventos')
+  const tab: Tab = initial === 'personagens' || initial === 'livros' || initial === 'lugares' ? initial : 'eventos'
   const [query, setQuery] = useState('')
-  const setActiveTab = (value: Tab) => { setTab(value); setParams(value === 'eventos' ? {} : { tab: value }) }
+  const setActiveTab = (value: Tab) => setParams(value === 'eventos' ? {} : { tab: value })
   const q = normal(query)
-  const filteredEvents = useMemo(() => events.filter((item) => normal(`${item.title} ${item.shortDescription} ${item.dateLabel}`).includes(q)), [q])
-  const filteredPeople = useMemo(() => persons.filter((item) => normal(`${item.title} ${item.role} ${item.shortDescription}`).includes(q)), [q])
-  const filteredBooks = useMemo(() => books.filter((item) => normal(`${item.title} ${item.category} ${item.description}`).includes(q)), [q])
-  const filteredPlaces = useMemo(() => places.filter((item) => normal(`${item.title} ${item.shortDescription}`).includes(q)), [q])
+  const matches = useMemo(() => q.length >= 2 ? new Set(searchCatalog(query, 200).map((item) => item.id)) : null, [q, query])
+  const filteredEvents = useMemo(() => events.filter((item) => matches ? matches.has(item.id) || normal(`${item.title} ${item.shortDescription} ${item.dateLabel}`).includes(q) : normal(`${item.title} ${item.shortDescription} ${item.dateLabel}`).includes(q)), [q, matches])
+  const filteredPeople = useMemo(() => persons.filter((item) => matches ? matches.has(item.id) || normal(`${item.title} ${item.role} ${item.shortDescription}`).includes(q) : normal(`${item.title} ${item.role} ${item.shortDescription}`).includes(q)), [q, matches])
+  const filteredBooks = useMemo(() => books.filter((item) => matches ? matches.has(item.id) || normal(`${item.title} ${item.category} ${item.description}`).includes(q) : normal(`${item.title} ${item.category} ${item.description}`).includes(q)), [q, matches])
+  const filteredPlaces = useMemo(() => places.filter((item) => matches ? matches.has(item.id) || normal(`${item.title} ${item.shortDescription}`).includes(q) : normal(`${item.title} ${item.shortDescription}`).includes(q)), [q, matches])
   return <div className="explore-page"><Breadcrumbs items={[{ label: 'Início', href: '/' }, { label: 'Explorar' }]} /><div className="page-title-row"><div><span className="eyebrow">ENCICLOPÉDIA CONECTADA</span><h1>Explore a história bíblica</h1><p>Pesquise e navegue por pessoas, acontecimentos, livros e lugares.</p></div><span className="explore-title-icon"><BookOpenText size={22} /></span></div>
     <div className="explore-search"><Search size={18} /><input aria-label="Filtrar conteúdo" placeholder="Filtrar por nome ou descrição..." value={query} onChange={(event) => setQuery(event.target.value)} />{query && <button onClick={() => setQuery('')}>Limpar</button>}</div>
     <div className="explore-tabs" role="tablist" aria-label="Categoria de conteúdo">{tabs.map((item) => <button key={item.id} role="tab" aria-selected={tab === item.id} className={tab === item.id ? 'active' : ''} onClick={() => setActiveTab(item.id)}>{item.label}<span>{item.id === 'eventos' ? events.length : item.id === 'personagens' ? persons.length : item.id === 'livros' ? books.length : places.length}</span></button>)}</div>
