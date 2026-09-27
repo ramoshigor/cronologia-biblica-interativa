@@ -81,3 +81,7 @@ O mapa regional em páginas de lugar marca apenas Jerusalém, Belém e Damasco c
 ## Atualização visual v0.3
 
 Três novas cenas cobrem conquista e juízes, reino dividido e período intertestamentário. Os cartões das eras e a lista vertical no celular usam as imagens do período com rótulo de ilustração interpretativa. A exportação do estudo permite guardar e transferir os dados locais sem criar uma conta.
+
+## Ajustes visuais v0.4
+
+Os eventos de nascimento e morte/ressurreição de Jesus têm cenas próprias, diferenciadas da paisagem da Galileia. Foram corrigidos a largura da cronologia em telas estreitas, a rolagem lateral involuntária em Explorar e o destaque comprimido da Home. Os botões de categoria em Explorar agora anunciam seu estado como filtros; **Meu estudo** mostra a contagem real de anotações.

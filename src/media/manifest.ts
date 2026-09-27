@@ -22,6 +22,8 @@ export const editorialImages = {
   judges: image('I09', 'canaa-juizes', 'Colinas, campos e aldeias em uma paisagem de Canaã.', 'Ilustração interpretativa do período dos juízes.'),
   divided: image('I10', 'reinos-divididos', 'Duas cidades distantes em colinas separadas por um vale.', 'Ilustração interpretativa dos reinos de Israel e Judá.'),
   hellenistic: image('I11', 'mediterraneo-helenistico', 'Porto mediterrâneo com embarcações e povoado nas colinas.', 'Ilustração interpretativa do ambiente mediterrâneo entre os Testamentos.'),
+  bethlehem: image('I12', 'belem-noite', 'Aldeia genérica nas colinas da Judeia sob o céu noturno.', 'Ilustração interpretativa do ambiente do nascimento de Jesus.'),
+  jerusalemFirstCentury: image('I13', 'jerusalem-seculo-i', 'Cidade murada genérica nas colinas da Judeia ao entardecer.', 'Ilustração interpretativa do ambiente de Jerusalém no século I.'),
 } satisfies Record<string, EditorialImage>
 
 export const imageForEvent: Record<string, EditorialImage> = {
@@ -37,8 +39,8 @@ export const imageForEvent: Record<string, EditorialImage> = {
   'united-monarchy': editorialImages.kingdom,
   'first-temple': editorialImages.kingdom,
   'return-exile': editorialImages.return,
-  'birth-jesus': editorialImages.galilee,
-  'crucifixion': editorialImages.galilee,
+  'birth-jesus': editorialImages.bethlehem,
+  'crucifixion': editorialImages.jerusalemFirstCentury,
   pentecost: editorialImages.church,
   'paul-conversion': editorialImages.church,
   'first-journey': editorialImages.church,
