@@ -30,7 +30,8 @@
     ],
     "eventIds": [
       "call-of-abraham",
-      "covenant-abraham"
+      "covenant-abraham",
+      "melchizedek-meets-abraham"
     ],
     "bookIds": [
       "genesis"
@@ -125,7 +126,8 @@
     ],
     "eventIds": [
       "anointing-saul",
-      "anointing-david"
+      "anointing-david",
+      "hannah-samuel"
     ],
     "bookIds": [
       "1-samuel"
@@ -174,7 +176,8 @@
     ],
     "eventIds": [
       "anointing-saul",
-      "david-goliath"
+      "david-goliath",
+      "united-monarchy"
     ],
     "bookIds": [
       "1-samuel"
@@ -276,7 +279,8 @@
     ],
     "eventIds": [
       "first-temple",
-      "kingdom-divided"
+      "kingdom-divided",
+      "united-monarchy"
     ],
     "bookIds": [
       "1-kings"
@@ -511,7 +515,9 @@
       "birth-jesus",
       "crucifixion",
       "pentecost",
-      "jesus-baptism"
+      "jesus-baptism",
+      "john-baptist-ministry",
+      "thomas-risen"
     ],
     "bookIds": [
       "luke",
@@ -558,7 +564,8 @@
     ],
     "eventIds": [
       "pentecost",
-      "cornelius-conversion"
+      "cornelius-conversion",
+      "council-jerusalem"
     ],
     "bookIds": [
       "acts"
@@ -605,7 +612,8 @@
     "eventIds": [
       "paul-conversion",
       "first-journey",
-      "council-jerusalem"
+      "council-jerusalem",
+      "philippi-gospel"
     ],
     "bookIds": [
       "acts",
@@ -1229,7 +1237,9 @@
         "label": "Filipenses 2:19–23"
       }
     ],
-    "eventIds": [],
+    "eventIds": [
+      "philippi-gospel"
+    ],
     "bookIds": [
       "acts",
       "philippians",
@@ -1263,11 +1273,15 @@
         "label": "Atos 16:11–15"
       }
     ],
-    "eventIds": [],
+    "eventIds": [
+      "philippi-gospel"
+    ],
     "bookIds": [
       "acts"
     ],
-    "placeIds": [],
+    "placeIds": [
+      "philippi"
+    ],
     "sourceIds": [
       "bible"
     ],
@@ -1308,19 +1322,26 @@
         "label": "Romanos 16:3–5"
       }
     ],
-    "eventIds": [],
+    "eventIds": [
+      "ephesus-teaching"
+    ],
     "bookIds": [
       "acts",
       "romans"
     ],
     "placeIds": [
-      "corinth"
+      "corinth",
+      "ephesus",
+      "rome"
     ],
     "sourceIds": [
       "bible"
     ],
     "dateBasis": "activity",
-    "periodId": "church"
+    "periodId": "church",
+    "family": [
+      "aquila"
+    ]
   },
   {
     "id": "john-apostle",
@@ -1365,5 +1386,578 @@
     ],
     "dateBasis": "activity",
     "periodId": "church"
+  },
+  {
+    "id": "jacob",
+    "slug": "jaco",
+    "title": "Jacó",
+    "role": "Patriarca",
+    "periodId": "patriarchs",
+    "startYear": -1950,
+    "endYear": -1800,
+    "dateLabel": "Contexto patriarcal; data debatida",
+    "dateType": "disputed",
+    "dateBasis": "activity",
+    "shortDescription": "Filho de Isaque, pai de José e dos ancestrais das tribos de Israel.",
+    "description": "Gênesis acompanha a jornada de Jacó, suas relações familiares e os encontros em Betel e no vau do Jaboque. Ele recebe o nome Israel. A faixa cronológica serve como contexto patriarcal, sem estabelecer anos de nascimento ou morte.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 28,
+        "verseStart": 10,
+        "verseEnd": 22,
+        "label": "Gênesis 28:10–22"
+      },
+      {
+        "book": "Gênesis",
+        "chapter": 32,
+        "verseStart": 22,
+        "verseEnd": 32,
+        "label": "Gênesis 32:22–32"
+      }
+    ],
+    "eventIds": [
+      "jacob-bethel"
+    ],
+    "bookIds": [
+      "genesis"
+    ],
+    "placeIds": [
+      "canaan"
+    ],
+    "family": [
+      "isaac",
+      "joseph"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "deborah",
+    "slug": "debora",
+    "title": "Débora",
+    "role": "Profetisa e juíza",
+    "periodId": "conquest",
+    "startYear": -1200,
+    "endYear": -1100,
+    "dateLabel": "Período dos juízes; data debatida",
+    "dateType": "disputed",
+    "dateBasis": "activity",
+    "shortDescription": "Juíza que orienta Israel e acompanha Baraque na narrativa de Juízes.",
+    "description": "Débora atende o povo sob uma palmeira na região montanhosa de Efraim. Juízes 4 relata sua orientação a Baraque, e Juízes 5 apresenta o cântico associado à vitória. O livro situa sua atuação no período dos juízes, sem oferecer uma data absoluta.",
+    "references": [
+      {
+        "book": "Juízes",
+        "chapter": 4,
+        "verseStart": 4,
+        "verseEnd": 10,
+        "label": "Juízes 4:4–10"
+      },
+      {
+        "book": "Juízes",
+        "chapter": 5,
+        "verseStart": 1,
+        "verseEnd": 9,
+        "label": "Juízes 5:1–9"
+      }
+    ],
+    "eventIds": [
+      "deborah-barak"
+    ],
+    "bookIds": [
+      "judges"
+    ],
+    "placeIds": [
+      "canaan"
+    ],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "ruth",
+    "slug": "rute",
+    "title": "Rute",
+    "role": "Moabita e ancestral de Davi",
+    "periodId": "conquest",
+    "startYear": -1200,
+    "endYear": -1050,
+    "dateLabel": "Período dos juízes; data debatida",
+    "dateType": "disputed",
+    "dateBasis": "activity",
+    "shortDescription": "Acompanha Noemi a Belém e encontra acolhimento nos campos de Boaz.",
+    "description": "A narrativa de Rute destaca sua lealdade a Noemi e a vida em Belém durante o período dos juízes. Ela recolhe espigas no campo de Boaz, com quem se casa. A genealogia final a liga à família de Davi. A faixa é contextual, sem um ano biográfico estabelecido.",
+    "references": [
+      {
+        "book": "Rute",
+        "chapter": 1,
+        "verseStart": 16,
+        "verseEnd": 22,
+        "label": "Rute 1:16–22"
+      },
+      {
+        "book": "Rute",
+        "chapter": 2,
+        "verseStart": 1,
+        "verseEnd": 23,
+        "label": "Rute 2:1–23"
+      },
+      {
+        "book": "Rute",
+        "chapter": 4,
+        "verseStart": 13,
+        "verseEnd": 22,
+        "label": "Rute 4:13–22"
+      }
+    ],
+    "eventIds": [
+      "ruth-bethlehem"
+    ],
+    "bookIds": [
+      "ruth",
+      "matthew"
+    ],
+    "placeIds": [
+      "bethlehem"
+    ],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "hannah",
+    "slug": "ana-mae-de-samuel",
+    "title": "Ana, mãe de Samuel",
+    "role": "Mãe de Samuel",
+    "periodId": "conquest",
+    "startYear": -1120,
+    "endYear": -1050,
+    "dateLabel": "Período dos juízes; data debatida",
+    "dateType": "disputed",
+    "dateBasis": "activity",
+    "shortDescription": "Sua oração e a dedicação de Samuel aparecem no início de 1 Samuel.",
+    "description": "Ana apresenta sua aflição ao Senhor em Siló e, depois do nascimento de Samuel, dedica o menino ao serviço do Senhor. Seu cântico aparece em 1 Samuel 2. A narrativa pertence à transição entre juízes e monarquia, sem datas biográficas seguras.",
+    "references": [
+      {
+        "book": "1 Samuel",
+        "chapter": 1,
+        "verseStart": 9,
+        "verseEnd": 28,
+        "label": "1 Samuel 1:9–28"
+      },
+      {
+        "book": "1 Samuel",
+        "chapter": 2,
+        "verseStart": 1,
+        "verseEnd": 10,
+        "label": "1 Samuel 2:1–10"
+      }
+    ],
+    "eventIds": [
+      "hannah-samuel"
+    ],
+    "bookIds": [
+      "1-samuel"
+    ],
+    "placeIds": [
+      "shiloh"
+    ],
+    "family": [
+      "samuel"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "nehemiah",
+    "slug": "neemias",
+    "title": "Neemias",
+    "role": "Governador e líder da reconstrução",
+    "periodId": "return",
+    "startYear": -450,
+    "endYear": -430,
+    "dateLabel": "Século V a.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Lidera a reconstrução dos muros de Jerusalém no período persa.",
+    "description": "Neemias recebe autorização para ir a Jerusalém e organiza a reconstrução dos muros em meio à oposição. O livro também descreve medidas de organização comunitária. A atuação é situada no século V a.C.; os marcadores do atlas são aproximações, não datas de toda a sua vida.",
+    "references": [
+      {
+        "book": "Neemias",
+        "chapter": 2,
+        "verseStart": 1,
+        "verseEnd": 20,
+        "label": "Neemias 2:1–20"
+      },
+      {
+        "book": "Neemias",
+        "chapter": 6,
+        "verseStart": 15,
+        "verseEnd": 16,
+        "label": "Neemias 6:15–16"
+      }
+    ],
+    "eventIds": [
+      "nehemiah-walls",
+      "ezra-reading"
+    ],
+    "bookIds": [
+      "nehemiah"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "susa"
+    ],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "elizabeth",
+    "slug": "isabel",
+    "title": "Isabel",
+    "role": "Mãe de João Batista",
+    "periodId": "jesus",
+    "startYear": -10,
+    "endYear": 10,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Parente de Maria e mãe de João Batista, apresentada no Evangelho de Lucas.",
+    "description": "Lucas apresenta Isabel como esposa de Zacarias. O anúncio do nascimento de João e o encontro com Maria fazem parte da abertura do Evangelho. O intervalo indica apenas o contexto desses relatos, sem datas de nascimento ou morte.",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 1,
+        "verseStart": 5,
+        "verseEnd": 25,
+        "label": "Lucas 1:5–25"
+      },
+      {
+        "book": "Lucas",
+        "chapter": 1,
+        "verseStart": 39,
+        "verseEnd": 45,
+        "label": "Lucas 1:39–45"
+      }
+    ],
+    "eventIds": [
+      "birth-jesus"
+    ],
+    "bookIds": [
+      "luke"
+    ],
+    "placeIds": [
+      "judah"
+    ],
+    "family": [
+      "john-baptist"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "thomas",
+    "slug": "tome",
+    "title": "Tomé",
+    "role": "Apóstolo",
+    "periodId": "jesus",
+    "startYear": 27,
+    "endYear": 33,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Um dos Doze; João relata sua confissão diante do Cristo ressuscitado.",
+    "description": "Tomé participa dos diálogos de Jesus com seus discípulos no Evangelho de João. Após a ressurreição, o relato descreve seu encontro com Jesus e sua confissão de fé. O catálogo indica o período do ministério de Jesus, sem acrescentar itinerários de tradições posteriores.",
+    "references": [
+      {
+        "book": "João",
+        "chapter": 11,
+        "verseStart": 16,
+        "verseEnd": 16,
+        "label": "João 11:16"
+      },
+      {
+        "book": "João",
+        "chapter": 14,
+        "verseStart": 5,
+        "verseEnd": 6,
+        "label": "João 14:5–6"
+      },
+      {
+        "book": "João",
+        "chapter": 20,
+        "verseStart": 24,
+        "verseEnd": 29,
+        "label": "João 20:24–29"
+      }
+    ],
+    "eventIds": [
+      "thomas-risen"
+    ],
+    "bookIds": [
+      "john"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "mark",
+    "slug": "joao-marcos",
+    "title": "João Marcos",
+    "role": "Cooperador missionário",
+    "periodId": "church",
+    "startYear": 40,
+    "endYear": 65,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Aparece em Atos nas viagens de Barnabé e Paulo e em referências de colaboração.",
+    "description": "João Marcos acompanha Barnabé e Saulo em parte da primeira viagem. Atos registra uma divergência posterior sobre sua participação. As cartas também mencionam Marcos como colaborador. Sua identificação com o evangelista Marcos pertence à tradição cristã e não é afirmada aqui como conclusão biográfica demonstrada.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 12,
+        "verseStart": 12,
+        "verseEnd": 25,
+        "label": "Atos 12:12–25"
+      },
+      {
+        "book": "Atos",
+        "chapter": 15,
+        "verseStart": 36,
+        "verseEnd": 39,
+        "label": "Atos 15:36–39"
+      },
+      {
+        "book": "2 Timóteo",
+        "chapter": 4,
+        "verseStart": 11,
+        "verseEnd": 11,
+        "label": "2 Timóteo 4:11"
+      }
+    ],
+    "eventIds": [
+      "first-journey"
+    ],
+    "bookIds": [
+      "acts",
+      "2-timothy"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "cyprus"
+    ],
+    "family": [
+      "barnabas"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "titus",
+    "slug": "tito",
+    "title": "Tito",
+    "role": "Cooperador de Paulo",
+    "periodId": "church",
+    "startYear": 45,
+    "endYear": 65,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Colaborador mencionado nas cartas de Paulo e destinatário tradicional da carta a Tito.",
+    "description": "Paulo menciona Tito em Gálatas e em 2 Coríntios como participante de seu trabalho. A carta a Tito o apresenta em tarefas de organização das comunidades em Creta. Essas referências indicam atuação, não datas de nascimento ou morte.",
+    "references": [
+      {
+        "book": "Gálatas",
+        "chapter": 2,
+        "verseStart": 1,
+        "verseEnd": 3,
+        "label": "Gálatas 2:1–3"
+      },
+      {
+        "book": "2 Coríntios",
+        "chapter": 8,
+        "verseStart": 16,
+        "verseEnd": 23,
+        "label": "2 Coríntios 8:16–23"
+      },
+      {
+        "book": "Tito",
+        "chapter": 1,
+        "verseStart": 5,
+        "verseEnd": 5,
+        "label": "Tito 1:5"
+      }
+    ],
+    "eventIds": [],
+    "bookIds": [
+      "galatians",
+      "2-corinthians",
+      "titus"
+    ],
+    "placeIds": [],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "aquila",
+    "slug": "aquila",
+    "title": "Áquila",
+    "role": "Artesão e cooperador",
+    "periodId": "church",
+    "startYear": 50,
+    "endYear": 65,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Com Priscila, trabalha com Paulo e participa do ensino de Apolo.",
+    "description": "Atos apresenta Áquila em Corinto, trabalhando com Paulo na mesma atividade artesanal. Ao lado de Priscila, ele acolhe Apolo e lhe explica com mais precisão o caminho de Deus em Éfeso. Romanos menciona o casal entre os cooperadores de Paulo.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 18,
+        "verseStart": 1,
+        "verseEnd": 3,
+        "label": "Atos 18:1–3"
+      },
+      {
+        "book": "Atos",
+        "chapter": 18,
+        "verseStart": 24,
+        "verseEnd": 28,
+        "label": "Atos 18:24–28"
+      },
+      {
+        "book": "Romanos",
+        "chapter": 16,
+        "verseStart": 3,
+        "verseEnd": 5,
+        "label": "Romanos 16:3–5"
+      }
+    ],
+    "eventIds": [
+      "ephesus-teaching"
+    ],
+    "bookIds": [
+      "acts",
+      "romans"
+    ],
+    "placeIds": [
+      "corinth",
+      "ephesus",
+      "rome"
+    ],
+    "family": [
+      "priscilla"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "apollos",
+    "slug": "apolo",
+    "title": "Apolo",
+    "role": "Pregador e mestre",
+    "periodId": "church",
+    "startYear": 50,
+    "endYear": 60,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Natural de Alexandria, aparece ensinando em Éfeso e atuando na Acaia.",
+    "description": "Atos descreve Apolo como eloquente e conhecedor das Escrituras. Priscila e Áquila ampliam sua instrução em Éfeso antes de sua atuação na Acaia. Em 1 Coríntios, Paulo o cita entre os que servem à comunidade, sem apresentar sua biografia completa.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 18,
+        "verseStart": 24,
+        "verseEnd": 28,
+        "label": "Atos 18:24–28"
+      },
+      {
+        "book": "1 Coríntios",
+        "chapter": 3,
+        "verseStart": 4,
+        "verseEnd": 9,
+        "label": "1 Coríntios 3:4–9"
+      }
+    ],
+    "eventIds": [
+      "ephesus-teaching"
+    ],
+    "bookIds": [
+      "acts",
+      "1-corinthians"
+    ],
+    "placeIds": [
+      "ephesus",
+      "corinth"
+    ],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "silas",
+    "slug": "silas",
+    "title": "Silas",
+    "role": "Cooperador missionário",
+    "periodId": "church",
+    "startYear": 45,
+    "endYear": 60,
+    "dateLabel": "Século I d.C.; atuação aproximada",
+    "dateType": "approximate",
+    "dateBasis": "activity",
+    "shortDescription": "Enviado de Jerusalém e companheiro de Paulo na viagem a Filipos.",
+    "description": "Atos apresenta Silas entre os enviados da igreja de Jerusalém e, depois, como companheiro de Paulo. Em Filipos, ambos são presos e o relato acompanha o encontro com o carcereiro. O intervalo corresponde a esse contexto missionário.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 15,
+        "verseStart": 22,
+        "verseEnd": 32,
+        "label": "Atos 15:22–32"
+      },
+      {
+        "book": "Atos",
+        "chapter": 16,
+        "verseStart": 19,
+        "verseEnd": 34,
+        "label": "Atos 16:19–34"
+      }
+    ],
+    "eventIds": [
+      "council-jerusalem",
+      "philippi-gospel"
+    ],
+    "bookIds": [
+      "acts"
+    ],
+    "placeIds": [
+      "jerusalem",
+      "antioch",
+      "philippi"
+    ],
+    "family": [],
+    "sourceIds": [
+      "bible"
+    ]
   }
 ]

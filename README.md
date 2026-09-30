@@ -26,11 +26,11 @@ O build final fica em `dist/`.
 
 - Consulta de 66 livros do cânon protestante (39 AT, 27 NT), em ordem bíblica e por faixas propostas de composição.
 - Autoria tradicional ou identificação debatida descrita por livro; composição e contexto narrado aparecem separadamente.
-- 31 personagens, incluindo Melquisedeque, João Batista, Maria Madalena, Estêvão, Barnabé, Lídia, Priscila e outros da igreja inicial.
+- 43 personagens, incluindo Melquisedeque, João Batista, Maria Madalena, Estêvão, Barnabé, Lídia, Priscila e outros da igreja inicial.
 - Cronologia horizontal e lista por período no celular. Começa apenas com acontecimentos; as demais camadas são opcionais.
 - Busca aproximada em português para eventos, pessoas, livros, lugares e impérios.
 - Comparação de personagens com faixas biográficas disponíveis, referências bíblicas e fontes de contexto.
-- 16 cenas editoriais interpretativas, PWA e rotas para hospedagem estática.
+- 19 cenas editoriais interpretativas, PWA e rotas para hospedagem estática.
 
 Favoritos, anotações, histórico e visões salvas permanecem implementados e no armazenamento local, porém a interface de estudo pessoal está suspensa nesta versão de consulta. Nenhum dado local é apagado na atualização.
 
@@ -89,3 +89,15 @@ Os eventos de nascimento e morte/ressurreição de Jesus têm cenas próprias, d
 O catálogo cobre os 66 livros conforme a organização protestante. A página **Livros** distingue ordem canônica e início aproximado da faixa de composição; faixas podem se sobrepor. A ordem sugerida na visualização de composição não determina qual obra foi finalizada antes. Autores são mostrados como atribuições tradicionais quando apropriado; Hebreus permanece anônimo. A página usa fontes gerais da Society of Biblical Literature e da American Bible Society, cujos panoramas não validam isoladamente cada intervalo numérico do catálogo.
 
 Foram acrescentados personagens e eventos com referências, sem atribuir datas de nascimento ou morte a Melquisedeque ou a outras pessoas cuja vida não pode ser datada. As novas ilustrações estão documentadas em `docs/MEDIA.md`. A navegação e os controles de estudo pessoal foram ocultos; o código e os dados locais foram preservados.
+
+## Melhorias de consulta v0.6
+
+- Menu móvel com fundo opaco e altura própria, rolagem em telas baixas, fechamento ao tocar fora, pressionar Esc ou navegar. O botão informa o estado aberto para tecnologias assistivas.
+- 12 novos personagens: Jacó, Débora, Rute, Ana (mãe de Samuel), Neemias, Isabel, Tomé, João Marcos, Tito, Áquila, Apolo e Silas.
+- 8 novos acontecimentos com referências estruturadas, além de Corinto, Éfeso e Filipos. O catálogo totaliza 43 personagens, 38 acontecimentos e 24 lugares.
+- Cronologia com lista e panorama disponíveis em qualquer tela, atalhos para camadas, navegação entre períodos e barra de rolagem controlável pelo teclado.
+- Faixas visuais de composição dos livros, autoria em cada linha e escala própria por grupo; não sugerem precedência exata entre faixas sobrepostas.
+- Personagens em ordem alfabética e filtro por período no catálogo; novas ilustrações nas fichas e cartões.
+- Novas cenas de Débora, Rute e do ensino de Priscila e Áquila a Apolo. Consulte [ativos e prompts](docs/MEDIA-v06.md).
+
+As pessoas adicionadas são representadas por contexto narrativo ou atuação. Não foram atribuídos anos de nascimento ou morte. Marcadores do período dos juízes e dos patriarcas servem para organização visual e não devem ser lidos como datas absolutas.

@@ -31,6 +31,29 @@ describe('initial historical sample', () => {
 })
 
 describe('consultation catalog', () => {
+  it('keeps person links, narrative periods and activity intervals valid', () => {
+    const personIds = new Set(persons.map((item) => item.id))
+    const bookIds = new Set(books.map((item) => item.id))
+    const placeIds = new Set(places.map((item) => item.id))
+    const eventIds = new Set(events.map((item) => item.id))
+    const sourceIds = new Set(sources.map((item) => item.id))
+    expect(personIds.size).toBe(persons.length)
+    for (const person of persons) {
+      expect(person.bookIds.every((id) => bookIds.has(id))).toBe(true)
+      expect(person.placeIds.every((id) => placeIds.has(id))).toBe(true)
+      expect(person.eventIds.every((id) => eventIds.has(id))).toBe(true)
+      expect(person.sourceIds.every((id) => sourceIds.has(id))).toBe(true)
+      expect((person.family ?? []).every((id) => personIds.has(id))).toBe(true)
+      expect(person.references.length).toBeGreaterThan(0)
+      expect(person.endYear ?? person.startYear).toBeGreaterThanOrEqual(person.startYear)
+      if (person.dateBasis === 'activity') {
+        expect(person.birthYear).toBeUndefined()
+        expect(person.deathYear).toBeUndefined()
+      }
+    }
+    expect(searchCatalog('Débora').some((item) => item.id === 'deborah')).toBe(true)
+    expect(searchCatalog('Apolo').some((item) => item.id === 'apollos')).toBe(true)
+  })
   it('contains the 66 books in canonical order with valid references and conservative composition dates', () => {
     expect(books).toHaveLength(66)
     expect(books.filter((book) => book.testament === 'AT')).toHaveLength(39)

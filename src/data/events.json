@@ -1164,5 +1164,289 @@
     "sourceIds": [
       "bible"
     ]
+  },
+  {
+    "id": "jacob-bethel",
+    "slug": "jaco-em-betel",
+    "title": "Jacó em Betel",
+    "startYear": -1900,
+    "periodId": "patriarchs",
+    "shortDescription": "Gênesis narra o sonho de Jacó e a promessa recebida em Betel.",
+    "description": "A passagem de Gênesis 28 acompanha Jacó durante sua viagem. A posição no atlas serve para agrupar o episódio na narrativa patriarcal; não afirma um ano preciso.",
+    "references": [
+      {
+        "book": "Gênesis",
+        "chapter": 28,
+        "verseStart": 10,
+        "verseEnd": 22,
+        "label": "Gênesis 28:10–22"
+      }
+    ],
+    "personIds": [
+      "jacob"
+    ],
+    "placeIds": [
+      "canaan"
+    ],
+    "relatedEventIds": [],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "disputed",
+    "dateLabel": "Contexto patriarcal; posição aproximada"
+  },
+  {
+    "id": "deborah-barak",
+    "slug": "debora-e-baraque",
+    "title": "Débora e Baraque",
+    "startYear": -1150,
+    "periodId": "conquest",
+    "shortDescription": "Débora orienta Baraque no confronto descrito em Juízes 4.",
+    "description": "O relato descreve a liderança de Débora e a convocação de Baraque. A data absoluta não é estabelecida; a posição é uma referência visual ao período dos juízes.",
+    "references": [
+      {
+        "book": "Juízes",
+        "chapter": 4,
+        "verseStart": 4,
+        "verseEnd": 16,
+        "label": "Juízes 4:4–16"
+      }
+    ],
+    "personIds": [
+      "deborah"
+    ],
+    "placeIds": [
+      "canaan"
+    ],
+    "relatedEventIds": [],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "disputed",
+    "dateLabel": "Período dos juízes; posição aproximada"
+  },
+  {
+    "id": "ruth-bethlehem",
+    "slug": "rute-em-belem",
+    "title": "Rute nos campos de Belém",
+    "startYear": -1100,
+    "periodId": "conquest",
+    "shortDescription": "Rute recolhe espigas nos campos de Boaz depois de acompanhar Noemi.",
+    "description": "Rute 2 mostra a chegada aos campos, a acolhida de Boaz e o cuidado com Noemi. O livro situa a história no período dos juízes, mas não fixa o ano deste episódio.",
+    "references": [
+      {
+        "book": "Rute",
+        "chapter": 2,
+        "verseStart": 1,
+        "verseEnd": 23,
+        "label": "Rute 2:1–23"
+      }
+    ],
+    "personIds": [
+      "ruth"
+    ],
+    "placeIds": [
+      "bethlehem"
+    ],
+    "relatedEventIds": [],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "disputed",
+    "dateLabel": "Período dos juízes; posição aproximada"
+  },
+  {
+    "id": "hannah-samuel",
+    "slug": "ana-dedica-samuel",
+    "title": "Ana dedica Samuel",
+    "startYear": -1080,
+    "periodId": "conquest",
+    "shortDescription": "Ana leva Samuel a Siló e o dedica ao serviço do Senhor.",
+    "description": "O episódio de 1 Samuel 1 liga a oração de Ana ao nascimento e à dedicação do menino. Sua posição cronológica é aproximada e não estabelece a data de nascimento de Samuel.",
+    "references": [
+      {
+        "book": "1 Samuel",
+        "chapter": 1,
+        "verseStart": 24,
+        "verseEnd": 28,
+        "label": "1 Samuel 1:24–28"
+      }
+    ],
+    "personIds": [
+      "hannah",
+      "samuel"
+    ],
+    "placeIds": [
+      "shiloh"
+    ],
+    "relatedEventIds": [
+      "anointing-saul"
+    ],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "disputed",
+    "dateLabel": "Período dos juízes; posição aproximada"
+  },
+  {
+    "id": "nehemiah-walls",
+    "slug": "reconstrucao-dos-muros",
+    "title": "Reconstrução dos muros de Jerusalém",
+    "startYear": -445,
+    "periodId": "return",
+    "shortDescription": "Neemias organiza a reconstrução dos muros no período persa.",
+    "description": "Neemias 2 relata a autorização e a inspeção dos muros. Neemias 6 apresenta a conclusão da obra em 52 dias. O marcador do atlas situa o episódio aproximadamente no século V a.C.",
+    "references": [
+      {
+        "book": "Neemias",
+        "chapter": 2,
+        "verseStart": 11,
+        "verseEnd": 20,
+        "label": "Neemias 2:11–20"
+      },
+      {
+        "book": "Neemias",
+        "chapter": 6,
+        "verseStart": 15,
+        "verseEnd": 16,
+        "label": "Neemias 6:15–16"
+      }
+    ],
+    "personIds": [
+      "nehemiah"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "relatedEventIds": [
+      "ezra-reading"
+    ],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "approximate",
+    "dateLabel": "Século V a.C.; posição aproximada"
+  },
+  {
+    "id": "thomas-risen",
+    "slug": "tome-e-o-cristo-ressuscitado",
+    "title": "Tomé e o Cristo ressuscitado",
+    "startYear": 30,
+    "periodId": "jesus",
+    "shortDescription": "João relata o encontro de Tomé com Jesus após a ressurreição.",
+    "description": "João 20 descreve a presença de Jesus entre os discípulos e a confissão de Tomé. A posição acompanha a faixa aproximada adotada para a morte e a ressurreição.",
+    "references": [
+      {
+        "book": "João",
+        "chapter": 20,
+        "verseStart": 24,
+        "verseEnd": 29,
+        "label": "João 20:24–29"
+      }
+    ],
+    "personIds": [
+      "thomas",
+      "jesus"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "relatedEventIds": [
+      "crucifixion"
+    ],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "approximate",
+    "dateLabel": "c. 30–33 d.C.",
+    "endYear": 33
+  },
+  {
+    "id": "philippi-gospel",
+    "slug": "evangelho-em-filipos",
+    "title": "O evangelho chega a Filipos",
+    "startYear": 50,
+    "periodId": "church",
+    "shortDescription": "Paulo e seus companheiros encontram Lídia; Paulo e Silas são presos.",
+    "description": "Atos 16 acompanha a chegada à Macedônia, o encontro com Lídia e os acontecimentos da prisão. O contexto é a expansão missionária da igreja no século I.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 16,
+        "verseStart": 11,
+        "verseEnd": 15,
+        "label": "Atos 16:11–15"
+      },
+      {
+        "book": "Atos",
+        "chapter": 16,
+        "verseStart": 19,
+        "verseEnd": 34,
+        "label": "Atos 16:19–34"
+      }
+    ],
+    "personIds": [
+      "paul",
+      "silas",
+      "timothy",
+      "lydia"
+    ],
+    "placeIds": [
+      "philippi"
+    ],
+    "relatedEventIds": [],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "approximate",
+    "dateLabel": "c. década de 50 d.C."
+  },
+  {
+    "id": "ephesus-teaching",
+    "slug": "apolo-em-efeso",
+    "title": "Priscila e Áquila orientam Apolo",
+    "startYear": 53,
+    "periodId": "church",
+    "shortDescription": "O casal acolhe Apolo e amplia sua instrução em Éfeso.",
+    "description": "Atos 18 descreve o ensino de Apolo e a orientação recebida de Priscila e Áquila. O episódio antecede sua ida à Acaia; o ano indicado é apenas uma posição aproximada no contexto missionário.",
+    "references": [
+      {
+        "book": "Atos",
+        "chapter": 18,
+        "verseStart": 24,
+        "verseEnd": 28,
+        "label": "Atos 18:24–28"
+      }
+    ],
+    "personIds": [
+      "priscilla",
+      "aquila",
+      "apollos"
+    ],
+    "placeIds": [
+      "ephesus"
+    ],
+    "relatedEventIds": [],
+    "empireIds": [],
+    "sourceIds": [
+      "bible"
+    ],
+    "category": "event",
+    "dateType": "approximate",
+    "dateLabel": "c. década de 50 d.C."
   }
 ]

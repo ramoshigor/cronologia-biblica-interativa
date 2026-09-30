@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router'
 import { BookOpenText, Clock3, Compass, GitCompareArrows, Menu, X } from 'lucide-react'
 import { SearchBox } from './SearchBox'
@@ -13,8 +13,21 @@ const navigation = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const menuButton = useRef<HTMLButtonElement>(null)
   const [isOnline, setIsOnline] = useState(() => navigator.onLine)
   const location = useLocation()
+  useEffect(() => { setMenuOpen(false) }, [location.pathname, location.search])
+  useEffect(() => {
+    if (!menuOpen) return
+    const close = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setMenuOpen(false); menuButton.current?.focus() }
+    }
+    const desktop = window.matchMedia('(min-width: 861px)')
+    const resize = () => { if (desktop.matches) setMenuOpen(false) }
+    window.addEventListener('keydown', close)
+    desktop.addEventListener('change', resize)
+    return () => { window.removeEventListener('keydown', close); desktop.removeEventListener('change', resize) }
+  }, [menuOpen])
   useEffect(() => {
     const update = () => setIsOnline(navigator.onLine)
     window.addEventListener('online', update)
@@ -30,7 +43,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <span className="brand-mark"><span>✦</span></span>
             <span className="brand-copy"><strong>Cronologia</strong><small>BÍBLICA INTERATIVA</small></span>
           </Link>
-          <nav className={`main-nav ${menuOpen ? 'open' : ''}`} aria-label="Navegação principal">
+          <nav id="main-navigation" className={`main-nav ${menuOpen ? 'open' : ''}`} aria-label="Navegação principal">
             {navigation.map(({ to, label, icon: Icon, end }) => (
               <NavLink key={to} to={to} end={end} onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
                 <Icon size={16} strokeWidth={1.8} /><span>{label}</span>
@@ -38,11 +51,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             ))}
           </nav>
           <div className="topbar-search"><SearchBox /></div>
-          <button className="mobile-menu icon-button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>
+          <button ref={menuButton} className="mobile-menu icon-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="main-navigation" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>
             {menuOpen ? <X size={21} /> : <Menu size={21} />}
           </button>
         </div>
       </header>
+      {menuOpen && <button className="nav-backdrop" aria-label="Fechar menu de navegação" tabIndex={-1} onClick={() => setMenuOpen(false)} />}
       {!isOnline && <div className="offline-banner"><span className="offline-dot" /> Você está offline. O conteúdo já carregado continua disponível.</div>}
       <main id="conteudo" className="page-shell" key={location.pathname}>
         {children}

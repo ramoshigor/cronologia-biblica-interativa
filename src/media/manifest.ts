@@ -27,6 +27,9 @@ export const editorialImages = {
   melchizedek: image('I14', 'melquisedeque-salem', 'Viajantes encontram um sacerdote diante de uma cidade antiga sobre colinas.', 'Ilustração interpretativa de Gênesis 14.'),
   manuscripts: image('I15', 'manuscritos-biblicos', 'Rolos e manuscritos em uma mesa próxima ao mar Mediterrâneo.', 'Ilustração interpretativa da transmissão dos textos bíblicos.'),
   jordan: image('I16', 'joao-jordao', 'Pessoas ouvem um pregador junto a um rio em uma paisagem antiga.', 'Ilustração interpretativa do ministério de João Batista.'),
+  deborah: image('I17', 'debora-palmeira', 'Mulher sentada sob uma palmeira conversa com um grupo nas colinas de Israel.', 'Ilustração interpretativa de Débora em Juízes 4.'),
+  ruth: image('I18', 'rute-colheita', 'Mulher recolhe espigas em um campo com ceifeiros e colinas ao fundo.', 'Ilustração interpretativa de Rute 2.'),
+  teaching: image('I19', 'priscila-aquila-apolo', 'Uma mulher e dois homens conversam junto a uma mesa com rolos em um pátio antigo.', 'Ilustração interpretativa do ensino em Atos 18.'),
 } satisfies Record<string, EditorialImage>
 
 export const imageForEvent: Record<string, EditorialImage> = {
@@ -60,11 +63,24 @@ export const imageForEvent: Record<string, EditorialImage> = {
   'second-temple': editorialImages.return,
   'ezra-reading': editorialImages.return,
   'jesus-baptism': editorialImages.jordan,
+  'deborah-barak': editorialImages.deborah,
+  'ruth-bethlehem': editorialImages.ruth,
+  'ephesus-teaching': editorialImages.teaching,
+  'jacob-bethel': editorialImages.abraham,
+  'hannah-samuel': editorialImages.judges,
+  'nehemiah-walls': editorialImages.return,
+  'thomas-risen': editorialImages.jerusalemFirstCentury,
+  'philippi-gospel': editorialImages.church,
 }
 
 export const imageForPerson: Record<string, EditorialImage> = {
   melchizedek: editorialImages.melchizedek,
   'john-baptist': editorialImages.jordan,
+  deborah: editorialImages.deborah,
+  ruth: editorialImages.ruth,
+  priscilla: editorialImages.teaching,
+  aquila: editorialImages.teaching,
+  apollos: editorialImages.teaching,
 }
 
 export const imageForPeriod: Record<string, EditorialImage> = {
