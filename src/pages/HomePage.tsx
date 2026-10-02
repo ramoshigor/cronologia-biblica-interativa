@@ -43,6 +43,11 @@ export default function HomePage() {
       </Link>)}</div>
     </section>
 
+    <section className="home-section jesus-home-feature" aria-labelledby="jesus-feature-title">
+      <Link to="/personagem/jesus" className="jesus-home-image" tabIndex={-1} aria-hidden="true"><EditorialImage image={editorialImages.jesusTeaching} /></Link>
+      <div><span className="eyebrow">JESUS NOS EVANGELHOS</span><h2 id="jesus-feature-title">Conheça sua história, momento a momento.</h2><p>Do nascimento à ressurreição, um percurso ilustrado com acontecimentos, lugares e referências para sua consulta.</p><Link to="/personagem/jesus" className="text-link">Explorar a vida de Jesus <ArrowRight size={16} /></Link></div>
+    </section>
+
     <section className="home-bottom-grid">
       <div className="continue-card">
         <div className="continue-heading"><div><span className="eyebrow">GUIA DE CONSULTA</span><h2>Por onde começar</h2></div><span className="continue-symbol"><BookOpenText size={21} /></span></div>

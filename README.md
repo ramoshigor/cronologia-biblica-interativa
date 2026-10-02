@@ -30,7 +30,7 @@ O build final fica em `dist/`.
 - Cronologia horizontal e lista por período no celular. Começa apenas com acontecimentos; as demais camadas são opcionais.
 - Busca aproximada em português para eventos, pessoas, livros, lugares e impérios.
 - Comparação de personagens com faixas biográficas disponíveis, referências bíblicas e fontes de contexto.
-- 19 cenas editoriais interpretativas, PWA e rotas para hospedagem estática.
+- 22 cenas editoriais interpretativas, PWA e rotas para hospedagem estática.
 
 Favoritos, anotações, histórico e visões salvas permanecem implementados e no armazenamento local, porém a interface de estudo pessoal está suspensa nesta versão de consulta. Nenhum dado local é apagado na atualização.
 
@@ -101,3 +101,11 @@ Foram acrescentados personagens e eventos com referências, sem atribuir datas d
 - Novas cenas de Débora, Rute e do ensino de Priscila e Áquila a Apolo. Consulte [ativos e prompts](docs/MEDIA-v06.md).
 
 As pessoas adicionadas são representadas por contexto narrativo ou atuação. Não foram atribuídos anos de nascimento ou morte. Marcadores do período dos juízes e dos patriarcas servem para organização visual e não devem ser lidos como datas absolutas.
+
+## Percurso visual de Jesus — v0.7
+
+- Página de Jesus com oito momentos da narrativa, filtros por etapa e navegação por seções.
+- Quatro novos acontecimentos: chamado dos primeiros discípulos, Sermão do Monte, última ceia e ressurreição/túmulo vazio. O catálogo passa a 42 acontecimentos.
+- Crucificação e ressurreição em registros separados e relacionados; endereço legado da crucificação preservado.
+- Os quatro Evangelhos acessíveis na ficha, lugares e personagens relacionados, além de destaque na página inicial.
+- Três novas imagens geradas e otimizadas para celular. [Arquivos e prompts](docs/MEDIA-v07.md).

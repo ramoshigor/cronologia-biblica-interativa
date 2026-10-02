@@ -479,15 +479,15 @@
     "id": "jesus",
     "slug": "jesus",
     "title": "Jesus Cristo",
-    "shortDescription": "Figura central dos Evangelhos; sua vida é situada no contexto do domínio romano.",
+    "shortDescription": "Nos Evangelhos, Jesus anuncia o reino de Deus, ensina e chama discípulos. Sua morte e ressurreição estão no centro da fé cristã.",
     "startYear": -4,
-    "endYear": 30,
-    "dateLabel": "c. 4 a.C.–30 d.C.",
+    "endYear": 33,
+    "dateLabel": "c. 6–4 a.C. a 30–33 d.C.",
     "dateType": "approximate",
     "role": "Messias e mestre",
     "birthYear": -4,
     "deathYear": 30,
-    "description": "Os Evangelhos narram o nascimento, ministério, crucificação e ressurreição de Jesus. As datas exatas do nascimento e da morte são reconstruções aproximadas; a cronologia varia entre estudiosos.",
+    "description": "Os Evangelhos apresentam a vida, o ministério, a morte e a ressurreição de Jesus. Mateus e Lucas também relatam seu nascimento. A Galileia é um dos principais cenários de seu ensino e do chamado dos discípulos; Jerusalém é o cenário da paixão e dos relatos do túmulo vazio. Este percurso reúne episódios da narrativa e indica passagens para consulta. As datas do nascimento e da paixão são estimativas e variam entre cronologias.",
     "references": [
       {
         "book": "Lucas",
@@ -498,17 +498,45 @@
       },
       {
         "book": "Marcos",
+        "chapter": 1,
+        "verseStart": 14,
+        "verseEnd": 20,
+        "label": "Marcos 1:14–20"
+      },
+      {
+        "book": "Mateus",
+        "chapter": 5,
+        "verseStart": 1,
+        "verseEnd": 12,
+        "label": "Mateus 5:1–12"
+      },
+      {
+        "book": "Lucas",
+        "chapter": 22,
+        "verseStart": 14,
+        "verseEnd": 20,
+        "label": "Lucas 22:14–20"
+      },
+      {
+        "book": "Marcos",
         "chapter": 15,
         "verseStart": 21,
         "verseEnd": 39,
         "label": "Marcos 15:21–39"
       },
       {
-        "book": "1 Coríntios",
-        "chapter": 15,
-        "verseStart": 3,
+        "book": "Marcos",
+        "chapter": 16,
+        "verseStart": 1,
         "verseEnd": 8,
-        "label": "1 Coríntios 15:3–8"
+        "label": "Marcos 16:1–8"
+      },
+      {
+        "book": "João",
+        "chapter": 20,
+        "verseStart": 24,
+        "verseEnd": 29,
+        "label": "João 20:24–29"
       }
     ],
     "eventIds": [
@@ -517,11 +545,17 @@
       "pentecost",
       "jesus-baptism",
       "john-baptist-ministry",
-      "thomas-risen"
+      "thomas-risen",
+      "first-disciples",
+      "sermon-mount",
+      "last-supper",
+      "empty-tomb"
     ],
     "bookIds": [
+      "matthew",
+      "mark",
       "luke",
-      "mark"
+      "john"
     ],
     "placeIds": [
       "bethlehem",
@@ -531,7 +565,8 @@
     "sourceIds": [
       "bible",
       "oxford"
-    ]
+    ],
+    "periodId": "jesus"
   },
   {
     "id": "peter",
@@ -565,7 +600,9 @@
     "eventIds": [
       "pentecost",
       "cornelius-conversion",
-      "council-jerusalem"
+      "council-jerusalem",
+      "first-disciples",
+      "last-supper"
     ],
     "bookIds": [
       "acts"
@@ -988,7 +1025,8 @@
       }
     ],
     "eventIds": [
-      "crucifixion"
+      "crucifixion",
+      "empty-tomb"
     ],
     "bookIds": [
       "luke",
@@ -1371,7 +1409,9 @@
       }
     ],
     "eventIds": [
-      "pentecost"
+      "pentecost",
+      "first-disciples",
+      "last-supper"
     ],
     "bookIds": [
       "mark",

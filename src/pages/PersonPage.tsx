@@ -8,12 +8,14 @@ import { formatYear, yearsOverlap } from '../utils/dates'
 import NotFoundPage from './NotFoundPage'
 import { EditorialImage } from '../components/EditorialImage'
 import { imageForPerson } from '../media/manifest'
+import JesusPage from './JesusPage'
 
 export default function PersonPage() {
   const { slug = '' } = useParams()
   const person = getPerson(slug)
   useEffect(() => { if (person) historyService.record({ type: 'person', id: person.id, slug: person.slug, title: person.title, href: `/personagem/${person.slug}` }) }, [person])
   if (!person) return <NotFoundPage />
+  if (person.id === 'jesus') return <JesusPage person={person} />
   const scene = imageForPerson[person.id]
   const personSources = sources.filter((source) => person.sourceIds.includes(source.id) && source.url)
   const lifeEvents = person.eventIds.map((id) => events.find((event) => event.id === id)).filter((event) => event !== undefined).sort((a, b) => a.startYear - b.startYear)

@@ -669,11 +669,11 @@
   {
     "id": "crucifixion",
     "slug": "morte-e-ressurreicao-de-jesus",
-    "title": "Morte e ressurreição de Jesus",
-    "shortDescription": "O centro da proclamação apostólica nos Evangelhos e nas cartas.",
-    "description": "Os quatro Evangelhos narram a crucificação e a ressurreição de Jesus. A data é estimada, com propostas principais em 30 ou 33 d.C.; esta amostra usa 30 d.C. apenas para posicionamento visual.",
+    "title": "Crucificação de Jesus",
+    "shortDescription": "Os Evangelhos narram a morte de Jesus em Jerusalém sob o domínio romano.",
+    "description": "Os quatro Evangelhos narram a crucificação de Jesus. A data histórica é debatida, com propostas em 30 ou 33 d.C.; o marcador usa 30 d.C. para posicionamento visual, sem estabelecer consenso. O relato da ressurreição pode ser consultado no acontecimento relacionado sobre o túmulo vazio.",
     "startYear": 30,
-    "dateLabel": "c. 30 d.C. (proposta)",
+    "dateLabel": "c. 30–33 d.C.",
     "dateType": "disputed",
     "periodId": "jesus",
     "category": "event",
@@ -703,12 +703,16 @@
       "rome-empire"
     ],
     "relatedEventIds": [
+      "last-supper",
+      "empty-tomb",
+      "thomas-risen",
       "pentecost"
     ],
     "sourceIds": [
       "bible",
       "oxford"
-    ]
+    ],
+    "endYear": 33
   },
   {
     "id": "pentecost",
@@ -1362,6 +1366,7 @@
       "jerusalem"
     ],
     "relatedEventIds": [
+      "empty-tomb",
       "crucifixion"
     ],
     "empireIds": [],
@@ -1448,5 +1453,197 @@
     "category": "event",
     "dateType": "approximate",
     "dateLabel": "c. década de 50 d.C."
+  },
+  {
+    "id": "first-disciples",
+    "slug": "chamado-dos-primeiros-discipulos",
+    "title": "Chamado dos primeiros discípulos",
+    "shortDescription": "À beira da Galileia, Jesus chama pescadores para segui-lo.",
+    "description": "Marcos narra o chamado de Simão e André, seguido pelo de Tiago e João, junto ao mar da Galileia. Eles deixam suas atividades e seguem Jesus. O episódio pertence ao início do ministério público; a faixa de anos é uma estimativa para navegação, não uma data indicada pelo texto.",
+    "startYear": 27,
+    "endYear": 30,
+    "dateLabel": "c. 27–30 d.C. · início do ministério",
+    "dateType": "range",
+    "periodId": "jesus",
+    "category": "ministry",
+    "references": [
+      {
+        "book": "Marcos",
+        "chapter": 1,
+        "verseStart": 16,
+        "verseEnd": 20,
+        "label": "Marcos 1:16–20"
+      },
+      {
+        "book": "Mateus",
+        "chapter": 4,
+        "verseStart": 18,
+        "verseEnd": 22,
+        "label": "Mateus 4:18–22"
+      }
+    ],
+    "personIds": [
+      "jesus",
+      "peter",
+      "john-apostle"
+    ],
+    "placeIds": [
+      "galilee"
+    ],
+    "empireIds": [
+      "rome-empire"
+    ],
+    "relatedEventIds": [
+      "jesus-baptism",
+      "sermon-mount"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "sermon-mount",
+    "slug": "sermao-do-monte",
+    "title": "Sermão do Monte",
+    "shortDescription": "Jesus ensina sobre o reino, a oração e a vida diante de Deus.",
+    "description": "Mateus 5–7 reúne o ensino de Jesus conhecido como Sermão do Monte. A narrativa começa com Jesus sentado em um monte, junto aos discípulos. As bem-aventuranças, a oração do Pai Nosso e a imagem da casa sobre a rocha fazem parte desse conjunto. A faixa indicada situa o ensino no ministério público, sem atribuir um ano exato ao episódio.",
+    "startYear": 27,
+    "endYear": 30,
+    "dateLabel": "c. 27–30 d.C. · ministério na Galileia",
+    "dateType": "range",
+    "periodId": "jesus",
+    "category": "ministry",
+    "references": [
+      {
+        "book": "Mateus",
+        "chapter": 5,
+        "verseStart": 1,
+        "verseEnd": 12,
+        "label": "Mateus 5:1–12"
+      },
+      {
+        "book": "Mateus",
+        "chapter": 6,
+        "verseStart": 9,
+        "verseEnd": 13,
+        "label": "Mateus 6:9–13"
+      },
+      {
+        "book": "Mateus",
+        "chapter": 7,
+        "verseStart": 24,
+        "verseEnd": 29,
+        "label": "Mateus 7:24–29"
+      }
+    ],
+    "personIds": [
+      "jesus"
+    ],
+    "placeIds": [
+      "galilee"
+    ],
+    "empireIds": [
+      "rome-empire"
+    ],
+    "relatedEventIds": [
+      "first-disciples",
+      "last-supper"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "last-supper",
+    "slug": "ultima-ceia-de-jesus",
+    "title": "Última ceia",
+    "shortDescription": "Jesus partilha o pão e o cálice com os apóstolos antes de sua prisão.",
+    "description": "Lucas relata a refeição de Jesus com os apóstolos antes de sua prisão. Jesus partilha o pão e o cálice, relacionando-os à entrega de sua vida e à nova aliança. O episódio antecede a crucificação na narrativa; a faixa de 30–33 d.C. acompanha as propostas de data já indicadas para a paixão, sem definir um dia ou ano exato.",
+    "startYear": 30,
+    "endYear": 33,
+    "dateLabel": "c. 30–33 d.C. · antes da crucificação",
+    "dateType": "disputed",
+    "periodId": "jesus",
+    "category": "event",
+    "references": [
+      {
+        "book": "Lucas",
+        "chapter": 22,
+        "verseStart": 14,
+        "verseEnd": 20,
+        "label": "Lucas 22:14–20"
+      },
+      {
+        "book": "Marcos",
+        "chapter": 14,
+        "verseStart": 22,
+        "verseEnd": 26,
+        "label": "Marcos 14:22–26"
+      }
+    ],
+    "personIds": [
+      "jesus",
+      "peter",
+      "john-apostle"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "empireIds": [
+      "rome-empire"
+    ],
+    "relatedEventIds": [
+      "crucifixion",
+      "empty-tomb"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
+  },
+  {
+    "id": "empty-tomb",
+    "slug": "ressurreicao-e-tumulo-vazio",
+    "title": "Ressurreição e túmulo vazio",
+    "shortDescription": "As mulheres encontram o túmulo aberto e recebem a notícia da ressurreição.",
+    "description": "Marcos 16:1–8 relata que Maria Madalena, Maria, mãe de Tiago, e Salomé vão ao túmulo e encontram a pedra removida. No interior, recebem o anúncio de que Jesus ressuscitou. Lucas 24 também narra a visita das mulheres e a notícia levada aos discípulos. A faixa de anos acompanha a cronologia debatida da paixão; o evento é apresentado após a crucificação conforme a sequência dos relatos.",
+    "startYear": 30,
+    "endYear": 33,
+    "dateLabel": "c. 30–33 d.C. · após a crucificação",
+    "dateType": "disputed",
+    "periodId": "jesus",
+    "category": "event",
+    "references": [
+      {
+        "book": "Marcos",
+        "chapter": 16,
+        "verseStart": 1,
+        "verseEnd": 8,
+        "label": "Marcos 16:1–8"
+      },
+      {
+        "book": "Lucas",
+        "chapter": 24,
+        "verseStart": 1,
+        "verseEnd": 12,
+        "label": "Lucas 24:1–12"
+      }
+    ],
+    "personIds": [
+      "jesus",
+      "mary-magdalene"
+    ],
+    "placeIds": [
+      "jerusalem"
+    ],
+    "empireIds": [
+      "rome-empire"
+    ],
+    "relatedEventIds": [
+      "crucifixion",
+      "thomas-risen"
+    ],
+    "sourceIds": [
+      "bible"
+    ]
   }
 ]
